@@ -68,8 +68,9 @@ footer{position:relative;z-index:10}
 #_main_slide ._current{font-weight: 500;font-size: 26px;line-height: 0.8;color: #fff}
 #_main_slide ._slash{width: 18px;height: 20px;margin: 0 7px;background-image: url(../imgs/main.png);background-position: 0px -752px}
 #_main_slide ._total{font-weight: 500;font-size: 16px;line-height: .8;color: #fff;opacity:0.7;margin-top: 5px}
-/* _content */
-#_content_wrap ._content1_container{overflow: hidden;padding: 120px 0}
+/* _content1 */
+#_content_wrap ._content1_container{overflow: hidden;padding: 140px 0}
+#_content_wrap ._content1_container ._content1_title{overflow: hidden;width: 0;height: 0;text-indent: -9999px;}
 ._content1_container ._contnet_slide_container{position: relative;width: 1200px;height: 616px;margin: 0 auto}
 ._content1_container ._img_container{position: absolute;top: 0;width: 690px;height: 616px}
 ._contnet_slide_container ._content{display: none;position: absolute;top: 0;left: 790px;width: 410px;padding-top: 55px;z-index:2}
@@ -95,3 +96,11 @@ footer{position:relative;z-index:10}
 ._contnet1_count_area ._cureent_no{position: absolute;top: 0;left: 0;font-weight: bold;font-size: 20px;line-height: 0.8;color: #012b5d}
 ._contnet1_count_area ._count_slash{position: absolute;top: 7px;left: 22px;width: 21px;height: 21px;background-image: url(../imgs/main.png);background-position: 0 -428px}
 ._contnet1_count_area ._total_no{position: absolute;bottom: 0;right: 0;font-weight: bold;font-size: 16px;line-height: 0.8;color: #a3a3a3}
+/* _content2 */
+#_content_wrap ._content2_container{overflow: hidden;width: 100%;}
+#_content_wrap ._content2_title_container{float: left;position: relative;width: 35%;height: 702px;background: #012b5d}
+#_content_wrap ._content2_title_container:before{position: absolute;bottom: 0;right: 0;width: 452px;height: 277px; background: url(../imgs/bg_section02_01.gif) no-repeat 0 0;content: ''}
+._content2_title_container ._content2_title_wrap{position: absolute;right: 0;width: 250px;padding-right: 60px;}
+._content2_title_wrap ._content2_title{padding-top: 170px;line-height: 1em;font-size: 40px;font-weight: bold;color: #fff}
+._content2_title_wrap ._content2_dec{margin-top: 30px;font-weight: bold;font-size: 16px;line-height: 26px;color: #fff;opacity: 0.7;}
+._content2_title_wrap ._btn_value{display: block;width: 118px;height: 38px;margin: 35px 0 0;border: 1px solid #fff;text-align: center;color: #fff;line-height: 38px;box-sizing: border-box;}

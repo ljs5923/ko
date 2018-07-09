@@ -182,6 +182,7 @@
         </section>
         <section id="_content_wrap">
             <article class="_content1_container">
+               <h3 class="_content1_title">사업소개</h3>
                 <div class="_contnet_slide_container">
                     <div class="_contnet_slide_wrap">
                         <div class="_img_container _slideimg1"><img src="imgs/img_section01_01.jpg" alt="" class="rel"></div>
@@ -223,6 +224,15 @@
                     </div>
                 </div>
             </article>
+            <article class="_content2_container clearfix">
+                <div class="_content2_title_container">
+                   <div class="_content2_title_wrap">
+                    <h3 class="_content2_title">가치체계</h3>
+                    <p class="_content2_dec">고려개발은 고객의 풍요로운 삶을<br>건설하기 위해 ‘기본’, ‘혁신’, ‘최고’라는<br>핵심가치를 기반으로 ‘시장 최고의<br>가치창출 기업’이라는 비전을<br>달성하고자 합니다.</p>
+                    <a href="#" class="_btn_value">바로가기</a>                       
+                   </div>
+                </div>
+            </article>
         </section>
     </div>
     <script>
@@ -230,12 +240,12 @@
             $('._main_lst li a').on('mouseenter', function() {
                 $('#_header').stop().animate({
                     height: 336
-                }, 500);
+                }, 400);
             });
             $('#_header').on('mouseleave', function() {
                 $('#_header').stop().animate({
                     height: 86
-                }, 500);
+                }, 400);
             }); //메뉴슬라이드 이벤트
             $w = $(window).height();
             $('#_main_slide').css("height", $w);
