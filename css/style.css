@@ -104,3 +104,15 @@ footer{position:relative;z-index:10}
 ._content2_title_wrap ._content2_title{padding-top: 170px;line-height: 1em;font-size: 40px;font-weight: bold;color: #fff}
 ._content2_title_wrap ._content2_dec{margin-top: 30px;font-weight: bold;font-size: 16px;line-height: 26px;color: #fff;opacity: 0.7;}
 ._content2_title_wrap ._btn_value{display: block;width: 118px;height: 38px;margin: 35px 0 0;border: 1px solid #fff;text-align: center;color: #fff;line-height: 38px;box-sizing: border-box;}
+#_content_wrap ._content2_dec_container{float: left;position: relative;width: 65%;height: 702px;background-image: url(../imgs/bg_section02-2.png);}
+._content2_dec_container ._content2_dec_wrap{width: 890px;height: 482px;margin:110px 0;background-color: #fff;}
+._content2_dec_container ._content2_dec{overflow: hidden;width: 770px;height: 342px;padding: 50px 0 90px 100px}
+._content2_dec_container ._content2_dec li{position: relative;float: left;width: 50%;height: 131px;margin-top: 40px}
+._content2_dec_container ._content2_dec li:before{content: '';position: absolute;top: 0;left: 0;}
+._content2_dec_container ._content2_dec li._content2_dec_01:before{background-image: url(../imgs/main.png);background-position: 0px -464px;width: 58px;height: 48px;}
+._content2_dec_container ._content2_dec li._content2_dec_02:before{background-image: url(../imgs/main.png);background-position: 0px -527px;width: 58px;height: 48px;}
+._content2_dec_container ._content2_dec li._content2_dec_03:before{background-image: url(../imgs/main.png);background-position: 0px -590px;width: 58px;height: 48px;}
+._content2_dec_container ._content2_dec li._content2_dec_04:before{background-image: url(../imgs/main.png);background-position: 0px -653px;width: 58px;height: 48px;}
+._content2_dec_container ._content2_dec li strong{display: block;padding-top: 76px;font-weight: bold;font-size: 20px;line-height: 0.8;color: #222;}
+._content2_dec_container ._content2_dec li p{margin-top: 13px;font-size: 16px;line-height: 26px;color: #555;}
+
