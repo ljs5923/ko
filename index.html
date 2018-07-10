@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="font/nanumsquare.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <script src="js/jquery-latest.min.js"></script>
+    <script src="js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
 </head>
 
@@ -182,7 +184,7 @@
         </section>
         <section id="_content_wrap">
             <article class="_content1_container">
-               <h3 class="_content1_title">사업소개</h3>
+                <h3 class="_content1_title">사업소개</h3>
                 <div class="_contnet_slide_container">
                     <div class="_contnet_slide_wrap">
                         <div class="_img_container _slideimg1"><img src="imgs/img_section01_01.jpg" alt="" class="rel"></div>
@@ -226,11 +228,11 @@
             </article>
             <article class="_content2_container clearfix">
                 <div class="_content2_title_container">
-                   <div class="_content2_title_wrap">
-                    <h3 class="_content2_title">가치체계</h3>
-                    <p class="_content2_dec">고려개발은 고객의 풍요로운 삶을<br>건설하기 위해 ‘기본’, ‘혁신’, ‘최고’라는<br>핵심가치를 기반으로 ‘시장 최고의<br>가치창출 기업’이라는 비전을<br>달성하고자 합니다.</p>
-                    <a href="#" class="_btn_value">바로가기</a>                       
-                   </div>
+                    <div class="_content2_title_wrap">
+                        <h3 class="_content2_title">가치체계</h3>
+                        <p class="_content2_dec">고려개발은 고객의 풍요로운 삶을<br>건설하기 위해 ‘기본’, ‘혁신’, ‘최고’라는<br>핵심가치를 기반으로 ‘시장 최고의<br>가치창출 기업’이라는 비전을<br>달성하고자 합니다.</p>
+                        <a href="#" class="_btn_value">바로가기</a>
+                    </div>
                 </div>
                 <div class="_content2_dec_container">
                     <div class="_content2_dec_wrap">
@@ -255,363 +257,263 @@
                     </div>
                 </div>
             </article>
+            <article class="_content3_container">
+                <div class="_content3_wrap clearfix">
+                    <div class="_content3_title_container">
+                        <h3 class="_contnet3_logo">
+                            고려인
+                            <img src="imgs/txt_kdc_person_logo.png" alt="고려인">
+                        </h3>
+                        <p class="_contnet3_txt">고려개발과 함께 성장하고<br>도전과 혁신으로 최고가 되는 고려인</p>
+                        <a href="#" class="_go_btn_ko"><span class="_go_btn_koicon"></span></a>
+                    </div>
+                    <div class="_content3_slide_container">
+                        <div class="_content3_slide_wrap">
+                            <div class="_content3_slide">
+                                <div class="_content3_slide_img" data-fx="fadeInLeft">
+                                    <img src="imgs/img_person01.png" alt="">
+                                </div>
+                                <div class="_content3_slide_title_box" data-fx="fadeInLeft">
+                                    <h4 class="_content3_title">직무 이야기</h4>
+                                    <div class="_content3_title_dec_box">
+                                        <p class="_content3_title_dec">고려개발은 <strong>'나의 비전'</strong>이다.</p>
+                                    </div>
+                                    <div class="_content3_slide_btn" data-fx="fadeInLeft">
+                                        <a href="#" class="_btn_content3"><span>바로가기</span></a>
+                                    </div>
+                                </div>
+                                <div class="_content3_slide_person_box">
+                                    <div class="_content3_slide_person">
+                                        <strong class="_content3_slide_person_name">PYO YUJEONG</strong>
+                                        <p class="_content3_slide_person_type">주택영업 표유정 과장</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="_content3_slide">
+                                <div class="_content3_slide_img">
+                                    <img src="imgs/img_person02.png" alt="">
+                                </div>
+                                <div class="_content3_slide_title_box">
+                                    <h4 class="_content3_title">직무 이야기</h4>
+                                    <div class="_content3_title_dec_box">
+                                        <p class="_content3_title_dec">고려개발은 <strong>'흙 속의 진주'</strong>다.</p>
+                                    </div>
+                                    <div class="_content3_slide_btn">
+                                        <a href="#" class="_btn_content3"><span>바로가기</span></a>
+                                    </div>
+                                </div>
+                                <div class="_content3_slide_person_box">
+                                    <div class="_content3_slide_person">
+                                        <strong class="_content3_slide_person_name">PARK NAMSU</strong>
+                                        <p class="_content3_slide_person_type">건축설계 박남수 과장</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="_content3_slide">
+                                <div class="_content3_slide_img">
+                                    <img src="imgs/img_person03.png" alt="">
+                                </div>
+                                <div class="_content3_slide_title_box">
+                                    <h4 class="_content3_title">직무 이야기</h4>
+                                    <div class="_content3_title_dec_box">
+                                        <p class="_content3_title_dec">고려개발은 <strong>'프로다운 최고'</strong>다.</p>
+                                    </div>
+                                    <div class="_content3_slide_btn">
+                                        <a href="#" class="_btn_content3"><span>바로가기</span></a>
+                                    </div>
+                                </div>
+                                <div class="_content3_slide_person_box">
+                                    <div class="_content3_slide_person">
+                                        <strong class="_content3_slide_person_name">JOO SANGHUN</strong>
+                                        <p class="_content3_slide_person_type">분양관리 주상훈 차장</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="_content3_slide">
+                                <div class="_content3_slide_img">
+                                    <img src="imgs/img_person04.png" alt="">
+                                </div>
+                                <div class="_content3_slide_title_box">
+                                    <h4 class="_content3_title">직무 이야기</h4>
+                                    <div class="_content3_title_dec_box">
+                                        <p class="_content3_title_dec">고려개발은 <strong>'가치를 증명하는 곳'</strong>이다.</p>
+                                    </div>
+                                    <div class="_content3_slide_btn">
+                                        <a href="#" class="_btn_content3"><span>바로가기</span></a>
+                                    </div>
+                                </div>
+                                <div class="_content3_slide_person_box">
+                                    <div class="_content3_slide_person">
+                                        <strong class="_content3_slide_person_name">LEE INYEONG</strong>
+                                        <p class="_content3_slide_person_type">건축시공 이인영 사원</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="_content3_slide">
+                                <div class="_content3_slide_img">
+                                    <img src="imgs/img_person05.png" alt="">
+                                </div>
+                                <div class="_content3_slide_title_box">
+                                    <h4 class="_content3_title">직무 이야기</h4>
+                                    <div class="_content3_title_dec_box">
+                                        <p class="_content3_title_dec">고려개발은 <strong>'내일이 기대되는 회사'</strong>다.</p>
+                                    </div>
+                                    <div class="_content3_slide_btn">
+                                        <a href="#" class="_btn_content3"><span>바로가기</span></a>
+                                    </div>
+                                </div>
+                                <div class="_content3_slide_person_box">
+                                    <div class="_content3_slide_person">
+                                        <strong class="_content3_slide_person_name">KWON KYUNGYOON</strong>
+                                        <p class="_content3_slide_person_type">수주견젹 권경윤 사원</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="_content3_slide">
+                                <div class="_content3_slide_img">
+                                    <img src="imgs/img_person06.png" alt="">
+                                </div>
+                                <div class="_content3_slide_title_box">
+                                    <h4 class="_content3_title">직무 이야기</h4>
+                                    <div class="_content3_title_dec_box">
+                                        <p class="_content3_title_dec">고려개발은 <strong>'건설업의 역사'</strong>이다.</p>
+                                    </div>
+                                    <div class="_content3_slide_btn">
+                                        <a href="#" class="_btn_content3"><span>바로가기</span></a>
+                                    </div>
+                                </div>
+                                <div class="_content3_slide_person_box">
+                                    <div class="_content3_slide_person">
+                                        <strong class="_content3_slide_person_name">SHIN CHUNGHUN</strong>
+                                        <p class="_content3_slide_person_type">토목영업 신충훈 과장</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="_content3_slide">
+                                <div class="_content3_slide_img">
+                                    <img src="imgs/img_person07.png" alt="">
+                                </div>
+                                <div class="_content3_slide_title_box">
+                                    <h4 class="_content3_title">직무 이야기</h4>
+                                    <div class="_content3_title_dec_box">
+                                        <p class="_content3_title_dec">고려개발은 <strong>'다윗'</strong>이다.</p>
+                                    </div>
+                                    <div class="_content3_slide_btn">
+                                        <a href="#" class="_btn_content3"><span>바로가기</span></a>
+                                    </div>
+                                </div>
+                                <div class="_content3_slide_person_box">
+                                    <div class="_content3_slide_person">
+                                        <strong class="_content3_slide_person_name">LEE DONGWOOK</strong>
+                                        <p class="_content3_slide_person_type">기술개발 이동욱 과장</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="_content3_slide">
+                                <div class="_content3_slide_img">
+                                    <img src="imgs/img_person08.png" alt="">
+                                </div>
+                                <div class="_content3_slide_title_box">
+                                    <h4 class="_content3_title">직무 이야기</h4>
+                                    <div class="_content3_title_dec_box">
+                                        <p class="_content3_title_dec">고려개발은 <strong>'기회의 장'</strong>이다.</p>
+                                    </div>
+                                    <div class="_content3_slide_btn">
+                                        <a href="#" class="_btn_content3"><span>바로가기</span></a>
+                                    </div>
+                                </div>
+                                <div class="_content3_slide_person_box">
+                                    <div class="_content3_slide_person">
+                                        <strong class="_content3_slide_person_name">SHIN YEONGGUK</strong>
+                                        <p class="_content3_slide_person_type">안전관리 신영국 사원</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="_content3_slide">
+                                <div class="_content3_slide_img">
+                                    <img src="imgs/img_person09.png" alt="">
+                                </div>
+                                <div class="_content3_slide_title_box">
+                                    <h4 class="_content3_title">직무 이야기</h4>
+                                    <div class="_content3_title_dec_box">
+                                        <p class="_content3_title_dec">고려개발은 <strong>'부부관계'</strong>이다.</p>
+                                    </div>
+                                    <div class="_content3_slide_btn">
+                                        <a href="#" class="_btn_content3"><span>바로가기</span></a>
+                                    </div>
+                                </div>
+                                <div class="_content3_slide_person_box">
+                                    <div class="_content3_slide_person">
+                                        <strong class="_content3_slide_person_name">HA JIO</strong>
+                                        <p class="_content3_slide_person_type">토목시공 하지오 사원</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="_content3_slide">
+                                <div class="_content3_slide_img">
+                                    <img src="imgs/img_person10.png" alt="">
+                                </div>
+                                <div class="_content3_slide_title_box">
+                                    <h4 class="_content3_title">직무 이야기</h4>
+                                    <div class="_content3_title_dec_box">
+                                        <p class="_content3_title_dec">고려개발은 <strong>'사다리'</strong>이다.</p>
+                                    </div>
+                                    <div class="_content3_slide_btn">
+                                        <a href="#" class="_btn_content3"><span>바로가기</span></a>
+                                    </div>
+                                </div>
+                                <div class="_content3_slide_person_box">
+                                    <div class="_content3_slide_person">
+                                        <strong class="_content3_slide_person_name">KIM SHINHOO</strong>
+                                        <p class="_content3_slide_person_type">전략기획 김신후 사원</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="_content3_slide">
+                                <div class="_content3_slide_img">
+                                    <img src="imgs/img_person11.png" alt="">
+                                </div>
+                                <div class="_content3_slide_title_box">
+                                    <h4 class="_content3_title">직무 이야기</h4>
+                                    <div class="_content3_title_dec_box">
+                                        <p class="_content3_title_dec">고려개발은 <strong>'온수매트'</strong>이다.</p>
+                                    </div>
+                                    <div class="_content3_slide_btn">
+                                        <a href="#" class="_btn_content3"><span>바로가기</span></a>
+                                    </div>
+                                </div>
+                                <div class="_content3_slide_person_box">
+                                    <div class="_content3_slide_person">
+                                        <strong class="_content3_slide_person_name">JUNG JUHOON</strong>
+                                        <p class="_content3_slide_person_type">인사관리 정주훈 사원</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="_content3_slide">
+                                <div class="_content3_slide_img">
+                                    <img src="imgs/img_person12.png" alt="">
+                                </div>
+                                <div class="_content3_slide_title_box">
+                                    <h4 class="_content3_title">직무 이야기</h4>
+                                    <div class="_content3_title_dec_box">
+                                        <p class="_content3_title_dec">고려개발은 <strong>'말뚝'</strong>이다.</p>
+                                    </div>
+                                    <div class="_content3_slide_btn">
+                                        <a href="#" class="_btn_content3"><span>바로가기</span></a>
+                                    </div>
+                                </div>
+                                <div class="_content3_slide_person_box">
+                                    <div class="_content3_slide_person">
+                                        <strong class="_content3_slide_person_name">PYO YUJEONG</strong>
+                                        <p class="_content3_slide_person_type">외주조달 박승진 과장</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
         </section>
     </div>
-    <script>
-        jQuery(function($) {
-            $('._main_lst li a').on('mouseenter', function() {
-                $('#_header').stop().animate({
-                    height: 336
-                }, 400);
-            });
-            $('#_header').on('mouseleave', function() {
-                $('#_header').stop().animate({
-                    height: 86
-                }, 400);
-            }); //메뉴슬라이드 이벤트
-            $w = $(window).height();
-            $('#_main_slide').css("height", $w);
-            //메인 슬라이드 높이 설정
-            //mainslide Strat
-            var mainSlide=$('._slide_img').bxSlider({
-                mode: 'fade',
-                speed: 2000,
-                control: false,
-                pager: false,
-                auto: true,
-                autoControls: true,
-                autoControlsCombine: true,
-                autoControlsSelector: $('._start_pause'),
-                prevSelector: $('._prev'),
-                nextSelector: $('._next'),
-                onSlideAfter: function() {
-                    no = mainSlide.getCurrentSlide();
-                    ++no;
-                    $('._current').text("0" + no);
-                }
-            });
-            //mainslide end
-            var prevTextNo=3;
-            var nextTextNo=3; 
-            var prevpx=0;
-            var nextpx=0;
-            $('._content1_prev').on('click', function() {
-                prevContentText();
-                prevContentImgSlide();
-            });
-            $('._content1_next').on('click', function() {
-                nextContentText();
-                nextContentImgSlide();
-            });
-            function prevContentText(){
-                if (prevTextNo == 3) {
-                    $('._text'+(prevTextNo-2)).fadeOut(1000);
-                    $('._text'+(prevTextNo)).fadeIn(1000);
-                    $('._contnet1_count_area ._cureent_no').text("0"+(prevTextNo));
-                    --prevTextNo;
-                    nextTextNo=1;
-                } else if (prevTextNo == 2) {
-                    $('._text'+(prevTextNo+1)).fadeOut(1000);
-                    $('._text'+(prevTextNo)).fadeIn(1000);
-                    $('._contnet1_count_area ._cureent_no').text("0"+(prevTextNo));
-                    --prevTextNo;
-                    nextTextNo=2;
-                } else {
-                    $('._text'+(prevTextNo + 1)).fadeOut(1000);
-                    $('._text'+(prevTextNo)).fadeIn(1000);
-                    $('._contnet1_count_area ._cureent_no').text("0"+(prevTextNo));
-                    prevTextNo=3;
-                    nextTextNo=3;
-                }
-            }
-            function prevContentImgSlide() {
-                if (prevpx == 1) {
-                    $('._slideimg4').stop().animate({
-                        left: 2090
-                    }, 1000)
-                    $('._slideimg5').css({
-                        left: -2370
-                    })
-                    $('._slideimg6').css({
-                        left: -1580
-                    })
-                    $('._slideimg1').stop().animate({
-                        left: -790
-                    }, 1000);
-                    $('._slideimg2').stop().animate({
-                        left: 0
-                    }, 1000);
-                    $('._slideimg3').stop().animate({
-                        left: 1300
-                    }, 1000);
-                    ++prevpx;
-                    nextpx=4;
-                } else if (prevpx == 2) {
-                    $('._slideimg4').css({
-                        left: -2370
-                    })
-                    $('._slideimg5').css({
-                        left: -1580
-                    })
-                    $('._slideimg6').stop().animate({
-                        left: -790
-                    }, 1000)
-                    $('._slideimg1').stop().animate({
-                        left: 0
-                    }, 1000);
-                    $('._slideimg2').stop().animate({
-                        left: 1300
-                    }, 1000);
-                    $('._slideimg3').stop().animate({
-                        left: 2090
-                    }, 1000);
-                    ++prevpx;
-                    nextpx=3;
-                }
-                else if(prevpx==3){
-                    $('._slideimg4').css({
-                        left: -1580
-                    })
-                    $('._slideimg5').stop().animate({
-                        left: -790
-                    },1000)
-                    $('._slideimg6').stop().animate({
-                        left: 0
-                    }, 1000)
-                    $('._slideimg1').stop().animate({
-                        left: 1300
-                    }, 1000);
-                    $('._slideimg2').stop().animate({
-                        left: 2090
-                    }, 1000);
-                    $('._slideimg3').css({
-                        left: -2370
-                    });
-                    ++prevpx;
-                    nextpx=2;
-                }
-                else if(prevpx==4){
-                    $('._slideimg4').stop().animate({
-                        left: -790
-                    },1000)
-                    $('._slideimg5').stop().animate({
-                        left: 0
-                    },1000)
-                    $('._slideimg6').stop().animate({
-                        left: 1300
-                    }, 1000)
-                    $('._slideimg1').stop().animate({
-                        left: 2090
-                    }, 1000);
-                    $('._slideimg2').css({
-                        left: -2370
-                    });
-                    $('._slideimg3').css({
-                        left: -1580
-                    });
-                    ++prevpx;
-                    nextpx=1;
-                }
-                else if(prevpx==5){
-                    $('._slideimg4').stop().animate({
-                        left: 0
-                    },1000)
-                    $('._slideimg5').stop().animate({
-                        left: 1300
-                    },1000)
-                    $('._slideimg6').stop().animate({
-                        left: 2090
-                    }, 1000)
-                    $('._slideimg1').css({
-                        left: -2370
-                    });
-                    $('._slideimg2').css({
-                        left: -1580
-                    });
-                    $('._slideimg3').stop().animate({
-                        left: -790
-                    },1000);
-                    prevpx=0;
-                    nextpx=0;
-                }
-                else {
-                    $('._slideimg4').stop().animate({
-                        left: 1300
-                    }, 1000)
-                    $('._slideimg5').stop().animate({
-                        left: 2090
-                    }, 1000)
-                    $('._slideimg6').css({
-                        left: -2370
-                    })
-                    $('._slideimg1').css({
-                        left: -1580
-                    });
-                    $('._slideimg2').stop().animate({
-                        left: -790
-                    }, 1000);
-                    $('._slideimg3').stop().animate({
-                        left: 0
-                    }, 1000);
-                    ++prevpx;
-                    nextpx=5;
-                }
-            }
-            function nextContentText(){
-                if (nextTextNo == 3) {
-                    $('._text'+(nextTextNo-2)).fadeOut(1000);
-                    $('._text'+(nextTextNo-1)).fadeIn(1000);                    
-                    $('._contnet1_count_area ._cureent_no').text("0"+(nextTextNo-1));
-                    --nextTextNo;
-                    prevTextNo=1;
-                } else if (nextTextNo == 2) {
-                    $('._text'+(nextTextNo)).fadeOut(1000);
-                    $('._text'+(nextTextNo+1)).fadeIn(1000);                    
-                    $('._contnet1_count_area ._cureent_no').text("0"+(nextTextNo+1));
-                    --nextTextNo;
-                    prevTextNo=2;
-                } else {
-                    $('._text'+(nextTextNo+2)).fadeOut(1000);
-                    $('._text'+(nextTextNo)).fadeIn(1000);
-                    $('._contnet1_count_area ._cureent_no').text("0"+(nextTextNo));
-                    nextTextNo=3;
-                    prevTextNo=3;
-                }
-            }
-            function nextContentImgSlide() {
-                if (nextpx == 1) {
-                    $('._slideimg4').stop().animate({
-                        left: -1580
-                    },1000)
-                    $('._slideimg5').stop().animate({
-                        left: -790
-                    }, 1000)
-                    $('._slideimg6').stop().animate({
-                        left: 0
-                    },1000)
-                    $('._slideimg1').stop().animate({
-                        left: 1300
-                    },1000);
-                    $('._slideimg2').css({
-                        left: 2090
-                    });
-                    $('._slideimg3').css({
-                        left: -2370
-                    });
-                    ++nextpx;
-                    prevpx=4;
-                } else if (nextpx == 2) {
-                    $('._slideimg4').css({
-                        left: -2370
-                    })
-                    $('._slideimg5').stop().animate({
-                        left: -1580
-                    }, 1000)
-                    $('._slideimg6').stop().animate({
-                        left: -790
-                    },1000)
-                    $('._slideimg1').stop().animate({
-                        left: 0
-                    },1000);
-                    $('._slideimg2').stop().animate({
-                        left: 1300
-                    },1000);
-                    $('._slideimg3').css({
-                        left: 2090
-                    });
-                    ++nextpx;
-                    prevpx=3;
-                }
-                else if(nextpx==3){
-                    $('._slideimg4').css({
-                        left: 2090
-                    })
-                    $('._slideimg5').css({
-                        left: -2370
-                    })
-                    $('._slideimg6').stop().animate({
-                        left: -1580
-                    },1000)
-                    $('._slideimg1').stop().animate({
-                        left: -790
-                    },1000);
-                    $('._slideimg2').stop().animate({
-                        left: 0
-                    },1000);
-                    $('._slideimg3').stop().animate({
-                        left: 1300
-                    },1000);
-                    ++nextpx;
-                    prevpx=2;
-                }
-                else if(nextpx==4){
-                    $('._slideimg4').stop().animate({
-                        left: 1300
-                    },1000)
-                    $('._slideimg5').css({
-                        left: 2090
-                    })
-                    $('._slideimg6').css({
-                        left: -2370
-                    })
-                    $('._slideimg1').stop().animate({
-                        left: -1580
-                    },1000);
-                    $('._slideimg2').stop().animate({
-                        left: -790
-                    },1000);
-                    $('._slideimg3').stop().animate({
-                        left: 0
-                    }, 1000);
-                    ++nextpx;
-                    prevpx=1;
-                }
-                else if(nextpx==5){
-                    $('._slideimg4').stop().animate({
-                        left: 0
-                    },1000)
-                    $('._slideimg5').stop().animate({
-                        left: 1300
-                    },1000)
-                    $('._slideimg6').css({
-                        left: 2090
-                    })
-                    $('._slideimg1').css({
-                        left: -2370
-                    });
-                    $('._slideimg2').stop().animate({
-                        left: -1580
-                    },1000);
-                    $('._slideimg3').stop().animate({
-                        left: -790
-                    },1000);
-                    nextpx=0;
-                    prevpx=0;
-                }
-                else {
-                    $('._slideimg4').stop().animate({
-                        left: -790
-                    },1000)
-                    $('._slideimg5').stop().animate({
-                        left: 0
-                    },1000)
-                    $('._slideimg6').stop().animate({
-                        left: 1300
-                    },1000)
-                    $('._slideimg1').css({
-                        left: 2090
-                    });
-                    $('._slideimg2').css({
-                        left: -2370
-                    });
-                    $('._slideimg3').stop().animate({
-                        left: -1580
-                    },1000);
-                    ++nextpx;
-                    prevpx=5;
-                }
-            }
-        }); //jQuery End
-    </script>
 </body>
 </html>
