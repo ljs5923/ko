@@ -21,10 +21,11 @@ jQuery(function ($) {
         auto: true,
         autoControls: true,
         autoControlsCombine: true,
+        randomStart: true,
         autoControlsSelector: $('._start_pause'),
         prevSelector: $('._prev'),
         nextSelector: $('._next'),
-        onSlideAfter: function () {
+        onSlideBefore: function () {
             no=mainSlide.getCurrentSlide();
             ++no;
             $('._current').text("0" + no);
@@ -346,5 +347,25 @@ jQuery(function ($) {
     }
     //content2 slide img End
     //content3 slide img start
-    var content3Index=0    
+    var content3Slide=$('._content3_slide_wrap').bxSlider({
+        mode: 'fade',
+        speed: 2000,
+        control: false,
+        pager: false,
+        auto: true,
+        autoControls: true,
+        autoControlsCombine: true,
+        randomStart: true,
+        autoControlsSelector: $('._content3_btn_play'),
+        prevSelector: $('._content3_prev'),
+        nextSelector: $('._content3_next'),
+        onSlideBefore: function () {
+            no=content3Slide.getCurrentSlide();
+            ++no;
+            $('._content3_current').text("0" + no);
+            if(no>9){
+            $('._content3_current').text(no);
+            }
+        }
+    });    
 }); //jQuery End
