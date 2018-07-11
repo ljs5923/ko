@@ -9,7 +9,7 @@ a{text-decoration:none;color:#000}
 body {line-height:1.5}
 ol,ul {list-style:none}
 table {border-collapse:collapse;border-spacing:0}
-button{border: none}
+button{padding: 0;border: none;background:none;}
 img{display: block;border: 0;}
 /* common */
 .clearfix:after{display:block;clear:both;content:''}
@@ -117,7 +117,7 @@ footer{position:relative;z-index:10}
 ._content2_dec_container ._content2_dec li p{margin-top: 13px;font-size: 16px;line-height: 26px;color: #555;}
 /* _content3 */
 #_content_wrap ._content3_container{margin-top: 210px;background: url(../imgs/bg_section03.gif) repeat-y 50% 50%}
-._content3_container ._content3_wrap{width: 1200px;margin: 0 auto;}
+._content3_container ._content3_wrap{position: relative;width: 1200px;margin: 0 auto;}
 ._content3_wrap ._content3_title_container{float: left;width: 386px;height: 398px;margin-right: 24px;text-align: center;background-image: url(../imgs/bg_kdc_person.jpg)}
 ._content3_title_container ._contnet3_logo{padding-top: 21px;text-indent: -9999px}
 ._content3_title_container ._contnet3_logo img{margin: 0 auto}
@@ -127,7 +127,8 @@ footer{position:relative;z-index:10}
 ._content3_wrap ._content3_slide_container{position: relative;height: 398px;margin-left: 410px;background-color: #e8e8e9;}
 ._content3_slide_container ._content3_slide_wrap{overflow: hidden;}
 ._content3_slide_wrap ._content3_slide{position: absolute;top: 0;left: 0;width: 792px;height: 398px}
-._content3_slide ._content3_slide_img{opacity:0;position: absolute;bottom: 0;left: 0;}
+._content3_slide_wrap ._content3_slide ._content3_on{opacity: 1;}
+._content3_slide ._content3_slide_img{opacity: 0;position: absolute;bottom: 0;left: 0;}
 ._content3_slide ._content3_slide_title_box{opacity:0;position: relative;width: 337px;padding-top: 120px;text-align: center}
 ._content3_slide ._content3_title{font-weight: 400;font-size: 40px;line-height: 1em;color: #222}
 ._content3_slide ._content3_title_dec_box{margin-top: 20px}
@@ -138,3 +139,8 @@ footer{position:relative;z-index:10}
 ._content3_slide ._content3_slide_person{padding-right: 30px;text-align: right;}
 ._content3_slide_person ._content3_slide_person_name{display: block;margin-top: 35px;font-weight: bold;font-size: 23px;line-height: 0.8;color: #fff;}
 ._content3_slide_person ._content3_slide_person_type{font-weight: 300;font-size: 16px;line-height: 26px;color: #fff}
+._content3_wrap ._content3_btn_container{position: absolute;top: 0;right: 0;}
+._content3_btn_container ._content3_btn_wrap{position: absolute;top: 110px;right: -30px;width: 82px;}
+._content3_btn_wrap ._content3_btn_prev{float: left;width: 27px;height: 27px;border-radius: 27px;background-color: #a8a9ab;}
+._content3_btn_wrap ._content3_btn_play{float: left;width: 27px;height: 27px; margin: 0 0.5px;}
+._content3_btn_wrap ._content3_btn_next{float: left;width: 27px;height: 27px;border-radius: 27px;background-color: #a8a9ab;}

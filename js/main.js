@@ -346,7 +346,5 @@ jQuery(function ($) {
     }
     //content2 slide img End
     //content3 slide img start
-    $('._content3_slide ._content3_slide_img').eq(0).addClass('animated fadeInLeft');
-    $('._content3_slide ._content3_slide_title_box').eq(0).addClass('animated fadeInLeft');
-    $('._content3_slide ._content3_slide_person_box').eq(0).addClass('animated fadeInLeft');
+    var content3Index=0    
 }); //jQuery End
