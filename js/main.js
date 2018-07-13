@@ -1,4 +1,5 @@
 jQuery(function ($) {
+    //nav event start
     $('._main_lst li a').on('mouseenter',function () {
         $('#_header').stop().animate({
             height:336
@@ -30,13 +31,28 @@ jQuery(function ($) {
             $(this).removeClass('_active');
         }
     );
-        
-    //메뉴슬라이드 이벤트
+    //nav event end
+    //main slide height set
     $w=$(window).height();
     $('#_main_slide').css("height",$w);
-    //메인 슬라이드 높이 설정
     //mainslide Strat
-    var mainSlide=$('._slide_img').bxSlider({       mode:'fade',speed:2000,control:false,pager:false,auto:true,autoControls:true,autoControlsCombine:true,randomStart:true,autoControlsSelector:$('._start_pause'),prevSelector:$('._prev'),nextSelector:$('._next'),onSlideBefore:function () {no=mainSlide.getCurrentSlide();++no;$('._current').text("0" + no);}
+    var mainSlide = $('._slide_img').bxSlider({
+        mode: 'fade',
+        speed: 2000,
+        control: false,
+        pager: false,
+        auto: true,
+        autoControls: true,
+        autoControlsCombine: true,
+        randomStart: true,
+        autoControlsSelector: $('._start_pause'),
+        prevSelector: $('._prev'),
+        nextSelector: $('._next'),
+        onSlideBefore: function () {
+            no = mainSlide.getCurrentSlide();
+            ++no;
+            $('._current').text("0" + no);
+        }
     });
     //mainslide end
     //scrolltop event start
@@ -81,7 +97,7 @@ jQuery(function ($) {
     //content3 slide img end
     //FAMILY SITE open start
     $('._btn_familysite_open').on('click',function(){
-        $('._footer_bottom_familysite_container').slideToggle(500,function(){
+        $('._footer_bottom_familysite_container').fadeToggle(500,function(){
             $('._familysite_title').toggleClass('active');
         });
         $('._btn_familysite_icon').toggleClass('_cancle');
@@ -96,14 +112,13 @@ jQuery(function ($) {
         },500,'swing');
     });
     $(window).on('scroll',function(){
-        var a=$(window).scrollTop();
-        var b=$(window).height();
-        var scrvalue2=$('._content1_container').offset().top;
-        if(scrvalue2>a){
+        var winST=$(window).scrollTop();
+        var content1Top=$('._content1_container').offset().top;
+        if(content1Top>winST){
             $('._scroll_top').fadeOut();
         }
         else{
-            $('._scroll_top').fadeIn();
+            $('._scroll_top').fadeIn().css("bottom",100);
         }
     })
     //scrollTop evet end
