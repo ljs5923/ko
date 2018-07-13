@@ -3,12 +3,34 @@ jQuery(function ($) {
         $('#_header').stop().animate({
             height:336
         },400);
+        $('#_header').addClass('_active');
     });
     $('#_header').on('mouseleave',function () {
         $('#_header').stop().animate({
             height:86
-        },400);
-    });
+        },400,function(){
+            $(this).removeClass('_active');
+        });
+    });    
+    $('._main_lst_dept').hover(        
+        function(){
+            var mainlstIndex=$(this).index();
+            $(this).find('span').addClass('_active');
+            $('._sub_lst').eq(mainlstIndex).addClass('_active');
+        },function(){
+            var mainlstIndex=$(this).index();
+            $(this).find('span').removeClass('_active');
+            $('._sub_lst').eq(mainlstIndex).removeClass('_active');
+        }
+    );
+    $('._sub_lst_dept a').hover(
+        function(){
+            $(this).addClass('_active');
+        },function(){
+            $(this).removeClass('_active');
+        }
+    );
+        
     //메뉴슬라이드 이벤트
     $w=$(window).height();
     $('#_main_slide').css("height",$w);
@@ -71,7 +93,7 @@ jQuery(function ($) {
         var wintop=$('html,body').offset().top;
         $('html,body').animate({
             'scrollTop': wintop
-        },2000,'swing');
+        },500,'swing');
     });
     $(window).on('scroll',function(){
         var a=$(window).scrollTop();

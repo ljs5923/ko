@@ -22,16 +22,21 @@ section_content_wrap{position:relative;z-index:20}
 footer{position:relative;z-index:10}
 /* header */
 #_header{overflow:hidden;top:0;left:0;width: 100%;min-width: 1200px;height:86px;background-color:#fff}
+#_header:before{content: "";position: absolute;top: 85px;left: 0;width: 100%;height: 1px;transition: background 0.3s ease}
+#_header._active:before{background-color: #e3e3e3;opacity: 1;}
 #_nav{width:1200px;margin:0 auto}
 #_nav ._logo{float:left;width:160px;padding-right:55px}
 #_nav ._logo_img{display:inline-block;width:154px;height:25px;margin:32.5px 3px;background-image:url(../imgs/header_on.png);background-position:0 0;text-indent:-9999px}
 #_nav ._lst_container{float:left}
 #_nav ._main_lst{width:792px}
-#_nav ._main_lst li{float:left;width:132px;text-align:center}
-#_nav ._main_lst li a{display:block;margin:30px 0 26px 0;padding:3px 0;font-size:16px;color:#222}
+#_nav ._main_lst ._main_lst_dept{float:left;width:132px;text-align:center}
+#_nav ._main_lst ._main_lst_dept a{display:block;margin:30px 0 26px 0;padding:3px 0;font-size:16px;color:#222}
+#_nav ._main_lst ._main_lst_dept span._active{border-bottom: 2px solid #012b5d;padding-bottom: 6px;transition: all 0.3s ease}
 #_nav ._lst_wrap ._sub_lst{float:left;width:131px;height:230px;padding-top:20px;border-right:1px solid #dcdddd;font-size:15px;text-align:center}
+#_nav ._lst_wrap ._sub_lst._active{background: #f5f7f9}
 #_nav ._lst_wrap ._sub_lst._bdleft{width:130px;border-left:1px solid #dcdddd}
-#_nav ._sub_lst li a{display:block;padding:6.5px 0;color:#222}
+#_nav ._sub_lst ._sub_lst_dept a{display:block;padding:6.5px 0;color:#222}
+#_nav ._sub_lst ._sub_lst_dept a._active{font-weight: bold;color: #012b5d;}
 #_nav ._banner_container{float:left;width:193px}
 #_nav ._siteMap{padding:21px 0;text-align:center;font-size:0}
 #_nav ._siteMap .fa-bars{padding:10px;font-size:24px}
@@ -200,4 +205,4 @@ footer{position:relative;z-index:10}
 ._familysite_title.active:before{width: 100%;opacity: 1;}
 ._familysite_lst_wrap{margin-top: 12px;}
 ._familysite_lst_wrap ._familysite_lst a{display: block;font-size: 15px;line-height: 31px;color: #555;}
-._scroll_top {display: block;position: fixed;left: 50%;bottom: 100px;width: 50px;height: 50px;text-indent: 9999px;margin-left: 700px;text-indent: -9999px;background: url(../imgs/scroll_top.png) 50% 50% no-repeat #fff;border: 1px solid #dedee1;z-index: 500}
+._scroll_top {display: none;position: fixed;left: 50%;bottom: 100px;width: 50px;height: 50px;text-indent: 9999px;margin-left: 700px;text-indent: -9999px;background: url(../imgs/scroll_top.png) 50% 50% no-repeat #fff;border: 1px solid #dedee1;z-index: 500}
