@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
@@ -25,7 +26,7 @@
                                 <a href="company_information.html" class="_main_dept"><span>회사소개</span></a>
                                 <ul class="_sub_lst _bdleft">
                                     <li class="_sub_lst_dept"><a href="company_information.html" class="_sub_dept">기업정보</a></li>
-                                    <li class="_sub_lst_dept"><a href="#" class="_sub_dept">CEO 인사말</a></li>
+                                    <li class="_sub_lst_dept"><a href="company_ceo.html" class="_sub_dept">CEO 인사말</a></li>
                                     <li class="_sub_lst_dept"><a href="#" class="_sub_dept">가치체계</a></li>
                                     <li class="_sub_lst_dept"><a href="#" class="_sub_dept">주요 연혁</a></li>
                                     <li class="_sub_lst_dept"><a href="#" class="_sub_dept">그룹사 소개</a></li>
@@ -105,7 +106,7 @@
                                     <li class="_header_gnb_lst _active">
                                         <a href="../company/company_information.html" class="_header_gnb_dept"><span>기업정보</span></a></li>
                                     <li class="_header_gnb_lst">
-                                        <a href="#" class="_header_gnb_dept"><span>CEO 인사말</span></a></li>
+                                        <a href="../company/company_ceo.html" class="_header_gnb_dept"><span>CEO 인사말</span></a></li>
                                     <li class="_header_gnb_lst">
                                         <a href="#" class="_header_gnb_dept"><span>가치체계</span></a></li>
                                     <li class="_header_gnb_lst">
@@ -297,20 +298,6 @@
     <script>
         //        jquery start
         jQuery(function($) {
-            //            company_information_header event start
-            $('._header_gnb_lst').on('click', function() {
-                $(this).addClass('_active').siblings().removeClass('_active');
-            });
-            $(window).on('scroll', function() {
-                var winHT = $(window).scrollTop();
-                var headerTopH = $('._header_top').height();
-                if (winHT >= headerTopH) {
-                    $('._header_down').addClass('_fixed');
-                } else {
-                    $('._header_down').removeClass('_fixed');
-                }
-            });
-            //            company_information_header event end
             //            company_information_content2_img_slide start
             var certificationImg = $('._certification_img_wrap').bxSlider({
                 mode: 'fade',
@@ -335,24 +322,26 @@
             })
             //            company_information_content2_img_pager evnet end
             //scrollTop event start
-                $('._scroll_top').on('click', function() {
-                    var wintop = $('html,body').offset().top;
-                    $('html,body').animate({
-                        'scrollTop': wintop
-                    }, 500, 'swing');
-                });
-                $(window).on('scroll', function() {
-                    var winST = $(window).scrollTop();
-                    var content1Top = $('._company_content1').offset().top;
-                    if (content1Top > winST) {
-                        $('._scroll_top').fadeOut();
-                    } else {
-                        $('._scroll_top').fadeIn().css("bottom", 100);
-                    }
-                });
-                //scrollTop evet end
+            $('._scroll_top').on('click', function() {
+                var wintop = $('html,body').offset().top;
+                $('html,body').animate({
+                    'scrollTop': wintop
+                }, 500, 'swing');
+            });
+            $(window).on('scroll', function() {
+                var winST = $(window).scrollTop();
+                var content1Top = $('._company_content1').offset().top;
+                if (content1Top > winST) {
+                    $('._scroll_top').fadeOut();
+                } else {
+                    $('._scroll_top').fadeIn().css("bottom", 100);
+                }
+            });
+            //scrollTop evet end
         });
         //        jquery end
+
     </script>
 </body>
+
 </html>

@@ -50,4 +50,18 @@ jQuery(function ($) {
         $('._btn_familysite_icon').toggleClass('_cancle');
     })
     //FAMILY SITE open end
+    //company_information_header event start
+    $('._header_gnb_lst').on('click', function () {
+        $(this).addClass('_active').siblings().removeClass('_active');
+    });
+    $(window).on('scroll', function () {
+        var winHT = $(window).scrollTop();
+        var headerTopH = $('._header_top').height();
+        if (winHT >= headerTopH) {
+            $('._header_down').addClass('_fixed');
+        } else {
+            $('._header_down').removeClass('_fixed');
+        }
+    });
+    //company_information_header event end
 }); //jQuery End
