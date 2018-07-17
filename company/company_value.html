@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>가치체계 / 회사소개 / 고려개발</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../font/nanumsquare.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../js/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="_company_wrap">
+            <div class="_value_content_container">
+                <section class="_value_content_wrap">
+                    <div class="_value_content">
+                        <article class="_value_content _value_content1">
+                            <header class="_value_header">
+                                <div class="_value_header_wrap">
+                                    <h1 class="_main_logo">
+                                        <a href="../main/index.html"><span class="_logo_img">메인으로가기</span></a>
+                                    </h1>
+                                    <h2 class="_value_title">가치체계</h2>
+                                </div>
+                            </header>
+                            <h3 class="_value_dec">풍요로운 삶을 건설하는 회사</h3>
+                            <div class="_value_content1_video_wrap">
+                                <video id="_video" preload="true" autoplay poster="../imgs/company/value/value_system_movie.jpg" title="고려개발에서 건설한 아파트 단지에 대한 동영상">
+                                    <source id="_value_video" src="../imgs/company/value/video/ko_development.mp4" type="video/mp4">
+                                    <p>동영상을 제공하지 않습니다.</p>
+                                </video>
+                                <p class="_value_video_text">고려개발에서 건설한 e편한 세상 아파트와 고속도로에 대한 영상 입니다.</p>
+                                <button type="button" class="_value_video_btn">
+                                    <span class="_value_video_btn_img">플레이버튼</span>
+                                </button>
+                            </div>
+                        </article>
+                        <article class="_value_content _value_content2"></article>
+                        <article class="_value_content _value_content3"></article>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="_scroll_nav_wrap">
+        <ul class="_scroll_nav">
+            <li class="_scroll_nav_anchor _nav_anchor1 _active">
+                <a href="" class="_anchor">
+                    <span class="_anchor_img"></span>
+                </a>
+            </li>
+            <li class="_scroll_nav_anchor _nav_anchor2">
+                <a href="" class="_anchor">
+                    <span class="_anchor_img"></span>
+                </a>
+            </li>
+            <li class="_scroll_nav_anchor _nav_anchor3">
+                <a href="" class="_anchor">
+                    <span class="_anchor_img"></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+<script>
+    jQuery(function($) {
+        $('body').css({
+            overflow: 'hidden',
+            height: '100%'
+        });
+
+        function contentH() {
+            var docH = $(window).height();
+            $('._value_content').css("height", docH);
+        }
+        window.onload = contentH;
+        window.onresize = contentH;
+        var check = true;
+        $('._value_video_btn').on('click', function() {
+            if (check == true) {
+                $('#_video').css('z-index', -1);
+                document.getElementById('_video').pause();
+                $('._value_video_btn_img').css('display', 'block');
+                check = false;
+            } else {
+                document.getElementById('_video').play();
+                $('#_video').css('z-index', 0);
+                $('._value_video_btn_img').css('display', 'none');
+                check = true;
+            }
+        })
+    })
+</script>
+
+</html>
