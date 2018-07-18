@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
-    <title>CEO 인사말 / 회사소개 / 고려개</title>
+    <title>주요현역 / 회사소개 / 고려개발</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="../js/jquery-latest.min.js"></script>
     <script src="../js/common.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
 </head>
 
 <body>
@@ -104,12 +104,12 @@
                                 <ul class="_header_gnb clearfix">
                                     <li class="_header_gnb_lst">
                                         <a href="../company/company_information.html" class="_header_gnb_dept"><span>기업정보</span></a></li>
-                                    <li class="_header_gnb_lst _active">
+                                    <li class="_header_gnb_lst">
                                         <a href="../company/company_ceo.html" class="_header_gnb_dept"><span>CEO 인사말</span></a></li>
                                     <li class="_header_gnb_lst">
                                         <a href="../company/company_value.html" target="_blank" class="_header_gnb_dept"><span>가치체계</span></a></li>
-                                    <li class="_header_gnb_lst">
-                                        <a href="#" class="_header_gnb_dept"><span>주요 연혁</span></a></li>
+                                    <li class="_header_gnb_lst _active">
+                                        <a href="#" class="_header_gnb_dept"><span>주요 현역</span></a></li>
                                     <li class="_header_gnb_lst">
                                         <a href="#" class="_header_gnb_dept"><span>그룹사 소개</span></a></li>
                                     <li class="_header_gnb_lst">
@@ -120,27 +120,65 @@
                     </div>
                 </div>
                 <section id="_company_content">
-                    <div class="_company_content_container _ceo_container">
-                        <h3 class="_company_content_title">CEO 인사말</h3>
-                        <div class="_company_ceo_wrap">
-                            <div class="_company_ceo_img_wrap">
-                                <div class="_ceo_img_box">
-                                    <img src="../imgs//company/ceo/img_ceo.jpg" class="rel" alt="ceo이미지">
+                    <div class="_company_content_container _history_container">
+                        <h3 class="_company_content_title">주요연혁</h3>
+                        <div class="_history_content_container">
+                            <div class="_history_conetent_wrap">
+                                <div class="_history_content_btn_wrap">
+                                    <button class="_history_btn _history_prev"></button>
+                                    <button class="_history_btn _history_next"></button>
                                 </div>
-                                <div class="_ceo_intro_box">
-                                    <p>고려개발주식회사<br>대표이사<strong>이주익</strong></p>
-                                </div>
-                            </div>
-                            <div class="_company_ceo_text_wrap">
-                                <div class="_text_title">
-                                    <p class="_title_text">끊임 없는 혁신과 도전으로<br>100년을 넘어 지속가능 기업으로<br>발돋움하겠습니다.</p>
-                                </div>
-                                <p class="_text_top">고려개발 홈페이지를 방문해주신 여러분을 진심으로 환영합니다.</p>
-                                <div class="_text_content">
-                                    <p class="_content">고려개발은 국내 최초로 해외건설업 토목/건축부문 면허 취득, 국내 최초의 오피스텔 도입 등 지난 반세기를 넘어 국내외 건설산업에 많은 업적을 남겨온 종합건설회사입니다.</p>
-                                    <p class="_content">1965년 창업 이래, 기본과 원칙에 충실하면서도 창의적인 성실 시공을 바탕으로 도로, 철도, 지하철, 택지, 항만, 환경시설 등 토목공사와 주택, 빌딩, 지식산업센터, 물류센터, 군 시설 등 건축공사에 이르는 모든 건설 분야의 사업을 수행해가고 있습니다.</p>
-                                    <p class="_content">고객 여러분, 이제 고려개발은 창사이래 이어져온 ‘도전정신과 열정’으로 내실 있고 차별적인 경쟁력이 있는 강한 회사로 발돋움 해 나갈 것입니다. 또한, 고객의 가치를 극대화할 수 있는 혁신적인 상품과 서비스로 고객의 삶을 쾌적하고 풍요롭게 할 뿐만 아니라, 사회의 구성원으로서 존경 받는 기업 가치를 창출할 수 있도록 최선을 다하겠습니다.</p>
-                                    <p class="_content">늘 아낌없는 사랑과 관심으로 성원해주시는 고객여러분께 진심으로 보답하는 고려개발이 되겠습니다.<br><br>감사합니다.</p>
+                                <div class="_history_content">
+                                    <div class="_history_content_box">
+                                        <article class="_content history2010 _active">
+                                            <div class="_content_history_year">
+                                                <button class="_year_btn">
+                                                <span class="_circle_img">2010 ~ 현재 : 주요연혁 보기</span>
+                                            </button>
+                                                <h4 class="_history_content_title">2010 ~ 현재 &nbsp;</h4>
+                                            </div>
+                                        </article>
+                                        <article class="_content history2000">
+                                            <div class="_content_history_year">
+                                                <button class="_year_btn">
+                                                <span class="_circle_img">2000 ~ 2009 : 주요연혁 보기</span>
+                                            </button>
+                                                <h4 class="_history_content_title">2000 ~ 2009 &nbsp;</h4>
+                                            </div>
+                                        </article>
+                                        <article class="_content history1990">
+                                            <div class="_content_history_year">
+                                                <button class="_year_btn">
+                                                <span class="_circle_img">1990 ~ 1999 : 주요연혁 보기</span>
+                                            </button>
+                                                <h4 class="_history_content_title">1990 ~ 1999 &nbsp;</h4>
+                                            </div>
+                                        </article>
+                                        <article class="_content history1980">
+                                            <div class="_content_history_year">
+                                                <button class="_year_btn">
+                                                <span class="_circle_img">1980 ~ 1989 : 주요연혁 보기</span>
+                                            </button>
+                                                <h4 class="_history_content_title">1980 ~ 1989&nbsp;</h4>
+                                            </div>
+                                        </article>
+                                        <article class="_content history1970">
+                                            <div class="_content_history_year">
+                                                <button class="_year_btn">
+                                                <span class="_circle_img">1970 ~ 1979 : 주요연혁 보기</span>
+                                            </button>
+                                                <h4 class="_history_content_title">1970 ~ 1979 &nbsp;</h4>
+                                            </div>
+                                        </article>
+                                        <article class="_content history1960">
+                                            <div class="_content_history_year">
+                                                <button class="_year_btn">
+                                                <span class="_circle_img">1960 ~ 1969 : 주요연혁 보기</span>
+                                            </button>
+                                                <h4 class="_history_content_title">1960 ~ 1969 &nbsp;</h4>
+                                            </div>
+                                        </article>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -213,28 +251,22 @@
         </footer>
     </div>
     <script>
-        //        jquery start
         jQuery(function($) {
-            //scrollTop event start
-            $('._scroll_top').on('click', function() {
-                var wintop = $('html,body').offset().top;
-                $('html,body').animate({
-                    'scrollTop': wintop
-                }, 500, 'swing');
-            });
-            $(window).on('scroll', function() {
-                var winST = $(window).scrollTop();
-                var content1Top = $('._company_ceo_wrap').offset().top;
-                if (content1Top > winST) {
-                    $('._scroll_top').fadeOut();
-                } else {
-                    $('._scroll_top').fadeIn().css("bottom", 100);
+            var MGL = -566;
+            $('._history_btn').on('click', function() {
+                console.log(MGL);
+                if ($(this).hasClass('_history_prev')) {
+                    $('._history_content_box').stop().animate({
+                        marginLeft: MGL + "px"
+                    }, 1000, function() {
+                        MGL = MGL + 187;
+                        if (MGL >= 369) {
+                            MGL = -566;
+                        }
+                    });
                 }
             });
-            //scrollTop evet end
         });
-        //        jquery end
-
     </script>
 </body>
 
