@@ -315,27 +315,94 @@ footer{position:relative;z-index:10}
 ._company_ceo_text_wrap ._text_content{margin-top: 50px}
 ._company_ceo_text_wrap ._text_content ._content{margin-top: 20px;font-size: 16px;line-height: 26px;color: #555}
 /* company_value */
-._company_wrap ._value_content_container ._value_content{position: relative;height: 100%;transition: all 500ms ease}
-/* _value_content1 */
-._company_wrap ._value_header{position: fixed;width: 100%;height: 75px;background-color: #012b5d;z-index: 60}
-._company_wrap ._value_header_wrap{width: 1200px;margin: 0 auto;padding-top: 25px;text-align: center;}
-._company_wrap ._value_header_wrap ._main_logo{display: inline-block;vertical-align: top;}
-._company_wrap ._value_header_wrap ._logo_img{display: inline-block;width: 154px;height: 25px;text-indent: -9999px;background-image: url(../imgs/company/company.png);background-position: 0 -2786px;}
-._company_wrap ._value_header_wrap ._value_title{display: inline-block;position: relative;margin: 3px 0 0 30px;padding-left: 30px;font-size: 20px;line-height: 1em;color: #fff}
-._company_wrap ._value_header_wrap ._value_title:before{content: '';position: absolute;top: 0;left: 0;width: 1px;height: 20px;background-color: #fff;opacity: 0.3}
-._company_wrap ._value_content1 ._value_dec{overflow: hidden;width: 0;height: 0;text-indent: -9999px}
-._company_wrap ._value_content1_video_wrap{position: relative !important; overflow: hidden !important;height: 100%;}
-._company_wrap ._value_content1_video_wrap #_video{position: absolute;top: 0;bottom: 0;width: 100%;height: 100%;object-fit: cover;z-index: -1}
-._company_wrap ._value_content1_video_wrap ._value_video_text{position: absolute;left: 0;bottom: 0;width: 100%;line-height: 40px;font-size: 14px;color: #fff;text-align: center;opacity: 0.8}
-._company_wrap ._value_content1_video_wrap ._value_video_btn{position: absolute;top: 0;left: 0;width: 100%;height: 100%;background-position: 50% 50%;background-size: cover;}
-._company_wrap ._value_video_btn ._value_video_btn_img{display: none;position: absolute;top: 50%;left: 50%;width: 70px;height: 70px;margin: -35px 0 0 -35px;text-indent: -9999px;background-image: url(../imgs/company/company.png);background-position: 0 -352px;}
+._value_content_container ._value_content_wrap ._value_content{position: relative;height: 100%;transition: all 500ms ease}
+._value_content_container ._value_content_wrap .section._value1{padding-top: 0}
+._value_content_container ._value_content_wrap .section{padding-top: 75px;width: 100%}
+._value_content_container ._value_content_wrap .section._value4{padding-top: 0}
+/* company_value_content1 */
+/* company_value_header */
+._value_content_container ._value_header{position: fixed;width: 100%;height: 75px;background-color: #012b5d;z-index: 60}
+._value_content_container ._value_header_wrap{width: 1200px;margin: 0 auto;padding-top: 25px;text-align: center;}
+._value_content_container ._value_header_wrap ._main_logo{display: inline-block;vertical-align: top;}
+._value_content_container ._value_header_wrap ._logo_img{display: inline-block;width: 154px;height: 25px;text-indent: -9999px;background-image: url(../imgs/company/company.png);background-position: 0 -2786px;}
+._value_content_container ._value_header_wrap ._value_title{display: inline-block;position: relative;margin: 3px 0 0 30px;padding-left: 30px;font-size: 20px;line-height: 1em;color: #fff}
+._value_content_container ._value_header_wrap ._value_title:before{content: '';position: absolute;top: 0;left: 0;width: 1px;height: 20px;background-color: #fff;opacity: 0.3}
+._value_content_container ._value1 ._value_dec{overflow: hidden;width: 0;height: 0;text-indent: -9999px}
+/* company_value_video */
+._value_content_container ._value_content1_video_wrap{position: relative !important; overflow: hidden !important;height: 100%;}
+._value_content_container ._value_content1_video_wrap #_video{position: absolute;top: 0;bottom: 0;width: 100%;height: 100%;object-fit: cover;z-index: -1}
+._value_content_container ._value_content1_video_wrap ._value_video_text{position: absolute;left: 0;bottom: 0;width: 100%;line-height: 40px;font-size: 14px;color: #fff;text-align: center;opacity: 0.8}
+._value_content_container ._value_content1_video_wrap ._value_video_btn{position: absolute;top: 0;left: 0;width: 100%;height: 100%;background-position: 50% 50%;background-size: cover;}
+._value_content_container ._value_video_btn ._value_video_btn_img{display: none;position: absolute;top: 50%;left: 50%;width: 70px;height: 70px;margin: -35px 0 0 -35px;text-indent: -9999px;background-image: url(../imgs/company/company.png);background-position: 0 -352px;}
+/* company_value_content2 */
+._value2{display: table;background-color: #fff;table-layout: fixed}
+._value2 ._value2_container{display: table-cell;width: 1200px;padding: 25px 0;text-align: center;vertical-align: middle}
+._value2 ._value2_container ._value2_wrap{width: 1200px;margin: 0 auto;}
+._value2 ._value2_wrap ._value2_content{display: table;width: 100%;padding: 25px 0;border: 2px solid #dedee1;border-radius: 10px;background-color: #fff}
+._value2 ._value2_content ._value2_content_title{display: table-cell;width: 160px;padding: 0 20px;line-height: 1em;font-size: 20px;color: #222;text-align: center;vertical-align: middle}
+._value2 ._value2_content ._value2_content_decBox{overflow: hidden;text-align: center;border-left: 1px solid #dedee1}
+._value2 ._value2_content._value2_content1 ._value2_content_decBox ._content_decBox_text1{line-height: 0.8;font-size: 18px;font-weight: bold;color: #555}
+._value2 ._value2_content._value2_content1 ._value2_content_decBox ._content_decBox_text2{margin-top: 20px;line-height: 30px;font-size: 30px;font-weight: bold;color: #0189b1}
+._value2 ._value2_wrap ._value2_content._value2_content2{position: relative;margin-top: 50px}
+._value2 ._value2_wrap ._value2_content._value2_content2:before{content: '';position: absolute;top: -40px;left: 50%;width: 35px;height: 65px;margin-left: 82px;background-image: url(../imgs/company/company.png);background-position: 0 -2706px}
+._value2 ._value2_content._value2_content2 ._value2_content_decBox{padding: 20px 0 10px;}
+._value2 ._value2_content._value2_content2 ._value2_content_decBox ._content_decBox_text2{line-height: 1em;font-size: 24px;color: #222}
+._value2 ._value2_content._value2_content2 ._value2_content_decBox ._content_decBox_img{display: block;width: 111px;height: 113px;margin: 0 auto 20px;background-image: url(../imgs/company/company.png);background-position: 0 -2826px;}
+._value2 ._value2_wrap ._value2_content._value2_content3{position: relative;margin-top: 50px}
+._value2 ._value2_wrap ._value2_content._value2_content3:before{content: '';position: absolute;top: -40px;left: 50%;width: 35px;height: 65px;margin-left: 82px;background-image: url(../imgs/company/company.png);background-position: 0 -2706px}
+._value2 ._value2_content._value2_content3 ._value2_content_decBox ul{display: table;width: 100%;padding: 10px 25px 10px;box-sizing: border-box}
+._value2 ._value2_content._value2_content3 ._value2_content_decBox ul li{display: table-cell;width: 33.3%}
+._value2 ._value2_content._value2_content3 ._value2_content_decBox ul li span{display: block;width: 64px;height: 56px;margin: 0 auto 20px;}
+._value2 ._value2_content._value2_content3 ._value2_content_decBox ul li._value2_content3_img1 span{background-image: url(../imgs/company/company.png);background-position: 0 -2351px;}
+._value2 ._value2_content._value2_content3 ._value2_content_decBox ul li._value2_content3_img2 span{width: 46px;height: 64px;background-image: url(../imgs/company/company.png);background-position: 0 -2422px;}
+._value2 ._value2_content._value2_content3 ._value2_content_decBox ul li._value2_content3_img3 span{width: 64px;height: 64px;background-image: url(../imgs/company/company.png);background-position: 0 -2501px;}
+._value2 ._value2_content._value2_content3 ._value2_content_decBox ul li p{line-height: 1em;font-size: 24px;color: #222}
+._value2 ._value2_content._value2_content4 ._value2_content_decBox{padding: 5px 0 5px 105px}
+._value2 ._value2_content._value2_content4 ._value2_content_decBox ul{float: left;width: 280px;padding-right: 20px;text-align: left}
+._value2 ._value2_content._value2_content4 ._value2_content_decBox ul:last-of-type{padding-right: 0;}
+._value2 ._value2_content._value2_content4 ._value2_content_decBox ul li{position: relative;padding-left: 10px;line-height: 26px;font-size: 16px;color: #555;}
+._value2 ._value2_content._value2_content4 ._value2_content_decBox ul li:before{content: "";position: absolute;top: 12px;left: 0;width: 3px;height: 3px;background-color: #0189b1}
+/* company_value_content3 */
+._value3{display: table;background-image:url(../imgs/company/value/bg_value_system_section03.jpg);background-size: cover;text-align: center;table-layout: fixed}
+._value3 ._value3_wrap{display: table-cell;width: 1200px;height: 615px;vertical-align: middle}
+._value3 ._value3_wrap ._value3_title{padding-top: 25px;line-height: 1em;font-size: 44px;color: #fff}
+._value3 ._value3_wrap ._value3_content_lsts{display: inline-block;padding-top: 170px;vertical-align: top}
+._value3 ._value3_content_lsts ._value3_lsts_lst{float: left;position: relative;width: 384px;height: 376px;background-color: #fff}
+._value3 ._value3_content_lsts ._value3_lsts_lst._value3_lst2{margin-left: 24px}
+._value3 ._value3_content_lsts ._value3_lsts_lst._value3_lst3{margin-left: 24px}
+._value3 ._value3_content_lsts ._value3_lsts_lst ._value3_lst_title{position: absolute;top: -103px;left: 50%;width: 163px;height: 163px;padding-top: 118px;margin-left: -81px;box-sizing: border-box;line-height: 1em;font-size: 20px;color: #fff}
+._value3 ._value3_content_lsts ._value3_lsts_lst._value3_lst1 ._value3_lst_title{background-color: #0189b1}
+._value3 ._value3_content_lsts ._value3_lsts_lst._value3_lst2 ._value3_lst_title{background-color: #012b5d}
+._value3 ._value3_content_lsts ._value3_lsts_lst._value3_lst3 ._value3_lst_title{background-color: #a99a71}
+._value3 ._value3_content_lsts ._value3_lsts_lst ._value3_lst_title ._value3_lst_title_img{display: inline-block;position: absolute;top: 30px;left: 50%}
+._value3 ._value3_content_lsts ._value3_lsts_lst ._value3_lst_title ._value3_lst_title_img._value3_lst_title_img1{width: 64px;height: 56px;margin-left: -32px;background-image: url(../imgs/company/company.png);background-position: 0px 0px}
+._value3 ._value3_content_lsts ._value3_lsts_lst ._value3_lst_title ._value3_lst_title_img._value3_lst_title_img2{width: 46px;height: 64px;margin-left: -23px;background-image: url(../imgs/company/company.png);background-position: 0 -71px}
+._value3 ._value3_content_lsts ._value3_lsts_lst ._value3_lst_title ._value3_lst_title_img._value3_lst_title_img3{width: 64px;height: 64px;margin-left: -32px;background-image: url(../imgs/company/company.png);background-position: 0 -150px}
+._value3 ._value3_content_lsts ._value3_lsts_lst ._value3_lst_decBox{padding-top: 100px}
+._value3 ._value3_content_lsts ._value3_lsts_lst ._value3_lst_decBox ._value3_lst_dec{position: relative;height: 205px}
+._value3 ._value3_content_lsts ._value3_lsts_lst ._value3_lst_decBox ._value3_lst_dec ._value3_lst_text{position: absolute;top: 0;left: 0;width: 100%;padding: 0 40px;box-sizing: border-box}
+._value3 ._value3_lst_decBox ._value3_lst_dec ._value3_lst_text ._value3_lst_text_force{line-height: 32px;font-size: 22px;color: #222}
+._value3 ._value3_lst_decBox ._value3_lst_dec ._value3_lst_text p{margin-top: 15px;line-height: 26px;font-size: 16px;color: #555}
+._value3 ._value3_lsts_lst ._value3_lst_control_container{position: absolute;bottom: 40px;left: 50%;width: 170px;margin-left: -85px;}
+._value3 ._value3_lsts_lst ._value3_lst_control_container ._value3_lst_btn{width: 30px;height: 30px;text-indent: -9999px;border-radius: 100%;background-color: #a8a9ab;}
+._value3 ._value3_lsts_lst ._value3_lst_control_container ._value3_lst_btn._value3_lst_prev{float: left}
+._value3 ._value3_lsts_lst ._value3_lst_control_container ._value3_lst_btn._value3_lst_prev .bx-prev{overflow: hidden;display: block;width: 30px;height: 30px;vertical-align: top;background-image: url(../imgs/company/company.png);background-position: 0 -2661px}
+._value3 ._value3_lsts_lst ._value3_lst_control_container ._value3_lst_btn._value3_lst_next{float: right}
+._value3_lst_btn._value3_lst_next .bx-next{overflow: hidden;display: block;width: 30px;height: 30px;vertical-align: top;background-image: url(../imgs/company/company.png);background-position: 0 -2616px}
+._value3 ._value3_lsts_lst ._value3_lst_conut{position: relative;height: 30px;width: 52px;margin: 0 auto}
+._value3 ._value3_lsts_lst ._value3_lst_conut span:nth-of-type(1){position: absolute;top: 3px;left: 0;line-height: 0.8;font-size: 14px;color: #0189b1}
+._value3 ._value3_lsts_lst ._value3_lst_conut span:nth-of-type(2){position: absolute;top: 50%;left: 50%;width: 21px;height: 21px;margin-top: -10.5px;margin-left: -10.5px;vertical-align: top;background-image: url(../imgs/company/company.png);background-position: 0px -2580px;}
+._value3 ._value3_lsts_lst ._value3_lst_conut span:nth-of-type(3){position: absolute;bottom: 5px;right: 0;line-height: 0.8;font-size: 14px;color: #000;opacity: 0.5}
+/* company_value_content4 */
+._value_content_container ._value_content_wrap .section._value4 #_footer{margin-top: 0}
 /* _scroll_nav_wrap */
 ._scroll_nav_wrap {position: absolute;top: 50%;right: 60px;width: 21px;margin-top: -103px}
-._scroll_nav_wrap ._scroll_nav ._scroll_nav_anchor{position: relative;padding-top: 72px}
-._scroll_nav_wrap ._scroll_nav ._scroll_nav_anchor._nav_anchor1{padding-top: 0}
-._scroll_nav_wrap ._scroll_nav ._scroll_nav_anchor:before{content: '';position: absolute;top: 10px;left: 10px;width: 1px;height: 52px;background-color: #a2a2a4;opacity: 0.4}
-._scroll_nav_wrap ._scroll_nav ._scroll_nav_anchor._active{}
-._scroll_nav ._scroll_nav_anchor ._anchor{position: relative;display: inline-block;vertical-align: top}
-._scroll_nav ._scroll_nav_anchor ._anchor:before{content: '';position: absolute;top: 0;left: 0;width: 21px;height: 21px;background-image: url(../imgs/company/company.png);background-position: 0 -265px;transform: scale(0);transition: all 0.3s ease}
-._scroll_nav ._scroll_nav_anchor._active ._anchor:before{transform: scale(1)}
-._scroll_nav ._scroll_nav_anchor ._anchor_img{display: inline-block;width: 21px;height: 21px;background-image: url(../imgs/company/company.png);background-position: 0 -229px;vertical-align: top;opacity: 1}
+._scroll_nav_wrap #_scroll_nav ._scroll_nav_lst{position: relative;padding-top: 72px}
+._scroll_nav_wrap #_scroll_nav ._scroll_nav_lst:first-of-type{padding-top: 0}
+._scroll_nav_wrap #_scroll_nav ._scroll_nav_lst:first-of-type:before{display: none}
+._scroll_nav_wrap #_scroll_nav ._scroll_nav_lst:before{content: '';position: absolute;top: 10px;left: 10px;width: 1px;height: 52px;background-color: #a2a2a4;opacity: 0.4}
+#_scroll_nav ._scroll_nav_lst ._anchor{position: relative;display: inline-block;vertical-align: top}
+#_scroll_nav ._scroll_nav_lst ._anchor:before{content: '';position: absolute;top: 0;left: 0;width: 21px;height: 21px;background-image: url(../imgs/company/company.png);background-position: 0 -265px;transform: scale(0);transition: all 0.3s ease}
+#_scroll_nav ._scroll_nav_lst.active ._anchor:before{transform: scale(1)}
+#_scroll_nav ._scroll_nav_lst ._anchor_img{display: inline-block;width: 21px;height: 21px;text-indent: -9999px;background-image: url(../imgs/company/company.png);background-position: 0 -229px;vertical-align: top;opacity: 1}
+#_scroll_nav ._scroll_nav_lst.active ._anchor_img{transform: scale(0)}
