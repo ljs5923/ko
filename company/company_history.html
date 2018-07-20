@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <title>주요현역 / 회사소개 / 고려개발</title>
@@ -252,20 +253,45 @@
     </div>
     <script>
         jQuery(function($) {
-            var MGL = -566;
-            $('._history_btn').on('click', function() {
-                console.log(MGL);
-                if ($(this).hasClass('_history_prev')) {
-                    $('._history_content_box').stop().animate({
-                        marginLeft: MGL + "px"
-                    }, 1000, function() {
-                        MGL = MGL + 187;
-                        if (MGL >= 369) {
-                            MGL = -566;
+            $('._history_content').each(function() {
+                var $his_con_box = $(this).find('._history_content_box');
+                var $his_con = $his_con_box.find('._content')
+                var last_con_index = $his_con.length - 1;
+                var $btn = $('._history_btn');
+                var conleftA = new Array();
+                var value_x = 866;
+                $his_con.each(function() {
+                    var _x = $(this).position().left;
+                    conleftA.push(_x);
+                })
+                $btn.on('click', function() { var index = $('._content._active').index();
+                    if ($(this).hasClass('_history_prev')) {
+                        if (index == 0) {
+                            $his_con_box.animate({
+                                marginLeft: -566
+                            },300)
+                            $his_con.eq(last_con_index).addClass('_active').siblings().removeClass('_active');
+                        } else {
+                            $his_con_box.animate({
+                                marginLeft: value_x - conleftA[index - 1]
+                            },300)
+                            $his_con.eq(index - 1).addClass('_active').siblings().removeClass('_active');
                         }
-                    });
-                }
-            });
+                    } else {
+                        if (index == 5) {
+                            $his_con_box.animate({
+                                marginLeft: 366
+                            },300)
+                            $his_con.eq(0).addClass('_active').siblings().removeClass('_active');
+                        } else {
+                            $his_con_box.animate({
+                                marginLeft: value_x - conleftA[index + 1]
+                            },300)
+                            $his_con.eq(index + 1).addClass('_active').siblings().removeClass('_active');
+                        }
+                    }
+                })
+            })
         });
     </script>
 </body>
