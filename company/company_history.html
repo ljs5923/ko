@@ -129,14 +129,103 @@
                                     <button class="_history_btn _history_prev"></button>
                                     <button class="_history_btn _history_next"></button>
                                 </div>
-                                <div class="_history_content">
+                                <div class="_history_contents">
                                     <div class="_history_content_box">
                                         <article class="_content history2010 _active">
                                             <div class="_content_history_year">
-                                                <button class="_year_btn">
-                                                <span class="_circle_img">2010 ~ 현재 : 주요연혁 보기</span>
-                                            </button>
+                                                <button class="_year_btn"><span class="_circle_img">2010 ~ 현재 : 주요연혁 보기</span></button>
                                                 <h4 class="_history_content_title">2010 ~ 현재 &nbsp;</h4>
+                                            </div>
+                                            <div class="_history_content _history2010_content">
+                                                <p class="_history_head_txt">기본과 혁신, 최고</p>
+                                                <div class="_history_middle_txt">
+                                                    <div class="_middle_txt_box _txt_box1">
+                                                        <p class="_txt">e편한세상 경산신대</p>
+                                                    </div>
+                                                    <div class="_middle_txt_box _txt_box2">
+                                                        <p class="_txt">부산도시철도 4호선 7공구</p>
+                                                    </div>
+                                                </div>
+                                                <ul class="_history_bottom_lsts">
+                                                    <li class="_history_lsts_even">
+                                                        <h5 class="_history_lst_year">2018년 연혁</h5>
+                                                        <ul>
+                                                            <li>
+                                                                <strong class="_history_lst_date">2018.07</strong>
+                                                                <p class="_history_lst_txt">한국철도시설공단 안전,품질관리부문 우수 현장<br>(진접선 복선전철 제3공구)</p>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="_history_lsts_odd">
+                                                        <h5 class="_history_lst_year">2016년 연혁</h5>
+                                                        <ul>
+                                                            <li>
+                                                                <strong class="_history_lst_date">2016.04</strong>
+                                                                <p class="_history_lst_txt">수원광명고속도로 민간투자사업 준공</p>
+                                                            </li>
+                                                             <li>
+                                                                <strong class="_history_lst_date">2016.04</strong>
+                                                                <p class="_history_lst_txt">한국토지 주택공사(LH) 우수 건설업자 (김포 양촌 4공구)</p>
+                                                            </li>
+                                                             <li>
+                                                                <strong class="_history_lst_date">2016.03</strong>
+                                                                <p class="_history_lst_txt">대한토목학회 올해의 토목구조물 은상 (사량대교)</p>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="_history_lsts_even">
+                                                        <h5 class="_history_lst_year">2013년 연혁</h5>
+                                                        <ul>
+                                                            <li>
+                                                                <strong class="_history_lst_date">2013.12</strong>
+                                                                <p class="_history_lst_txt">국토교통부 '9회 건설협력증진대상' 공로부문 표창</p>
+                                                            </li>
+                                                            <li>
+                                                                <strong class="_history_lst_date">2013.03</strong>
+                                                                <p class="_history_lst_txt">국방시설본부 우수 건설업자</p>
+                                                            </li>
+                                                            <li>
+                                                                <strong class="_history_lst_date">2013.02</strong>
+                                                                <p class="_history_lst_txt">한국도로공사 안전부문 우수 현장 (충주 제천 5공구)</p>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="_history_lsts_odd">
+                                                        <h5 class="_history_lst_year">2012년 연혁</h5>
+                                                        <ul>
+                                                            <li>
+                                                                <strong class="_history_lst_date">2012.06</strong>
+                                                                <p class="_history_lst_txt">석탑산업훈장 (4대강 사업)</p>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="_history_lsts_even">
+                                                        <h5 class="_history_lst_year">2011년 연혁</h5>
+                                                        <ul>
+                                                            <li>
+                                                                <strong class="_history_lst_date">2011.11</strong>
+                                                                <p class="_history_lst_txt">대한건설단체총연합회 건설협력증진대상 공로부문 표창</p>
+                                                            </li>
+                                                            <li>
+                                                                <strong class="_history_lst_date">2011.07</strong>
+                                                                <p class="_history_lst_txt">제 18회 전국자원봉사대축제 올해의 자원봉사 거버넌스상</p>
+                                                            </li>
+                                                            <li>
+                                                                <strong class="_history_lst_date">2011.03</strong>
+                                                                <p class="_history_lst_txt">동탑산업훈장 (부산도시철도 4호선 건설 유공)</p>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="_history_lsts_odd">
+                                                        <h5 class="_history_lst_year">2010년 연혁</h5>
+                                                        <ul>
+                                                            <li>
+                                                                <strong class="_history_lst_date">2010.04</strong>
+                                                                <p class="_history_lst_txt">한국도로공사 우수건설업자 (춘천동홍천 4공구)</p>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
                                             </div>
                                         </article>
                                         <article class="_content history2000">
@@ -253,7 +342,7 @@
     </div>
     <script>
         jQuery(function($) {
-            $('._history_content').each(function() {
+            $('._history_contents').each(function() {
                 var $his_con_box = $(this).find('._history_content_box');
                 var $his_con = $his_con_box.find('._content')
                 var last_con_index = $his_con.length - 1;

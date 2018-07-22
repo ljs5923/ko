@@ -415,8 +415,8 @@ footer{position:relative;z-index:10}
 ._history_content_container ._history_content_btn_wrap ._history_btn{position: absolute;top: -11px;width: 46px;height: 46px;background-image: url(../imgs/company/company.png);z-index: 1;}
 ._history_content_container ._history_content_btn_wrap ._history_btn._history_prev{left: 0;background-position: 0px -1336px}
 ._history_content_container ._history_content_btn_wrap ._history_btn._history_next{right: 0;background-position: 0px -1195px}
-._history_content_container ._history_content{overflow: hidden;height: 200px;margin: 0 150px}
-._history_content_container ._history_content ._history_content_box{display: inline-block;width: 600%;margin-left: 369px;vertical-align: top}
+._history_content_container ._history_contents{overflow: hidden;height: 200px;margin: 0 150px}
+._history_content_container ._history_contents ._history_content_box{display: inline-block;width: 600%;margin-left: 369px;vertical-align: top}
 ._history_content_container ._history_content_box ._content{float: left}
 ._history_content_container ._history_content_box ._content ._content_history_year{position: relative;float: left;height: 48px;transition: all 0.3s ease}
 ._history_content_container ._history_content_box ._content._active ._content_history_year{height: 181px}
@@ -429,3 +429,26 @@ footer{position:relative;z-index:10}
 ._history_content_container ._history_content_box ._content ._content_history_year ._circle_img:after{content: '';position: absolute;top: 0;left: 50%;width: 25px;height: 25px;margin-left: -12.5px;background-image: url(../imgs/company/company.png);background-position: 0 -1256px}
 ._history_content_container ._history_content_box ._content ._content_history_year ._history_content_title{position: absolute;bottom: 0;left: 50%;margin-left: -100px;text-align: center;line-height: 1em;font-size: 20px;color: #777;transition: all 0.3s ease}
 ._history_content_container ._history_content_box ._content._active ._content_history_year ._history_content_title{width: 400px;margin-left: -200px;font-size: 52px;color: #012b5d;}
+._history_content_container ._history_content_box ._content ._history_content{display: none;position: absolute;top: 208px;left: 0;width: 100%;padding-top: 128px;opacity: 1;}
+._history_content_container ._history_content_box ._content._active ._history_content{display: block;}
+._content ._history_content ._history_head_txt{position: absolute;top: 0;left: 0;width: 100%;margin-top: 7px;font-size: 22px;color: #222;text-align: center;}
+._content ._history_content ._history_middle_txt{position: relative;text-align: center}
+._content ._history_content ._history_middle_txt ._middle_txt_box{position: absolute;top: 374px;width: 396px;height: 50px;text-align: center;box-sizing: border-box;background-color: #fff}
+._content ._history_content ._history_middle_txt ._middle_txt_box._txt_box1{right: 50%}
+._content ._history_content ._history_middle_txt ._middle_txt_box._txt_box2{left: 50%;border-left: 1px solid #dedee1}
+._content ._history_content ._history_middle_txt ._middle_txt_box ._txt{line-height: 60px;font-size: 18px;font-weight: bold;color: #012b5d}
+._content ._history_content ._history_bottom_lsts{position: relative;display: inline-block;width: 100%;margin-top: 423px;padding: 105px 0 95px;vertical-align: top}
+._content ._history_content ._history_bottom_lsts ._history_lst_year{overflow: hidden;width: 0;height: 0}
+._content ._history_content ._history_bottom_lsts:before{content: '';position: absolute;top: 0;left: 50%;width: 1px;height: 100%;background-color: #d6d6d6}
+._content ._history_content ._history_bottom_lsts ._history_lsts_even{position: relative;clear: both;float: left;width: 50%;margin-left: 50%;margin-top: 10px;}
+._content ._history_content ._history_bottom_lsts ._history_lsts_even:before{content: '';position: absolute;top: 0;left: -4px;width: 51px;height: 8px;background-image: url(../imgs/company/company.png);background-position: 0 -1397px;}
+._content ._history_content ._history_bottom_lsts ._history_lsts_even ul{clear: both;padding-left: 56px;margin-top: -10px}
+._content ._history_content ._history_bottom_lsts ._history_lsts_even ul li{display: inline-block;width: 100%;margin-top: 5px;vertical-align: top}
+._history_bottom_lsts ._history_lsts_even ul li ._history_lst_date{float: left;width: 70px;padding-right: 14px;line-height: 26px;text-align: right;font-weight: bold;font-size: 16px;color: #222;}
+._history_bottom_lsts ._history_lsts_even ul li ._history_lst_txt{overflow: hidden;line-height: 26px;font-size: 16px;color: #555}
+._content ._history_content ._history_bottom_lsts ._history_lsts_odd{position: relative;clear: both;float: left;width: 50%;margin-top: 10px;}
+._content ._history_content ._history_bottom_lsts ._history_lsts_odd:before{content: '';position: absolute;top: 0;right: -4px;width: 51px;height: 8px;background-image: url(../imgs/company/company.png);background-position: 0 -1172px;}
+._content ._history_content ._history_bottom_lsts ._history_lsts_odd ul{clear: both;padding-right: 56px;margin-top: -10px}
+._content ._history_content ._history_bottom_lsts ._history_lsts_odd ul li{display: inline-block;width: 100%;margin-top: 5px;text-align: right;vertical-align: top}
+._history_bottom_lsts ._history_lsts_odd ul li ._history_lst_date{float: right;width: 73px;padding-left: 14px;line-height: 26px;text-align: left;font-weight: bold;font-size: 16px;color: #222;}
+._history_bottom_lsts ._history_lsts_odd ul li ._history_lst_txt{overflow: hidden;line-height: 26px;font-size: 16px;color: #555}
