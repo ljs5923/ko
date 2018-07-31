@@ -112,7 +112,7 @@
                                     <li class="_header_gnb_lst">
                                         <a href="company_history.html" class="_header_gnb_dept"><span>주요 연혁</span></a></li>
                                     <li class="_header_gnb_lst">
-                                        <a href="#" class="_header_gnb_dept"><span>그룹사 소개</span></a></li>
+                                        <a href="company_relative01.html" class="_header_gnb_dept"><span>그룹사 소개</span></a></li>
                                     <li class="_header_gnb_lst">
                                         <a href="#" class="_header_gnb_dept"><span>찾아오시는 길</span></a></li>
                                 </ul>
@@ -322,12 +322,6 @@
             })
             //            company_information_content2_img_pager evnet end
             //scrollTop event start
-            $('._scroll_top').on('click', function() {
-                var wintop = $('html,body').offset().top;
-                $('html,body').animate({
-                    'scrollTop': wintop
-                }, 500, 'swing');
-            });
             $(window).on('scroll', function() {
                 var winST = $(window).scrollTop();
                 var content1Top = $('._company_content1').offset().top;

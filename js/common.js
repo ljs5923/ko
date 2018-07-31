@@ -41,7 +41,15 @@ jQuery(function ($) {
             $(this).removeClass('_active');
         }
     );
-    //nav event end    
+    //nav event end
+    //scroll event start
+    $('._scroll_top').on('click', function () {
+        var wintop = $('html,body').offset().top;
+        $('html,body').animate({
+            'scrollTop': wintop
+        }, 500, 'swing');
+    });
+    //scroll event end
     //FAMILY SITE open start
     $('._btn_familysite_open').on('click', function () {
         $('._footer_bottom_familysite_container').fadeToggle(500, function () {
@@ -64,4 +72,14 @@ jQuery(function ($) {
         }
     });
     //company_information_header event end
+    //company_relative_gnb event start
+    $('._relative_lst').hover(
+        function () {
+            $(this).find('a').addClass('_active');
+        },
+        function () {
+            $(this).find('a').removeClass('_active');
+        }
+    )
+    //company_relative_gnb event end
 }); //jQuery End
