@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="../js/jquery-latest.min.js"></script>
     <script src="../js/common.js"></script>
+    <script src="../js/company_common.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
 </head>
 
@@ -29,8 +30,8 @@
                                     <li class="_sub_lst_dept"><a href="company_ceo.html" class="_sub_dept">CEO 인사말</a></li>
                                     <li class="_sub_lst_dept"><a href="company_value.html" class="_sub_dept">가치체계</a></li>
                                     <li class="_sub_lst_dept"><a href="company_history.html" class="_sub_dept">주요 연혁</a></li>
-                                    <li class="_sub_lst_dept"><a href="#" class="_sub_dept">그룹사 소개</a></li>
-                                    <li class="_sub_lst_dept"><a href="#" class="_sub_dept">찾아오시는 길</a></li>
+                                    <li class="_sub_lst_dept"><a href="company_relative01.html" class="_sub_dept">그룹사 소개</a></li>
+                                    <li class="_sub_lst_dept"><a href="company_location.html" class="_sub_dept">찾아오시는 길</a></li>
                                 </ul>
                             </li>
                             <li class="_main_lst_dept">
@@ -114,7 +115,7 @@
                                     <li class="_header_gnb_lst _active">
                                         <a href="company_relative01.html" class="_header_gnb_dept"><span>그룹사 소개</span></a></li>
                                     <li class="_header_gnb_lst">
-                                        <a href="#" class="_header_gnb_dept"><span>찾아오시는 길</span></a></li>
+                                        <a href="company_location.html" class="_header_gnb_dept"><span>찾아오시는 길</span></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -176,7 +177,7 @@
                                                     <table>
                                                         <caption>대림미술관/디뮤지엄 - 대림미술관 | 위치, Tel / Fax(으)로 구성되어있습니다.</caption>
                                                         <tbody>
-                                                           <tr>
+                                                            <tr>
                                                                 <th scope="row">위치</th>
                                                                 <td>서울특별시 종로구 자하문로 4길 21</td>
                                                             </tr>
@@ -194,7 +195,7 @@
                                                     <table>
                                                         <caption>대림미술관/디뮤지엄 - 디뮤지엄 | 위치, Tel / Fax(으)로 구성되어있습니다.</caption>
                                                         <tbody>
-                                                           <tr>
+                                                            <tr>
                                                                 <th scope="row">위치</th>
                                                                 <td>서울특별시 용산구 독서당로 29길 5-6</td>
                                                             </tr>
@@ -248,7 +249,7 @@
                                                     <table>
                                                         <caption>학교법인 대림학원 - 대림 대학교 | 설립, 위치, Tel / Fax(으)로 구성되어있습니다.</caption>
                                                         <tbody>
-                                                           <tr>
+                                                            <tr>
                                                                 <th scope="row">설립</th>
                                                                 <td>1967년 6월 3일</td>
                                                             </tr>
@@ -373,15 +374,6 @@
             });
             $('._btn._btn_number').on('click', function() {
                 $(this).addClass('_active').siblings().removeClass('_active')
-            });
-            $(window).on('scroll', function() {
-                var winST = $(window).scrollTop();
-                var content1Top = $('#_company_content').offset().top;
-                if (content1Top > winST) {
-                    $('._scroll_top').fadeOut();
-                } else {
-                    $('._scroll_top').fadeIn().css("bottom", 100);
-                }
             });
         })
 

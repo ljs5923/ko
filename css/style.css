@@ -22,7 +22,7 @@ header{position:absolute;z-index:60}
 ._company_header_wrap{position: relative;}
 section#_main_slide{position:relative;}
 #_company_content{position: relative;}
-section#_content_wrap{position:relative}
+section#_company_content{position:relative}
 footer{position:relative;z-index:10}
 /* main header */
 #_header{overflow:hidden;top:0;left:0;width: 100%;min-width: 1200px;height:86px;transition: background 0.3s ease}
@@ -95,8 +95,8 @@ footer{position:relative;z-index:10}
 #_main_slide ._total{font-weight:500;font-size:16px;line-height:.8;color:#fff;opacity:0.7;margin-top:5px}
 #_main_slide ._btn_scroll_step{position: absolute;left: 50%;bottom: 30px;width: 107px;height: 107px;margin-left: -53px;text-indent: -9999px;background-image: url(../imgs/main/scroll_icon.png);background-repeat: no-repeat;z-index: 200}
 /* main _content1 */
-#_content_wrap ._content1_container{overflow:hidden;padding:140px 0}
-#_content_wrap ._content1_container ._content1_title{overflow:hidden;width:0;height:0;text-indent:-9999px}
+#_company_content ._content1_container{overflow:hidden;padding:140px 0}
+#_company_content ._content1_container ._content1_title{overflow:hidden;width:0;height:0;text-indent:-9999px}
 ._content1_container ._content1_slide_container{position:relative;width:1200px;height:616px;margin:0 auto}
 ._content1_slide_container ._img_container{position:absolute;top:0;width:690px;height:616px}
 ._content1_slide_container ._img_container._slideimg1{left:-2370px}
@@ -125,14 +125,14 @@ footer{position:relative;z-index:10}
 ._contnet1_count_area ._count_slash{position:absolute;top:7px;left:22px;width:21px;height:21px;background-image:url(../imgs/main/main.png);background-position:0 -428px}
 ._contnet1_count_area ._total_no{position:absolute;bottom:0;right:0;font-weight:bold;font-size:16px;line-height:0.8;color:#a3a3a3}
 /* main _content2 */
-#_content_wrap ._content2_container{overflow:hidden;width:100%}
-#_content_wrap ._content2_title_container{float:left;position:relative;width:35%;height:702px;background:#012b5d}
-#_content_wrap ._content2_title_container:before{position:absolute;bottom:0;right:0;width:452px;height:277px; background:url(../imgs/main/bg_section02_01.gif) no-repeat 0 0;content:''}
+#_company_content ._content2_container{overflow:hidden;width:100%}
+#_company_content ._content2_title_container{float:left;position:relative;width:35%;height:702px;background:#012b5d}
+#_company_content ._content2_title_container:before{position:absolute;bottom:0;right:0;width:452px;height:277px; background:url(../imgs/main/bg_section02_01.gif) no-repeat 0 0;content:''}
 ._content2_title_container ._content2_title_wrap{position:absolute;right:0;width:250px;padding-right:60px}
 ._content2_title_wrap ._content2_title{padding-top:170px;line-height:1em;font-size:40px;font-weight:bold;color:#fff}
 ._content2_title_wrap ._content2_dec{margin-top:30px;font-weight:bold;font-size:16px;line-height:26px;color:#fff;opacity:0.7}
 ._content2_title_wrap ._btn_value{display:block;width:118px;height:38px;margin:35px 0 0;border:1px solid #fff;text-align:center;color:#fff;line-height:38px;box-sizing:border-box}
-#_content_wrap ._content2_dec_container{float:left;position:relative;width:65%;height:702px;background-image:url(../imgs/main/bg_section02-2.png)}
+#_company_content ._content2_dec_container{float:left;position:relative;width:65%;height:702px;background-image:url(../imgs/main/bg_section02-2.png)}
 ._content2_dec_container ._content2_dec_wrap{width:890px;height:482px;margin:110px 0;background-color:#fff}
 ._content2_dec_container ._content2_dec{overflow:hidden;width:770px;height:342px;padding:50px 0 90px 100px}
 ._content2_dec_container ._content2_dec li{position:relative;float:left;width:50%;height:131px;margin-top:40px}
@@ -144,7 +144,7 @@ footer{position:relative;z-index:10}
 ._content2_dec_container ._content2_dec li strong{display:block;padding-top:76px;font-weight:bold;font-size:20px;line-height:0.8;color:#222}
 ._content2_dec_container ._content2_dec li p{margin-top:13px;font-size:16px;line-height:26px;color:#555}
 /* main _content3 */
-#_content_wrap ._content3_container{margin-top:210px;background:url(../imgs/main/bg_section03.gif) repeat-y 50% 50%}
+#_company_content ._content3_container{margin-top:210px;background:url(../imgs/main/bg_section03.gif) repeat-y 50% 50%}
 ._content3_container ._content3_wrap{position:relative;width:1200px;margin:0 auto}
 ._content3_wrap ._content3_title_container{float:left;width:386px;height:398px;margin-right:24px;text-align:center;background-image:url(../imgs/main/bg_kdc_person.jpg)}
 ._content3_title_container ._contnet3_logo{padding-top:21px;text-indent:-9999px}
@@ -182,7 +182,7 @@ footer{position:relative;z-index:10}
 ._content3_count_container ._content3_count_slash{position:absolute;top:6px;left:22px;width:21px;height:21px;background-image:url(../imgs/main/main.png);background-position:0px -716px}
 ._content3_count_container ._content3_total{position:absolute;bottom:0;right:0;font-weight:bold;font-size:16px;line-height:0.8;color:#fff;opacity:0.5}
 /* main content4 */
-#_content_wrap ._content4_container {width: 1200px;margin: 0 auto;margin-top: 140px;padding-bottom: 140px}
+#_company_content ._content4_container {width: 1200px;margin: 0 auto;margin-top: 140px;padding-bottom: 140px}
 ._content4_container ._content4_title{font-weight: bold;font-size: 40px;line-height: 1em;text-align: center;color: #333}
 ._content4_container ._content4_notice_container{margin-top: 60px}
 ._content4_container ._content4_notice_wrap{display: block;margin: -30px 0 -40px -24px;overflow: hidden}
@@ -482,7 +482,7 @@ footer{position:relative;z-index:10}
 #_company_content ._relative_info_lst ul li:before{content: '';position: absolute;top: 8px;left: 0;width: 3px;height: 3px;background-color: #0189b1}
 #_company_content ._relative_info_lst ul li a{display: inline;padding-bottom: 1px;border-bottom: 1px solid transparent;line-height: 1em;vertical-align: top;transition: all 0.3s ease}
 #_company_content ._relative_info_lst ul li a:hover{border-bottom-color: #555}
-/* _company_relative02 */
+/* _company_relative_sub */
 #_company_content ._relative_content_container{margin-top: 50px;margin-bottom: -60px}
 #_company_content ._relative_content{position: relative;padding: 60px 0;border-top: 1px solid #012b5d}
 #_company_content ._relative_content ._title_content{position: absolute;top: 54px;left: 0;width: 380px}
@@ -495,7 +495,8 @@ footer{position:relative;z-index:10}
 #_company_content ._relative_content ._dec_img_contanier ._img_wrap{width: 792px;height: 380px}
 #_company_content ._relative_content ._dec_img_contanier ._dec_btn_contanier{position: absolute;bottom: -6px;left: -10px}
 #_company_content ._relative_content ._dec_img_contanier ._dec_btn_contanier ._btn{display: inline-block;float: left;height: 36px;padding: 10px}
-#_company_content ._relative_content ._dec_img_contanier ._dec_btn_contanier ._btn .bx-prev{display: inline-block;width: 22px;height: 16px;text-indent: -9999px;vertical-align: top;background-image: url(../imgs/company/company.png);background-position: 0 -1112px}
+#_company_content ._relative_
+-content ._dec_img_contanier ._dec_btn_contanier ._btn .bx-prev{display: inline-block;width: 22px;height: 16px;text-indent: -9999px;vertical-align: top;background-image: url(../imgs/company/company.png);background-position: 0 -1112px}
 #_company_content ._relative_content ._dec_img_contanier ._dec_btn_contanier ._btn .bx-next{display: inline-block;width: 22px;height: 16px;text-indent: -9999px;vertical-align: top;background-image: url(../imgs/company/company.png);background-position: 0 -1052px}
 #_company_content ._relative_content ._dec_img_contanier ._dec_count_container{position: absolute;bottom: 0;right: 0}
 #_company_content ._relative_content ._dec_img_contanier ._dec_count_container ._btn_number{display: inline-block;position: relative;padding-bottom: 8px;margin-left: 26px;font-size: 16px;font-weight: bold;color: #222;transition:color 0.3s ease}
@@ -504,6 +505,7 @@ footer{position:relative;z-index:10}
 #_company_content ._relative_content ._dec_img_contanier ._dec_count_container ._btn_number._active:before{width: 100%;opacity: 1}
 #_company_content ._relative_content ._dec_info_container{position: relative;overflow: hidden;margin-top: 60px;padding-left: 23px}
 #_company_content ._relative_content ._dec_info_container:before{content: '';position: absolute;bottom: 0;left: 0;width: 4px;height: 0;opacity: 0;background-color: #0189b1;transition: all 1.5s ease}
+#_company_content ._relative_content ._dec_info_container._active:before{height: 100%;opacity: 1}
 #_company_content ._relative_content ._dec_info_container ._company_txt{margin-top: 15px;line-height: 26px;font-size: 16px;color: #555}
 #_company_content ._relative_content ._dec_company_container{margin-top: 60px}
 #_company_content ._relative_content ._dec_company_container ._company_box{margin-top: 40px}
@@ -512,3 +514,35 @@ footer{position:relative;z-index:10}
 #_company_content ._relative_content ._dec_company_container ._box_content table{width: 100%;text-align: left}
 #_company_content ._relative_content ._dec_company_container ._box_content table tbody th{padding: 15px 20px;line-height: 26px;font-size: 16px;background-color: #f7f7f9;border-bottom: 1px solid #dedee1}
 #_company_content ._relative_content ._dec_company_container ._box_content table tbody td{padding: 15px 20px;line-height: 26px;font-size: 16px;color: #555;border-bottom: 1px solid #dedee1}
+/* _company_location */
+#_company_content ._map_container{position: relative}
+#_map{width: 100%;height: 554px}
+#_company_content ._map_info_container{display: table;position: absolute;top: 442px;left: 50%;width: 1200px;margin-left: -600px;padding: 70px 0;background-color: #012b5d;box-sizing: border-box;z-index: 1}
+#_company_content ._map_info_container ._map_title{display: table-cell;width: 464px;padding: 0 20px;line-height: 46px;text-align: center;vertical-align: middle;font-size: 36px;color: #fff}
+#_company_content ._map_info_container ._map_txt_box{overflow: hidden;border-left: 1px solid #4e6b8e;padding-left: 55px}
+#_company_content ._map_info_container ._map_txt_box address{display: block;margin-top: -5px;line-height: 28px;font-size: 18px;color: #fff}
+#_company_content ._map_info_container ._map_txt_box ._map_tel_box{margin-bottom: -5px;margin-top: 15px}
+#_company_content ._map_info_container ._map_txt_box ._map_tel_box ._map_tel{line-height: 26px;font-size: 16px;color: #fff}
+#_company_content ._map_info_container ._map_txt_box ._map_tel_box ._map_tel strong{padding-right: 7px;font-weight: bold}
+#_company_content ._location_info_container{width: 1200px;margin: 0 auto;margin-top: 160px}
+#_company_content ._location_info_container ._location_info{display: inline-block;width: 100%;padding-left: 153px;vertical-align: top;box-sizing: border-box}
+#_company_content ._location_info_container ._location_info ._info{display: block;float: left;position: relative}
+#_company_content ._location_info_container ._location_info ._info._subway{width: 398px}
+#_company_content ._location_info_container ._location_info ._info._subway ._info_title{padding-left: 65px}
+#_company_content ._location_info_container ._location_info ._info ._info_title{position: relative;padding-left: 78px;line-height: 53px;font-size: 22px;color: #222}
+#_company_content ._location_info_container ._location_info ._info ._info_title ._info_icon{display: inline-block;overflow: hidden;position: absolute;top: 0;left: 0;background-image: url(../imgs/company/company.png);vertical-align: top;text-indent: -9999px}
+#_company_content ._location_info_container ._location_info ._info ._info_title ._info_icon._subway_icon{width: 36px;height: 53px;background-position: 0 -1445px}
+#_company_content ._location_info_container ._location_info ._info ._info_title ._info_icon._bus_icon{width: 54px;height: 49px;background-position: 0 -1513px}
+#_company_content ._location_info_container ._location_info ._info ._info_dec{overflow: hidden;position: relative;height: 135px;padding-left: 50px;margin: 15px 0 0 25px}
+#_company_content ._location_info_container ._location_info ._info._subway ._info_dec{margin: 15px 0 0 16px}
+#_company_content ._location_info_container ._location_info ._info ._info_dec:before{content: '';position: absolute;bottom: 0;left: 0;width: 4px;height: 0;opacity: 0;background-color: #0189b1;transition: all 1.5s ease}
+#_company_content ._location_info_container ._location_info ._info ._info_dec._active:before{height: 100%;opacity: 1}
+#_company_content ._location_info_container ._location_info ._info ._info_dec ._info_dec_txt{display: block;margin-top: -5px;line-height: 26px;font-size: 16px;color: #555}
+#_company_content ._location_info_container ._location_info ._info._subway ._info_dec ._info_dec_txt{letter-spacing: -1px}
+#_company_content ._location_info_container ._location_info ._info ._info_dec ._info_dec_txt strong{color: #0189b1}
+#_company_content ._location_info_container ._location_info ._info ._info_dec ul{margin-top: 15px}
+#_company_content ._location_info_container ._location_info ._info ._info_dec ul li{margin-top: 9px;line-height: 27px;font-size: 14px;color: #555}
+#_company_content ._location_info_container ._location_info ._info ._info_dec ul li strong{display: inline-block;margin-right: 10px;padding: 0 10px;line-height: 27px;text-align: center;vertical-align: top;border-radius: 3px;color: #fff}
+#_company_content ._location_info_container ._location_info ._info ._info_dec ul li._bus_lst1 strong{background-color: #0096ff}
+#_company_content ._location_info_container ._location_info ._info ._info_dec ul li._bus_lst2 strong{background-color: #e70000}
+#_company_content ._location_info_container ._location_info ._info ._info_dec ul li._bus_lst3 strong{background-color: #54bc00}

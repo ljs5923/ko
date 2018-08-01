@@ -29,8 +29,8 @@
                                     <li class="_sub_lst_dept"><a href="../company/company_ceo.html" class="_sub_dept">CEO 인사말</a></li>
                                     <li class="_sub_lst_dept"><a href="../company/company_value.html" target="_blank" class="_sub_dept">가치체계</a></li>
                                     <li class="_sub_lst_dept"><a href="../company/company_history.html" class="_sub_dept">주요 연혁</a></li>
-                                    <li class="_sub_lst_dept"><a href="#" class="_sub_dept">그룹사 소개</a></li>
-                                    <li class="_sub_lst_dept"><a href="#" class="_sub_dept">찾아오시는 길</a></li>
+                                    <li class="_sub_lst_dept"><a href="../company/company_relative01.html" class="_sub_dept">그룹사 소개</a></li>
+                                    <li class="_sub_lst_dept"><a href="../company/company_location.html" class="_sub_dept">찾아오시는 길</a></li>
                                 </ul>
                             </li>
                             <li class="_main_lst_dept">
@@ -195,7 +195,7 @@
                 <button class="_btn_scroll_step">다음 content로 이동</button>
             </article>
         </section>
-        <section id="_content_wrap">
+        <section id="_company_content">
             <article class="_content1_container">
                 <h3 class="_content1_title">사업소개</h3>
                 <div class="_content1_slide_container">
@@ -1051,23 +1051,6 @@
                     }
                 });
                 //content3 slide img end
-                //scrollTop event start
-                $('._scroll_top').on('click', function() {
-                    var wintop = $('html,body').offset().top;
-                    $('html,body').animate({
-                        'scrollTop': wintop
-                    }, 500, 'swing');
-                });
-                $(window).on('scroll', function() {
-                    var winST = $(window).scrollTop();
-                    var content1Top = $('._content1_container').offset().top;
-                    if (content1Top > winST) {
-                        $('._scroll_top').fadeOut();
-                    } else {
-                        $('._scroll_top').fadeIn().css("bottom", 100);
-                    }
-                });
-                //scrollTop evet end
             })
         </script>
     </div>

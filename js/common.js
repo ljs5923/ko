@@ -49,6 +49,15 @@ jQuery(function ($) {
             'scrollTop': wintop
         }, 500, 'swing');
     });
+    $(window).on('scroll', function () {
+        var winST = $(window).scrollTop();
+        var content1Top = $('#_company_content').offset().top;
+        if (content1Top > winST) {
+            $('._scroll_top').fadeOut();
+        } else {
+            $('._scroll_top').fadeIn().css("bottom", 100);
+        }
+    });
     //scroll event end
     //FAMILY SITE open start
     $('._btn_familysite_open').on('click', function () {

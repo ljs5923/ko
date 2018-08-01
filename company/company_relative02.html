@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="../js/jquery-latest.min.js"></script>
     <script src="../js/common.js"></script>
+    <script src="../js/company_common.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
 </head>
 
@@ -29,8 +30,8 @@
                                     <li class="_sub_lst_dept"><a href="company_ceo.html" class="_sub_dept">CEO 인사말</a></li>
                                     <li class="_sub_lst_dept"><a href="company_value.html" class="_sub_dept">가치체계</a></li>
                                     <li class="_sub_lst_dept"><a href="company_history.html" class="_sub_dept">주요 연혁</a></li>
-                                    <li class="_sub_lst_dept"><a href="#" class="_sub_dept">그룹사 소개</a></li>
-                                    <li class="_sub_lst_dept"><a href="#" class="_sub_dept">찾아오시는 길</a></li>
+                                    <li class="_sub_lst_dept"><a href="company_relative01.html" class="_sub_dept">그룹사 소개</a></li>
+                                    <li class="_sub_lst_dept"><a href="company_location.html" class="_sub_dept">찾아오시는 길</a></li>
                                 </ul>
                             </li>
                             <li class="_main_lst_dept">
@@ -114,7 +115,7 @@
                                     <li class="_header_gnb_lst _active">
                                         <a href="company_relative01.html" class="_header_gnb_dept"><span>그룹사 소개</span></a></li>
                                     <li class="_header_gnb_lst">
-                                        <a href="#" class="_header_gnb_dept"><span>찾아오시는 길</span></a></li>
+                                        <a href="company_location.html" class="_header_gnb_dept"><span>찾아오시는 길</span></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -128,11 +129,11 @@
                                 <li class="_relative_lst"><a href="company_relative01.html" class="_lst_btn">개요</a></li>
                                 <li class="_relative_lst"><a href="company_relative02.html" class="_lst_btn active">건설</a></li>
                                 <li class="_relative_lst _active"><a href="company_relative03.html" class="_lst_btn">석유/화학</a></li>
-                                <li class="_relative_lst"><a href="#" class="_lst_btn">제조/상사</a></li>
-                                <li class="_relative_lst"><a href="#" class="_lst_btn">IT</a></li>
-                                <li class="_relative_lst"><a href="#" class="_lst_btn">레저</a></li>
-                                <li class="_relative_lst"><a href="#" class="_lst_btn">교육/문화</a></li>
-                                <li class="_relative_lst"><a href="#" class="_lst_btn">에너지</a></li>
+                                <li class="_relative_lst"><a href="company_relative04.html" class="_lst_btn">제조/상사</a></li>
+                                <li class="_relative_lst"><a href="company_relative05.html" class="_lst_btn">IT</a></li>
+                                <li class="_relative_lst"><a href="company_relative06.html" class="_lst_btn">레저</a></li>
+                                <li class="_relative_lst"><a href="company_relative07.html" class="_lst_btn">교육/문화</a></li>
+                                <li class="_relative_lst"><a href="company_relative08.html" class="_lst_btn">에너지</a></li>
                             </ul>
                         </div>
                         <div class="_relative_content_wrap">
@@ -360,19 +361,19 @@
         </footer>
     </div>
     <script>
-        jQuery(function($){
+        jQuery(function($) {
             $('._img_box').eq(0).bxSlider({
                 pagerCustom: '.count01',
-                prevSelector:$('._btn01_prev'),
-                nextSelector:$('._btn01_next'),
+                prevSelector: $('._btn01_prev'),
+                nextSelector: $('._btn01_next'),
                 prevText: '대림산업(주) 건설사업부 - 이전이미지 보기',
                 nextText: '대림산업(주) 건설사업부 - 다음이미지 보기',
             });
-            var companySlide=$('._img_box').eq(1).bxSlider({
+            var companySlide = $('._img_box').eq(1).bxSlider({
                 mode: 'fade',
                 pagerCustom: '.count02',
-                prevSelector:$('._btn02_prev'),
-                nextSelector:$('._btn02_next'),
+                prevSelector: $('._btn02_prev'),
+                nextSelector: $('._btn02_next'),
                 prevText: '(주)삼호 - 이전이미지 보기',
                 nextText: '(주)삼호 - 다음이미지 보기',
                 onSlideNext: function() {
@@ -387,16 +388,8 @@
             $('.count02 ._btn._btn_number').on('click', function() {
                 $(this).addClass('_active').siblings().removeClass('_active')
             })
-            $(window).on('scroll', function() {
-                var winST = $(window).scrollTop();
-                var content1Top = $('#_company_content').offset().top;
-                if (content1Top > winST) {
-                    $('._scroll_top').fadeOut();
-                } else {
-                    $('._scroll_top').fadeIn().css("bottom", 100);
-                }
-            });
         })
+
     </script>
 </body>
 
