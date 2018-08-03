@@ -67,10 +67,10 @@ footer{position:relative;z-index:10}
 #_main_slide ._main_text{position:relative;width:1200px;margin:0 auto}
 #_main_slide ._main_text ._text_title{position: absolute;top: 0;left: -50px;transition: all 1s ease}
 #_main_slide ._main_text ._title{font-size:70px;font-weight:400;color:#fff}
-#_main_slide ._main_text ._dec{position:relative;top:25px}
+#_main_slide ._main_text ._dec{position:relative;top:25px;left: -45px;opacity: 0}
 #_main_slide ._main_text ._slash{position:absolute;top:17.5px;left:0;display:inline-block;width:30px;height:2px;font-weight:400; background-color:#fff}
 #_main_slide ._main_text ._dec_text{position:absolute;top:0;left:45px;font-size:26px;font-weight:bold;color:#fff;line-height:39px}
-#_main_slide ._main_text .text_content{position:absolute;top:180px;left:45px;font-size:22px;font-weight:bold;color:#fff;transition: all 1s ease}
+#_main_slide ._main_text .text_content{position:absolute;top:160px;left:0;font-size:22px;font-weight:bold;color:#fff;opacity: 0}
 #_main_slide .bx-wrapper{height:100%}
 #_main_slide .bx-viewport{height:100%}
 #_main_slide ._slide_img{height:100%}
@@ -157,13 +157,13 @@ footer{position:relative;z-index:10}
 ._content3_slide_container .bx-wrapper .bx-viewport{overflow:inherit !important}
 ._content3_slide_wrap ._content3_slide{position:absolute;top:0;left:0;width:792px;height:398px;z-index:0 !important}
 ._content3_slide ._content3_slide_img{position:absolute;bottom:0;right:0}
-._content3_slide ._content3_slide_title_box{position:relative;width:337px;padding-top:120px;text-align:center}
+._content3_slide ._content3_slide_title_box{position:relative;left: -50px;width:337px;padding-top:120px;text-align:center;opacity: 0;}
 ._content3_slide ._content3_title{font-weight:400;font-size:40px;line-height:1em;color:#222}
 ._content3_slide ._content3_title_dec_box{margin-top:20px}
 ._content3_slide ._content3_title_dec{height:60px;font-weight:300;font-size:20px;line-height:30px;color:#555}
 ._content3_slide ._content3_slide_btn{margin-top:15px}
 ._content3_slide ._btn_content3{display:inline-block;padding:0 30px;font-weight:400;font-size:16px;line-height:36px;color:#012b5d;border:1px solid #012b5d}
-._content3_slide ._content3_slide_person_box{position:absolute;bottom:63px;right:0;width:304px;height:182px;background-color:#012b5d}
+._content3_slide ._content3_slide_person_box{position:absolute;bottom:63px;right:50px;width:304px;height:182px;background-color:#012b5d;opacity: 0;}
 ._content3_slide ._content3_slide_person{padding-right:30px;text-align:right}
 ._content3_slide_person ._content3_slide_person_name{display:block;margin-top:35px;font-weight:bold;font-size:23px;line-height:0.8;color:#fff}
 ._content3_slide_person ._content3_slide_person_type{font-weight:300;font-size:16px;line-height:26px;color:#fff}
@@ -457,11 +457,11 @@ footer{position:relative;z-index:10}
 ._history_bottom_lsts ._history_lsts_odd ul li ._history_lst_txt{overflow: hidden;line-height: 26px;font-size: 16px;color: #555}
 /* _company_relative01 */
 #_company_content ._company_relative_container{width: 1200px;margin: 0 auto}
-#_company_content ._relative_gnb_wrap ._relative_gnb{display: table;width: 100%;border-right: 1px solid #dedee1;box-sizing: border-box;}
-#_company_content ._relative_gnb_wrap ._relative_lst{display: table-cell;width: 10%;}
-#_company_content ._relative_gnb_wrap ._relative_lst ._lst_btn{position: relative;display: block;height: 48px;line-height: 48px;text-align: center;font-size: 18px;border: 1px solid #dedee1;border-right: none;transition: all 0.3s ease}
-#_company_content ._relative_gnb_wrap ._relative_lst ._lst_btn.active{color: #fff;background-color: #012b5d;border-color: #012b5d}
-#_company_content ._relative_gnb_wrap ._relative_lst ._lst_btn._active{color: #fff;background-color: #012b5d;border-color: #012b5d}
+#_company_content ._tab_area ._lsts{display: table;width: 100%;border-right: 1px solid #dedee1;box-sizing: border-box;}
+#_company_content ._tab_area ._lst{display: table-cell;width: 10%;}
+#_company_content ._tab_area ._lst ._lst_btn{position: relative;display: block;height: 48px;line-height: 48px;text-align: center;font-size: 18px;border: 1px solid #dedee1;border-right: none;transition: all 0.3s ease}
+#_company_content ._tab_area ._lst ._lst_btn.active{color: #fff;background-color: #012b5d;border-color: #012b5d}
+#_company_content ._tab_area ._lst ._lst_btn._active{color: #fff;background-color: #012b5d;border-color: #012b5d}
 #_company_content ._relative_dec{margin-top: 45px;line-height: 32px;text-align: center;font-size: 22px;color: #222}
 #_company_content ._relative_info_wrap{margin-top: 35px;border-top: 2px solid #012b5d;}
 #_company_content ._relative_info{display: inline-block;width: 100%;vertical-align: top}
@@ -586,3 +586,30 @@ footer{position:relative;z-index:10}
 #_company_content ._company_content_container ._business_lst_cont_box ._title{display: block;margin-top: -5px;line-height: 30px;font-size: 20px;color: #222}
 #_company_content ._company_content_container ._business_lst_cont_box ._txt{margin-top: 15px;line-height: 26px;font-size: 16px;color: #555}
 #_company_content ._company_content_container ._business_lst_cont_box ._img_box{margin-top: 55px;}
+/* _business_architure */
+#_company_content ._company_content_container._business_arch{margin-bottom: 0}
+#_company_content ._company_content_container._business_arch ._tab_area{width: 840px;margin: 0 auto}
+#_company_content ._company_content_container._business_arch ._tab_area ._lsts ._lst{width: 20%;vertical-align: middle}
+#_company_content ._company_content_container._business_arch ._tab_area ._lsts ._lst ._btn._active{color: #fff;background-color: #012b5d;border-color: #012b5d}
+#_company_content ._company_content_container._business_arch ._search_area{width: 1200px;margin: 0 auto;margin-top: 50px}
+#_company_content ._company_content_container._business_arch ._search_area ._search_box{padding: 22px 50px 23px;border: 1px solid #dedee1;background-color: #f7f7f9}
+#_company_content ._company_content_container._business_arch ._search_box table{width: 100%;text-align: left}
+#_company_content ._company_content_container._business_arch ._search_box th{height: 57px;line-height: 26px;font-size: 16px;color: #222;vertical-align: middle;border: none}
+#_company_content ._company_content_container._business_arch ._search_box td{padding: 8px 0 7px;border: none}
+#_company_content ._company_content_container._business_arch ._search_box td.w428{width: 428px}
+#_company_content ._company_content_container._business_arch ._search_box td ._tab_radio_area ul{display: inline-block;vertical-align: top}
+#_company_content ._company_content_container._business_arch ._search_box td ._tab_radio_area ul li{position: relative;float: left;width: 126px;margin-left: 10px;}
+#_company_content ._company_content_container._business_arch ._search_box td ._tab_radio_area ul li:first-child{margin-left: 0}
+#_company_content ._company_content_container._business_arch ._search_box td ._tab_radio_area ul li button{width: 100%;height: 100%}
+#_company_content ._company_content_container._business_arch ._search_box td ._tab_radio_area ul li button span{position: relative;overflow: hidden;display: inline-block;width: 124px;height: 40px;line-height: 40px;text-align: center;font-size: 16px;vertical-align: top;border: 1px solid #dedee1;border-radius: 2px; background-color: #fff;transition: all 0.3s ease}
+#_company_content ._company_content_container._business_arch ._search_box td ._tab_radio_area ul li button._active span{font-weight: bold;background-color: #012b5d;color: #fff;border-color: #012b5d;}
+#_company_content ._company_content_container._business_arch ._search_box td ._checkBox_area ul{display: inline-block;padding: 10px 0;vertical-align: top}
+#_company_content ._company_content_container._business_arch ._search_box td ._checkBox_area ul li{float: left;margin-left: 0;vertical-align: top}
+#_company_content ._company_content_container._business_arch ._search_box td ._checkBox_area ul li ._inp_check{display: inline-block;position: relative;vertical-align: top;min-height: 18px}
+#_company_content ._company_content_container._business_arch ._search_box td ._checkBox_area ul li ._inp_check input{position: absolute;overflow: hidden;top: 1px;left: 1px;width: 19px;height: 19px;border: none}
+#_company_content ._company_content_container._business_arch ._search_box td ._checkBox_area ul li ._inp_check
+#_company_content ._company_content_container._business_arch ._search_box td ._input_box{position: relative;width: 398px;background-color: #fff}
+#_company_content ._company_content_container._business_arch ._search_box td ._input_box input{width: 100%;height: 40px;padding: 0 30px;line-height: 40px;font-size: 16px;vertical-align: top;border: 1px solid #dedee1;border-radius: 2px; color: #555;box-sizing: border-box;transition: border 0.3s ease}
+#_company_content ._company_content_container._business_arch ._search_box td ._input_box input:hover{border-color: #012b5d}
+#_company_content ._company_content_container._business_arch ._search_box td ._input_box ._btn_search{position: absolute;top: 0;right: 22px}
+#_company_content ._company_content_container._business_arch ._search_box td ._input_box ._btn_search ._icon{display: inline-block;overflow: hidden;width: 18px;height: 18px;margin: 11px;vertical-align: top;text-indent: -9999px;background-image: url(../imgs/common.png);background-position: 0 -477px}

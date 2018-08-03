@@ -82,7 +82,7 @@ jQuery(function ($) {
     });
     //company_information_header event end
     //company_relative_gnb event start
-    $('._relative_lst').hover(
+    $('._tab_area ._lsts ._lst').hover(
         function () {
             $(this).find('a').addClass('_active');
         },

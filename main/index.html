@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <title>고려개발</title>
@@ -695,10 +696,38 @@
                     autoControlsSelector: $('._start_pause'),
                     prevSelector: $('._prev'),
                     nextSelector: $('._next'),
-                    onSlideBefore: function() {
-                        no = mainSlide.getCurrentSlide();
-                        ++no;
-                        $('._current').text("0" + no);
+                    onSliderLoad: function(currentIndex) {
+                        $('._current').text("0" + (currentIndex + 1));
+                        $('._main_text').eq(currentIndex).find('._dec').animate({
+                            opacity: 1,
+                            left: 0
+                        }, function() {
+                            $('._main_text').eq(currentIndex).find('.text_content').animate({
+                                opacity: 1,
+                                top: 180
+                            })
+                        })
+                    },
+                    onSlideAfter: function($slideElement, oldIndex, newIndex) {
+                        $('._current').text("0" + (newIndex + 1));
+                        $('._main_text').eq(newIndex).find('._dec').animate({
+                            opacity: 1,
+                            left: 0
+                        }, function() {
+                            $('._main_text').eq(newIndex).find('.text_content').animate({
+                                opacity: 1,
+                                top: 180
+                            })
+                        })
+                        $('._main_text').eq(oldIndex).find('._dec').animate({
+                            opacity: 0,
+                            left: -45
+                        }, function() {
+                            $('._main_text').eq(oldIndex).find('.text_content').animate({
+                                opacity: 0,
+                                top: 160
+                            })
+                        })
                     }
                 });
                 //mainslide end
@@ -1041,18 +1070,51 @@
                     autoControlsSelector: $('._content3_btn_play'),
                     prevSelector: $('._content3_prev'),
                     nextSelector: $('._content3_next'),
-                    onSlideBefore: function() {
-                        no = content3Slide.getCurrentSlide();
-                        ++no;
-                        $('._content3_current').text("0" + no);
-                        if (no > 9) {
-                            $('._content3_current').text(no);
+                    onSliderLoad: function(currentIndex) {
+                        $('._content3_current').text("0" + (currentIndex + 1));
+                        if (currentIndex > 8) {
+                            $('._content3_current').text((currentIndex + 1));
                         }
+                        $('._content3_slide').eq(currentIndex).find('._content3_slide_title_box').animate({
+                            opacity: 1,
+                            left: 0
+                        }, function() {
+                            $('._content3_slide').eq(currentIndex).find('._content3_slide_person_box').animate({
+                                opacity: 1,
+                                right: 0
+                            })
+                        })
+                    },
+                    onSlideAfter: function($slideElement, oldIndex, newIndex) {
+                        $('._content3_current').text("0" + (newIndex + 1));
+                        if (newIndex > 8) {
+                            $('._content3_current').text((newIndex + 1));
+                        }
+                        $('._content3_slide').eq(newIndex).find('._content3_slide_title_box').animate({
+                            opacity: 1,
+                            left: 0
+                        }, function() {
+                            $('._content3_slide').eq(newIndex).find('._content3_slide_person_box').animate({
+                                opacity: 1,
+                                right: 0
+                            })
+                        })
+                        $('._content3_slide').eq(oldIndex).find('._content3_slide_title_box').animate({
+                            opacity: 0,
+                            left: -50
+                        }, function() {
+                            $('._content3_slide').eq(oldIndex).find('._content3_slide_person_box').animate({
+                                opacity: 0,
+                                right: 50
+                            })
+                        })
                     }
                 });
                 //content3 slide img end
             })
+
         </script>
     </div>
 </body>
+
 </html>
