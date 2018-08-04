@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="../js/jquery-latest.min.js"></script>
     <script src="../js/common.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
 </head>
 
 <body>
@@ -121,24 +122,19 @@
                         <h3 class="_company_content_title">건축</h3>
                         <div class="_tab_area">
                             <ul class="_lsts">
-                                <li class="_lst"><a href="" class="_lst_btn active">전체</a></li>
-                                <li class="_lst"><a href="" class="_lst_btn">업무시설</a></li>
-                                <li class="_lst"><a href="" class="_lst_btn">교육ㆍ문화시설</a></li>
-                                <li class="_lst"><a href="" class="_lst_btn">산업ㆍ판매시설</a></li>
-                                <li class="_lst"><a href="" class="_lst_btn">기타시설</a></li>
+                                <li class="_lst"><a href="business_architecture.html" class="_lst_btn active">전체</a></li>
+                                <li class="_lst"><a href="_architecture/_architecture_th.html" class="_lst_btn">업무시설</a></li>
+                                <li class="_lst"><a href="_architecture/_architecture_bi.html" class="_lst_btn">교육ㆍ문화시설</a></li>
+                                <li class="_lst"><a href="_architecture/_architecture_in.html" class="_lst_btn">산업ㆍ판매시설</a></li>
+                                <li class="_lst"><a href="_architecture/_architecture_ot.html" class="_lst_btn">기타시설</a></li>
                             </ul>
                         </div>
                         <div class="_search_area">
                             <div class="_search_box">
                                 <table>
                                     <caption>
-                                        토목 검색 | 공사기간, 지역, 키워드(으)로 구성되어있습니다. 
+                                        토목 검색 | 공사기간, 지역으로 구성되어있습니다.
                                     </caption>
-                                    <colgroup>
-                                        <col style="width: 130px">
-                                        <col style="width: 428px">
-                                        <col style="width: 118px">
-                                    </colgroup>
                                     <tbody>
                                         <tr>
                                             <th scope="row">공사기간</th>
@@ -164,27 +160,689 @@
                                                     </ul>
                                                 </div>
                                             </td>
-                                            <td colspan="2">
-                                                <div class="_checkBox_area">
-                                                    <ul>
-                                                        <li><span class="_inp_check"><input type="checkbox" name="stype2" id="keyword2" value="1"><label class="keyword2" for="keyword2"><span class="_icon">대표실적</span></label></span></li>
-                                                    </ul>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">키워드</th>
-                                            <td colspan="3">
-                                                <div class="_input_box">
-                                                    <input type="text" name="search" class="input_text" placeholder="검색어를 입력해주세요" title="키워드 입력">
-                                                    <button class="_btn _btn_search">
-                                                        <span class="_icon">키워드 검색</span>
-                                                    </button>
-                                                </div>
-                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
+                            </div>
+                        </div>
+                        <div class="_content_container">
+                            <div class="_content_wrap">
+                                <div id="_content_lsts" class="grid">
+                                    <div id="_content_lst01" class="grid-item th">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor _active">주요 실적</span>
+                                                <img src="../imgs/bi/bi_arch/th_%EA%B3%A0%EB%A0%A4%EC%95%84%EC%B9%B4%EB%8D%B0%EB%AF%B8%ED%85%94%201%20.jpg" class="rel" alt="고려아케데미텔">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">고려아카데미텔Ⅰ</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst02" class="grid-item bi">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor _active">주요 실적</span>
+                                                <img src="../imgs/bi/bi_arch/bi_%EB%A7%8C%EC%95%88%EC%B2%AD%EC%86%8C%EB%85%84%EC%88%98%EB%A0%A8%EA%B4%80%EA%B1%B4%EB%A6%BD%EA%B3%B5%EC%82%AC01.jpg" class="rel" alt="안양 만안 청소년수련관">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">안양 만안 청소년수련관</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst03" class="grid-item in">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor _active">주요 실적</span>
+                                                <img src="../imgs/bi/bi_arch/in_%EA%B0%80%EC%82%B0%20%EB%94%94%EC%A7%80%ED%84%B8%20%EC%97%A0%ED%8C%8C%EC%9D%B4%EC%96%B401.jpg" class="rel" alt="가산 디지털 엠파이어 지식산업센터">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">가산 디지털 엠파이어 지식산업센터</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst04" class="grid-item ot">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor _active">주요 실적</span>
+                                                <img src="../imgs/bi/bi_arch/ot_%ED%95%9C%EA%B5%AD%EB%A7%88%EC%82%AC%ED%9A%8C%20%EA%B4%80%EB%9E%8C%EB%8C%80%20%EC%A6%9D%EC%B6%95%EA%B3%B5%EC%82%AC01.jpg" class="rel" alt="과천경마장 관람대">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">과천경마장 관람대</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst05" class="grid-item th">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor _active">주요 실적</span>
+                                                <img src="../imgs/bi/bi_arch/th_%EC%9D%B8%EC%B2%9C%EB%B2%95%EC%9B%90%EC%B2%AD%EC%82%AC01.jpg" class="rel" alt="인천법원청사">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">인천법원청사</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst06" class="grid-item bi">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor _active">주요 실적</span>
+                                                <img src="../imgs/bi/bi_arch/bi_%EC%B2%9C%EC%95%88%EC%A2%85%ED%95%A9%EB%AC%B8%ED%99%94%EC%98%88%EC%88%A0%ED%9A%8C%EA%B4%8001.jpg" class="rel" alt="천안종합문화예술회관">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">천안종합문화예술회관</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst07" class="grid-item in">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor _active">주요 실적</span>
+                                                <img src="../imgs/bi/bi_arch/in_%EC%9D%B4%EC%B2%9C%EB%8D%95%ED%8F%89%EB%AC%BC%EB%A5%98%EC%84%BC%ED%84%B0.jpg" class="rel" alt="이천덕평물류센터">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">이천덕평물류센터</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst08" class="grid-item ot">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor _active">주요 실적</span>
+                                                <img src="../imgs/bi/bi_arch/ot_%ED%85%8C%EB%94%98%EC%9B%8C%ED%84%B0%ED%8C%8C%ED%81%AC%20%EB%B0%8F%20%EC%BD%98%EB%8F%84.jpg" class="rel" alt="테딘워터파크 및 콘도(천안종합휴양관광지)">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">테딘워터파크 및 콘도(천안종합휴양관광지)</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst09" class="grid-item bi">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor">주요 실적</span>
+                                                <img src="../imgs/bi/bi_arch/bi_%EA%B2%BD%EC%B0%B0%EC%B2%AD%EC%96%B4%EB%A6%B0%EC%9D%B4%EC%A7%91.jpg" class="rel" alt="경찰관서직장어린이집">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">경찰관서직장어린이집</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst44" class="grid-item in">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor">주요 실적</span>
+                                                <img src="../../imgs/bi/bi_arch/in_%EC%8B%A0%EA%B0%88%EA%B8%B0%ED%9D%A5%EC%97%AD%EC%82%AC_01.jpg" class="rel" alt="신갈기흥역사(구갈역사)">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">신갈기흥역사(구갈역사)</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst45" class="grid-item in">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor">주요 실적</span>
+                                                <img src="../../imgs/bi/bi_arch/in_%EC%B6%98%EC%9D%98%ED%85%8C%ED%81%AC%EB%85%B8%ED%8C%8C%ED%81%AC1-1.jpg" class="rel" alt="춘의동테크노파크">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">춘의동테크노파크</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst10" class="grid-item bi">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor _active">주요 실적</span>
+                                                <img src="../imgs/bi/bi_arch/bi_%EA%B8%B0%ED%9B%84%EB%B3%80%ED%99%941.jpg" class="rel" alt="기후변화대응실험시설">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">기후변화대응실험시설</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst11" class="grid-item bi">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor">주요 실적</span>
+                                                <img src="../imgs/bi/bi_arch/bi_%EC%83%81%EC%A3%BC%EA%B5%AD%EC%A0%9C%EC%8A%B9%EB%A7%88%EC%9E%A501.jpg" class="rel" alt="상주국제승마장">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">상주국제승마장</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst12" class="grid-item bi">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor">주요 실적</span>
+                                                <img src="../imgs/bi/bi_arch/bi_%EC%83%81%EC%A3%BC%EC%8B%A4%EB%82%B4%EC%B2%B4%EC%9C%A1%EA%B4%80%EA%B1%B4%EB%A6%BD%EA%B3%B5%EC%82%AC01.jpg" class="rel" alt="상주실내체육관">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">상주실내체육관</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst13" class="grid-item bi">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor">주요 실적</span>
+                                                <img src="../imgs/bi/bi_arch/bi_%EC%A0%9C3%EA%B3%B5%EB%AC%B4%EC%9B%90%EC%88%98%EB%A0%A8%EC%9B%9001.jpg" class="rel" alt="서울시 제3공무원수련원">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">서울시 제3공무원수련원</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst14" class="grid-item bi">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor _active">주요 실적</span>
+                                                <img src="../imgs/bi/bi_arch/bi_%ED%99%94%EC%84%B1%EB%AA%A8%EB%91%90%EB%88%84%EB%A6%BC%EC%84%BC%ED%84%B0.jpg" class="rel" alt="화성모두누림센터">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">화성모두누림센터</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst15" class="grid-item in">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor">주요 실적</span>
+                                                <img src="../imgs/bi/bi_arch/in_%EC%88%98%EC%9B%90%20%EB%94%94%EC%A7%80%ED%84%B8%20%EC%97%A0%ED%8C%8C%EC%9D%B4%EC%96%B4II%20%EC%8B%A0%EC%B6%95%EA%B3%B5%EC%82%AC01.jpg" class="rel" alt="수원 디지털 엠파이어II">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">수원 디지털 엠파이어II</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst16" class="grid-item in">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor">주요 실적</span>
+                                                <img src="../imgs/bi/bi_arch/in_%EC%88%98%EC%9B%90%20%EC%8B%A0%EB%8F%99%20%EC%95%84%ED%8C%8C%ED%8A%B8%ED%98%95%EA%B3%B5%EC%9E%A5%20%EC%8B%A0%EC%B6%95%EA%B3%B5%EC%82%AC01.jpg" class="rel" alt="수원 디지털 엠파이어 II 지식산업센터">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">수원 디지털 엠파이어 II 지식산업센터</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst17" class="grid-item in">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor _active">주요 실적</span>
+                                                <img src="../imgs/bi/bi_arch/in_%EC%9D%B8%EB%8D%95%EC%9B%90%20%EB%94%94%EC%A7%80%ED%84%B8%EC%97%A0%ED%8C%8C%EC%9D%B4%EC%96%B401.jpg" class="rel" alt="인덕원 디지털엠파이어 지식산업센터">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">인덕원 디지털엠파이어 지식산업센터</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst18" class="grid-item in">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor _active">주요 실적</span>
+                                                <img src="../imgs/bi/bi_arch/in_%EC%9D%B8%EC%B2%9C%EA%B2%80%EB%8B%A8%EC%A7%80%EC%8B%9D%EC%82%B0%EC%97%85%EC%84%BC%ED%84%B0.jpg" class="rel" alt="인천검단지식산업센터">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">인천검단지식산업센터</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst26" class="grid-item th">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor _active">주요 실적</span>
+                                                <img src="../imgs/bi/bi_arch/th_%EB%8C%80%ED%95%9C%EA%B5%90%EC%9B%90%EA%B3%B5%EC%A0%9C%ED%9A%8C%20%EB%8C%80%EC%A0%84%ED%9A%8C%EA%B4%80%20%EC%8B%A0%EC%B6%95%EA%B3%B5%EC%82%AC01.jpg" class="rel" alt="대한교원공제회 대전회관">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">대한교원공제회 대전회관</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst27" class="grid-item th">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor">주요 실적</span>
+                                                <img src="../imgs/bi/bi_arch/th_%EB%AC%B8%EC%A0%95%EB%8F%99%EC%98%A4%ED%94%BC%EC%8A%A4.jpg" class="rel" alt="문정동오피스">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">문정동오피스</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst19" class="grid-item in">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor">주요 실적</span>
+                                                <img src="../imgs/bi/bi_arch/in_%ED%8F%89%EC%B4%8C%EB%94%94%EC%A7%80%ED%84%B8%EC%97%A0%ED%8C%8C%EC%9D%B4%EC%96%B4.jpg" class="rel" alt="평촌디지털엠파이어">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">평촌디지털엠파이어</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst20" class="grid-item ot">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor _active">주요 실적</span>
+                                                <img src="../imgs/bi/bi_arch/ot_%EC%97%AC%EC%88%98%ED%9E%88%EB%93%A0%EB%B2%A0%EC%9D%B4%ED%98%B8%ED%85%94.jpg" class="rel" alt="여수히든베이호텔(여수연도관광호텔)">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">여수히든베이호텔(여수연도관광호텔)</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst21" class="grid-item ot">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor">주요 실적</span>
+                                                <img src="../imgs/bi/bi_arch/ot_%EC%97%B0%EA%B8%B0%EC%9D%B8%EC%B2%9C%EB%B3%91%EC%98%811.jpg" class="rel" alt="연기인천병영시설">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">연기인천병영시설</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst22" class="grid-item ot">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor">주요 실적</span>
+                                                <img src="../imgs/bi/bi_arch/ot_%EC%9A%A9%EC%9D%B8%ED%99%94%EC%84%B1%EB%B3%91%EC%98%81.jpg" class="rel" alt="용인화성병영영시설">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">용인화성병영영시설</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst23" class="grid-item ot">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor _active">주요 실적</span>
+                                                <img src="../imgs/bi/bi_arch/ot_%EC%9A%B0%EB%A6%AC%EB%93%A4%EA%B5%90%ED%9A%8C%ED%8C%90%EA%B5%90%EC%84%B1%EC%A0%841.jpg" class="rel" alt="우리들교회판교성전">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">우리들교회판교성전</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst42" class="grid-item in">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor">주요 실적</span>
+                                                <img src="../../imgs/bi/bi_arch/in_%EB%94%94%EC%A7%80%ED%84%B8%EC%97%A0%ED%8C%8C%EC%9D%B4%EC%96%B4-01.jpg" class="rel" alt="수원 디지털 엠파이어Ⅰ 지식산업센터">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">수원 디지털 엠파이어Ⅰ 지식산업센터</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst43" class="grid-item in">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor">주요 실적</span>
+                                                <img src="../../imgs/bi/bi_arch/in_%EC%82%AC%EB%8B%B9%EB%8F%99%EC%A3%BC%EC%83%81%EB%B3%B5%ED%95%A901.jpg" class="rel" alt="사당동 골든시네마">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">사당동 골든시네마</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst24" class="grid-item ot">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor">주요 실적</span>
+                                                <img src="../imgs/bi/bi_arch/ot_%ED%95%B4%EB%B3%91%EB%8C%80%ED%8F%AC%ED%95%AD%EB%B3%91%EC%98%81.jpg" class="rel" alt="해병대포항병영시설">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">해병대포항병영시설</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst37" class="grid-item bi">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor">주요 실적</span>
+                                                <img src="../imgs/bi/bi_arch/bi_%EB%B0%B1%EB%82%A8%EC%A4%80%EB%AF%B8%EC%88%A0%EA%B4%80%20%EA%B1%B4%EB%A6%BD%EA%B3%B5%EC%82%AC(%EA%B3%B5%EB%8F%99%EB%8F%84%EA%B8%89)01.jpg" class="rel" alt="백남준미술관">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">백남준미술관</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst55" class="grid-item ot">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor">주요 실적</span>
+                                                <img src="../../imgs/bi/bi_arch/ot_%EC%9B%90%EA%B4%91%EB%8C%80%ED%95%99%EA%B5%90%20%EA%B5%B0%ED%8F%AC%EB%B3%91%EC%9B%90%20%EC%8B%A0%EC%B6%95%EA%B3%B5%EC%82%AC01.jpg" class="rel" alt="원광대학교 군포병원">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">원광대학교 군포병원</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst56" class="grid-item ot">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor">주요 실적</span>
+                                                <img src="../../imgs/bi/bi_arch/ot_%EC%9C%A1%EA%B5%B0%ED%99%94%EC%B2%9C%EB%B3%91%EC%98%81.jpg" class="rel" alt="육군 화천병영시설">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">육군 화천병영시설</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst38" class="grid-item bi">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor">주요 실적</span>
+                                                <img src="../imgs/bi/bi_arch/bi_%EB%85%B8%EB%9F%89%EC%A7%84%20%EC%95%84%EC%9D%B4%EB%B9%84%EB%B9%8C%EB%94%A9%20%EC%8B%A0%EC%B6%95%EA%B3%B5%EC%82%AC01.jpg" class="rel" alt="노량진 아이비빌딩">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">노량진 아이비빌딩</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst25" class="grid-item th">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor _active">주요 실적</span>
+                                                <img src="../imgs/bi/bi_arch/th_%EA%B6%8C%EC%84%A0%EB%8F%99%EC%A7%80%EC%98%A4%EB%B2%A0%EB%A5%B4%ED%81%AC01.jpg" class="rel" alt="수원 권선동 지오베르크">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">수원 권선동 지오베르크</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst53" class="grid-item ot">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor">주요 실적</span>
+                                                <img src="../../imgs/bi/bi_arch/ot_%EC%97%B0%EC%84%B8-%ED%95%9C%EC%A0%84%20%EC%82%B0%ED%95%99%ED%98%91%EB%8F%99%EC%97%B0%EA%B5%AC%EA%B4%80%20%EC%8B%A0%EC%B6%95%EA%B3%B5%EC%82%AC01.jpg" class="rel" alt="연세-한전 산학협동연구관">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">연세-한전 산학협동연구관</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst54" class="grid-item ot">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor">주요 실적</span>
+                                                <img src="../../imgs/bi/bi_arch/ot_%EC%9A%B8%EC%A7%84%EC%9B%90%EC%A0%84%20%ED%9B%88%EB%A0%A8%EC%84%BC%ED%84%B0.jpg" class="rel" alt="울진 표준형 원전 모의훈련동">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">울진 표준형 원전 모의훈련동</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst28" class="grid-item th">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor">주요 실적</span>
+                                                <img src="../imgs/bi/bi_arch/th_%EC%9A%A9%EC%9D%B8%EC%83%81%EA%B3%B5%ED%9A%8C%EC%9D%98%EC%86%8C%20%ED%9A%8C%EA%B4%80%20%EC%8B%A0%EC%B6%95%EA%B3%B5%EC%82%AC01.jpg" class="rel" alt="용인상공회의소 회관">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">용인상공회의소 회관</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst29" class="grid-item th">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor">주요 실적</span>
+                                                <img src="../imgs/bi/bi_arch/th_%EA%B3%A0%EB%A0%A4%EC%95%84%EC%B9%B4%EB%8D%B0%EB%AF%B8%ED%85%94%202.jpg" class="rel" alt="고려아카데미텔Ⅱ">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">고려아카데미텔Ⅱ</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst57" class="grid-item ot">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor">주요 실적</span>
+                                                <img src="../../imgs/bi/bi_arch/ot_%EC%A0%84%EA%B3%A1.jpg" class="rel" alt="육군전곡포천관사">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">육군전곡포천관사</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst58" class="grid-item ot">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor">주요 실적</span>
+                                                <img src="../../imgs/bi/bi_arch/ot_%EC%B2%9C%EC%95%88%EC%9E%84%EC%8B%9C%EC%97%AD%EC%82%AC01.jpg" class="rel" alt="천안임시역사">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">천안임시역사</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst30" class="grid-item th">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor">주요 실적</span>
+                                                <img src="../imgs/bi/bi_arch/th_%EB%B6%84%EB%8B%B9%EC%95%BC%ED%83%91%EC%98%A4%ED%94%BC%EC%8A%A401.jpg" class="rel" alt="분당야탑오피스">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">분당야탑오피스</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst31" class="grid-item th">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor">주요 실적</span>
+                                                <img src="../imgs/bi/bi_arch/th_%EC%95%88%EC%96%91%EB%8F%84%EC%A0%95%EC%98%A4%ED%94%BC%EC%8A%A4%ED%85%9401.jpg" class="rel" alt="안양도정오피스텔">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">안양도정오피스텔</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst51" class="grid-item ot">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor">주요 실적</span>
+                                                <img src="../../imgs/bi/bi_arch/ot_%EC%8B%A0%EB%B6%80%ED%8F%89%EB%B3%80%EC%A0%84%EC%86%8C%20%ED%86%A0%EA%B1%B4%EA%B3%B5%EC%82%AC01.jpg" class="rel" alt="345kv 신부평변전소">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">345kv 신부평변전소</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst52" class="grid-item ot">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor">주요 실적</span>
+                                                <img src="../../imgs/bi/bi_arch/ot_%EC%96%91%EC%82%B0%EA%B3%B5%EC%84%A4%EC%9A%B4%EB%8F%99%EC%9E%A5_%ED%95%AD%EA%B3%B5.jpg" class="rel" alt="양산공설운동장 주경기장 및 관람석">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">양산공설운동장 주경기장 및 관람석</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst32" class="grid-item th">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor">주요 실적</span>
+                                                <img src="../imgs/bi/bi_arch/th_%EC%9A%A9%EC%82%B0%EC%82%AC%EC%98%A5.jpg" class="rel" alt="고려개발 용산사옥">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">고려개발 용산사옥</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst40" class="grid-item in">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor">주요 실적</span>
+                                                <img src="../../imgs/bi/bi_arch/in_%EA%B5%B0%EC%82%B0%EA%B3%B5%EC%9E%A501.jpg" class="rel" alt="대림 C&S 군산공장">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">대림 C&S 군산공장</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst59" class="grid-item ot">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor">주요 실적</span>
+                                                <img src="../../imgs/bi/bi_arch/ot_%ED%94%84%EB%A6%AC%EC%8A%A4%ED%8B%B4%20%EB%B0%B8%EB%A6%AC%20%EC%A1%B0%EC%84%B1%EA%B3%B5%EC%82%AC01.jpg" class="rel" alt="가평 프리스틴밸리 골프장 클럽하우스">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">가평 프리스틴밸리 골프장 클럽하우스</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst60" class="grid-item ot">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor">주요 실적</span>
+                                                <img src="../../imgs/bi/bi_arch/ot_%ED%99%8D%EC%B2%9C%EC%9D%B8%EC%A0%9C%EA%B4%80%EC%82%AC%EB%B3%91%EC%98%81.jpg" class="rel" alt="홍천인제관사 및 병영시설">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">홍천인제관사 및 병영시설</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst41" class="grid-item in">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor">주요 실적</span>
+                                                <img src="../../imgs/bi/bi_arch/in_%EB%85%B8%EB%9F%89%EC%A7%84%EC%9D%B4%EB%8D%B0%EC%95%84%EB%B9%8C%EB%94%A901.jpg" class="rel" alt="노량진이데아빌딩">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">노량진이데아빌딩</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst61" class="grid-item ot">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor">주요 실적</span>
+                                                <img src="../../imgs/bi/bi_arch/ot_%ED%99%94%EC%B2%9C%EC%96%91%EA%B5%AC%EB%B3%91%EC%98%81.jpg" class="rel" alt="육군 화천·양구 병영시설">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">육군 화천·양구 병영시설</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst33" class="grid-item th">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor">주요 실적</span>
+                                                <img src="../imgs/bi/bi_arch/th_%EC%A4%91%EA%B3%84%EB%8F%99%EB%B3%B5%ED%95%A9%EB%B9%8C%EB%94%A901.jpg" class="rel" alt="중계동복합빌딩">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">중계동복합빌딩</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst34" class="grid-item bi">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor">주요 실적</span>
+                                                <img src="../imgs/bi/bi_arch/bi_%EA%B3%B5%EC%A3%BC%EB%8C%80%ED%95%99%EA%B5%90%20%EC%82%B0%EC%97%85%EA%B3%BC%ED%95%99%EB%8C%80%ED%95%99%20%EC%9D%B4%EC%A0%84%EC%8B%A0%EC%B6%95%20%EB%B0%8F%20%ED%86%A0%EB%AA%A9%EA%B3%B5%EC%82%AC01.jpg" class="rel" alt="공주대학교 산업과학대학 이전신축">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">공주대학교 산업과학대학 이전신축</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst46" class="grid-item in">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor">주요 실적</span>
+                                                <img src="../../imgs/bi/bi_arch/in_%EC%B6%98%EC%9D%98%ED%85%8C%ED%81%AC%EB%85%B8%ED%8C%8C%ED%81%AC2-1.jpg" class="rel" alt="춘의테크노파크Ⅱ">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">춘의테크노파크Ⅱ</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst47" class="grid-item in">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor">주요 실적</span>
+                                                <img src="../../imgs/bi/bi_arch/in_%ED%8C%90%EA%B5%90%EC%83%81%EC%97%85%EC%8B%9C%EC%84%A401.jpg" class="rel" alt="판교상업시설">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">판교상업시설</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst49" class="grid-item ot">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor">주요 실적</span>
+                                                <img src="../../imgs/bi/bi_arch/ot_%EA%B3%B5%EA%B5%B0%EC%88%98%EC%9B%90%EA%B4%80%EC%82%AC1.jpg" class="rel" alt="공군수원관사">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">공군수원관사</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst50" class="grid-item ot">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor">주요 실적</span>
+                                                <img src="../../imgs/bi/bi_arch/ot_%EB%B6%80%EC%82%B0%ED%8F%AC%ED%95%AD%EA%B4%80%EC%82%AC1.jpg" class="rel" alt="부산포항관사 및 병영시설">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">부산포항관사 및 병영시설</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst48" class="grid-item in">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor">주요 실적</span>
+                                                <img src="../../imgs/bi/bi_arch/in_%ED%95%B4%EC%9A%B4%EB%8C%80%EC%A2%8C%EB%8F%99%EB%B3%B5%ED%95%A901.jpg" class="rel" alt="해운대 ZIPOP">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">해운대 ZIPOP</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst35" class="grid-item bi">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor">주요 실적</span>
+                                                <img src="../imgs/bi/bi_arch/bi_%EA%B5%AD%EC%A0%9C%EC%B2%AD%EC%86%8C%EB%85%84%EC%84%BC%ED%83%80%20%EC%8B%A0%EC%B6%95%EA%B3%B5%EC%82%AC01.jpg" class="rel" alt="국제청소년센터">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">국제청소년센터</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst36" class="grid-item bi">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor">주요 실적</span>
+                                                <img src="../imgs/bi/bi_arch/bi_%ED%99%8D%EC%9D%B5%EB%8C%80%20%EC%A1%B0%EC%B9%98%EC%9B%90%EC%BA%A0%ED%8D%BC%EC%8A%A4%20%EA%B8%B0%EC%88%99%EC%82%AC%20%EB%B0%8F%20%EB%B6%80%EB%8C%80%EC%8B%9C%EC%84%A4%20%EC%A6%9D%EC%B6%95%EA%B3%B5%EC%82%AC01.jpg" class="rel" alt="홍익대 조치원캠퍼스 기숙사 및 부대시설">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">홍익대 조치원캠퍼스 기숙사 및 부대시설</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div id="_content_lst39" class="grid-item bi">
+                                        <a href="#">
+                                            <figure class="_img_box">
+                                                <span class="_icon _icon_impor">주요 실적</span>
+                                                <img src="../imgs/bi/bi_arch/bi_%EB%8C%80%EB%A6%BC%EC%82%B0%EC%97%85%20%EB%8C%80%EB%8D%95%20%EC%84%9D%EC%9C%A0%ED%99%94%ED%95%99%EC%97%B0%EA%B5%AC%EC%86%8C.jpg" class="rel" alt="대덕연구소">
+                                            </figure>
+                                            <div class="_cont_txt">
+                                                <h4 class="_title">대덕연구소</h4>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="_content_more_box">
+                                <button class="_btn _btn_more"><p>더보기</p><span class="_icon _icon_more"></span></button>
                             </div>
                         </div>
                     </div>
@@ -255,8 +913,6 @@
             </div>
         </footer>
     </div>
-    <script>
-    </script>
 </body>
 
 </html>

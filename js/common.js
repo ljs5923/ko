@@ -81,11 +81,53 @@ jQuery(function ($) {
     //_btn_area event start
     $('._tab_area ._lsts ._lst').hover(
         function () {
-            $(this).find('a').addClass('_active');
+            $(this).find('._lst_btn').addClass('_active');
         },
         function () {
-            $(this).find('a').removeClass('_active');
+            $(this).find('._lst_btn').removeClass('_active');
         }
     )
     //_btn_area event end
+    //_tab_radio_area event start
+    $('._tab_radio_area ul li button').hover(
+        function () {
+            $(this).find('span').addClass('_active');
+        },
+        function () {
+            $(this).find('span').removeClass('_active');
+        }
+    )
+    //_tab_radio_area event end
+    //grid _cont_txt event start
+    $('.grid-item').hover(
+        function () {
+            $(this).find('._cont_txt').addClass('_active');
+        },
+        function () {
+            $(this).find('._cont_txt').removeClass('_active');
+        }
+    )
+    //grid _cont_txt event end
+    //grid event start
+    var $gird = $('.grid').masonry({
+        itemSelector: '.grid-item',
+        columnWidth: 282,
+        gutter: 24
+    });
+    $gird.imagesLoaded().progress(function () {
+        $gird.masonry('layout');
+    })
+    var moreIndex = 1
+    var gridIndex = Math.ceil($('grid-item').length / 8);
+    $('._btn_more').on('click', function () {
+        for (i = 0; i < 8; i++) {
+            $('.grid-item').eq(i + (moreIndex * 8)).fadeIn();
+        }
+        $gird.masonry('layout');
+        if (gridIndex == moreIndex) {
+            return false;
+        }
+        ++moreIndex;
+    })
+    //grid event end
 }); //jQuery End
