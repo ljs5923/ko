@@ -68,9 +68,6 @@ jQuery(function ($) {
     })
     //FAMILY SITE open end
     //company_information_header event start
-    $('._header_gnb_lst').on('click', function () {
-        $(this).addClass('_active').siblings().removeClass('_active');
-    });
     $(window).on('scroll', function () {
         var winHT = $(window).scrollTop();
         var headerTopH = $('._header_top').height();
@@ -81,7 +78,7 @@ jQuery(function ($) {
         }
     });
     //company_information_header event end
-    //company_relative_gnb event start
+    //_btn_area event start
     $('._tab_area ._lsts ._lst').hover(
         function () {
             $(this).find('a').addClass('_active');
@@ -90,5 +87,5 @@ jQuery(function ($) {
             $(this).find('a').removeClass('_active');
         }
     )
-    //company_relative_gnb event end
+    //_btn_area event end
 }); //jQuery End
