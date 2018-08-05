@@ -634,3 +634,31 @@ footer{position:relative;z-index:10}
 #_company_content ._company_content_container._business_arch ._content_more_box ._btn_more ._icon_more{display: inline-block;position: absolute;top: 0;right: 0;width: 29px;height: 29px;vertical-align: top;text-indent: -9999px;background-image: url(../imgs/common.png);background-position: 0 -148px}
 #_company_content ._company_content_container._business_arch ._content_more_box ._btn_more ._icon_more:before{content: '';position: absolute;top: 0;right: 0;width: 29px;height: 29px;background-image: url(../imgs/common.png);background-position: 0 -192px;transition: all 0.3s ease}
 #_company_content ._company_content_container._business_arch ._content_more_box ._btn_more:hover ._icon_more:before{top: 5px}
+/* _ethical_management01 */
+#_company_wrap ._company_header_wrap ._header_top._ethical{background-image: url(../imgs/sm/bg_spot_sm.jpg)}
+#_company_content ._company_content_container._ethical{margin-bottom: 0}
+#_company_content ._company_content_container._ethical ._tab_area{width: 601px;margin: 0 auto}
+#_company_wrap ._company_content_container._ethical ._content_container{width: 1200px;margin: 0 auto;margin-top: 50px}
+#_company_wrap ._company_content_container._ethical ._content_container ._info_wrap{position: relative;padding-top: 60px;border-top: 2px solid #012b5d}
+#_company_wrap ._company_content_container._ethical ._content_container ._info_wrap ._info_title{position: absolute;top: 60px;left: 0;width: 295px;line-height: 1em;font-size: 28px;color: #222}
+#_company_wrap ._company_content_container._ethical ._content_container ._info_wrap ._info_txt{padding-left: 305px;}
+#_company_wrap ._company_content_container._ethical ._content_container ._info_wrap ._info_txt ._txt{margin-top: -5px;line-height: 26px;font-size: 16px;color: #555}
+#_company_wrap ._company_content_container._ethical ._content_container ._content_wrap{position: relative;margin-top: 55px}
+#_company_wrap ._company_content_container._ethical ._content_container ._content_wrap ._content_title{position: absolute;top: 50%;left: 0;width: 266px;height: 266px;margin-top: -113px;line-height: 1em;font-size: 26px;color: #012b5d;background-image: url(../imgs/sm/sm.png);background-position: 0 -1261px}
+#_company_wrap ._company_content_container._ethical ._content_container ._content_wrap ._content_title span{position: absolute;top: 168px;left: 0;width: 100%;text-align: center}
+#_company_wrap ._company_content_container._ethical ._content_container ._content_wrap ._content_lsts{padding-left: 483px}
+#_company_wrap ._company_content_container._ethical ._content_container ._content_wrap ._content_lsts li{position: relative;display: inline-block;width: 100%;margin-top: 40px;padding: 40px;vertical-align: top;border: 2px solid #dedee1;box-sizing: border-box}
+#_company_wrap ._company_content_container._ethical ._content_container ._content_wrap ._content_lsts li._lst01{margin-top: 0}
+#_company_wrap ._company_content_container._ethical ._content_container ._content_wrap ._content_lsts li:before{content: '';position: absolute;top: 50%;left: -120px;width: 123px;height: 220px;background-image: url(../imgs/sm/sm.png)}
+#_company_wrap ._company_content_container._ethical ._content_container ._content_wrap ._content_lsts li._lst01:before{margin-top: -4px;background-position: 0 -1542px}
+#_company_wrap ._company_content_container._ethical ._content_container ._content_wrap ._content_lsts li._lst02:before{left: -220px;width: 223px;height: 230px;margin-top: -115px;background-position: 0 -1777px}
+#_company_wrap ._company_content_container._ethical ._content_container ._content_wrap ._content_lsts li._lst03:before{margin-top: -220px;background-position: 0 -2022px}
+#_company_wrap ._company_content_container._ethical ._content_container ._content_wrap ._content_lsts li ._cont_box{width: 330px;padding-right: 10px}
+#_company_wrap ._company_content_container._ethical ._content_container ._content_wrap ._content_lsts li ._cont_box ._lst_title{line-height: 1em;font-size: 22px;color: #012b5d}
+#_company_wrap ._company_content_container._ethical ._content_container ._content_wrap ._content_lsts li ._cont_box ._lst_txt{margin-top: 20px;line-height: 26px;font-size: 16px;color: #555}
+#_company_wrap ._company_content_container._ethical ._content_container ._content_wrap ._content_lsts li ._download_box{position: absolute;top: 50%;right: 40px;width: 243px;margin-top: -42px}
+#_company_wrap ._company_content_container._ethical ._content_container ._content_wrap ._content_lsts li ._download_box ._btn_download{overflow: hidden;width: 241px;line-height: 46px;font-size: 16px;text-align: center;border-radius: 2px;color: #fff;background-color: #0189b1}
+#_company_wrap ._company_content_container._ethical ._content_container ._content_wrap ._content_lsts li ._download_box ._btn_download:hover span:before{background-position: 0 -2365px}
+#_company_wrap ._company_content_container._ethical ._content_container ._content_wrap ._content_lsts li ._download_box ._btn_download span{position: relative;vertical-align: top;padding-left: 27px}
+#_company_wrap ._company_content_container._ethical ._content_container ._content_wrap ._content_lsts li ._download_box ._btn_download span:before{content: '';position: absolute;top: 0;left: 0;width: 17px;height: 16px;vertical-align: top;background-image: url(../imgs/sm/sm.png);background-position: 0 -2367px;transition: all 0.3s ease}
+#_company_wrap ._company_content_container._ethical ._content_container ._content_wrap ._content_lsts li ._download_box ._date_txt{display: block;margin-top: 10px;line-height: 26px;font-size: 16px;text-align: center}
