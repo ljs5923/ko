@@ -10,16 +10,17 @@ jQuery(function(){
         $gird.masonry('layout');
     })
     var moreIndex = 1
-    var gridIndex = Math.ceil($('grid-item').length / 8);
+    var gridIndex = Math.ceil($('.grid-item').length / 8);
     $('._btn_more').on('click', function () {
         for (i = 0; i < 8; i++) {
             $('.grid-item').eq(i + (moreIndex * 8)).fadeIn();
         }
         $gird.masonry('layout');
-        if (gridIndex == moreIndex) {
-            return false;
-        }
         ++moreIndex;
+        if (gridIndex==moreIndex) {
+            $('._content_more_box').hide();
+//            return false;            
+        }
     })
     //grid event end
 });
