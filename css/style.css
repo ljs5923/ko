@@ -16,7 +16,7 @@ em{font-style: normal}
 /* common */
 .clearfix:after{display:block;clear:both;content:''}
 .rel{width:100%;height:100%}
-._company_content_title{display:block;margin-top:80px;padding-bottom:60px;font-size:44px;color:#012b5d;text-align:center}
+._company_content_title{display:block;margin-top:80px;padding-bottom:60px;font-size:40px;color:#012b5d;text-align:center}
 /* layout */
 #wrap{width:100%;min-width:1200px}
 header{position:absolute;z-index:60}
@@ -202,7 +202,7 @@ footer{position:relative;z-index:10}
 ._content4_normal_notice_textBox ._content4_normal_notice_date{display:block;margin-top:25px;font-weight:bold;font-size:16px;line-height:0.8;color:#012b5d}
 /* main footer */
 #_footer{margin-top:150px;background-color:#011d3f}
-#_footer ._footer_content_wrap{width:1200px;margin:0 auto;padding:60px 0}
+#_footer ._footer_content_wrap{width:1200px;margin:0 auto;padding:50px 0}
 ._footer_content_wrap ._footer_top{display:inline-block;overflow:hidden;position:relative;width:100%;height:100px;border-bottom:1px solid #1b3453}
 ._footer_content_wrap ._footer_address_box{float:left}
 ._footer_address_box ._footer_logo_wrap{display:inline-block;width:154px;height:25px;background-image:url(../imgs/common.png);background-position:0 -72px;text-indent:-9999px}
@@ -646,6 +646,7 @@ footer{position:relative;z-index:10}
 #_company_content ._company_content_container._sm ._info_wrap ._info_txt ._btn_box ._btn_popup{display: inline-block;overflow: hidden;position: relative;padding: 0 45px 0 30px;line-height: 46px;font-size: 16px;font-weight: bold;text-align: center;vertical-align: top;color: #555;border: 1px solid #dedee1;border-radius: 2px}
 #_company_content ._company_content_container._sm ._info_wrap ._info_txt ._btn_box ._btn_popup:before{content: '';position: absolute;top: 19px;right: 30px;width: 5px;height: 10px;background-image: url(../imgs/sm/sm.png);background-position: 0 -25px;transition: right 0.3s ease}
 #_company_content ._company_content_container._sm ._info_wrap ._info_txt ._btn_box ._btn_popup:hover:before{right: 25px}
+#_company_content ._company_content_container ._content_box_title{line-height: 1em;font-size: 26px;color: #222;text-align: center}
 /* _ethical_management01 */
 #_company_content ._company_content_container._ethical01 ._content_box{position: relative;margin-top: 55px}
 #_company_content ._company_content_container._ethical01 ._content_box ._content_title{position: absolute;top: 50%;left: 0;width: 266px;height: 266px;margin-top: -113px;line-height: 1em;font-size: 26px;color: #012b5d;background-image: url(../imgs/sm/sm.png);background-position: 0 -1261px}
@@ -727,7 +728,6 @@ footer{position:relative;z-index:10}
 /*_safety_management02 */
 #_company_content ._company_content_container._safety02 ._content_01{margin-top: 60px;padding: 80px 0;background-color: #f5f7f9}
 #_company_content ._company_content_container._safety02 ._content_01 ._content_box:before{content: '';position: absolute;top: 50%;left: 0;width: 100%;height: 1px;margin-top: -13px;background-color: #dedee1}
-#_company_content ._company_content_container._safety02 ._content_box_title{line-height: 1em;font-size: 26px;color: #222;text-align: center}
 #_company_content ._company_content_container._safety02 ._content_01 ._content_box_lsts{position: relative;display: inline-block;height: 470px;margin-top: 50px;vertical-align: top}
 #_company_content ._company_content_container._safety02 ._content_01 ._content_box_lsts>li{position: absolute;width: 265px;padding-left: 140px}
 #_company_content ._company_content_container._safety02 ._content_01 li._lst01{top: 0;left: 111px}
@@ -761,21 +761,23 @@ footer{position:relative;z-index:10}
 #_company_content ._company_content_container._safety03 ._content_01 ._chart_info ._performance ._icon{width: 10px;height: 10px;background-position: 0px -2398px}
 #_company_content ._company_content_container._safety03 ._content_01 ._chart_info ._average ._icon{width: 26px;height: 10px;background-position: 0px 0px}
 #_company_content ._company_content_container._safety03 ._content_01 ._img_box{margin-top: 24px}
-#_company_content ._company_content_container._safety03 ._content_01 ._chart_data_table{margin-top: 60px}
+#_company_content ._company_content_container ._content_01 ._chart_data_table{margin-top: 60px}
 #_company_content ._chart_table{border-top: 2px solid #012b5d;border-bottom: 1px solid #dedee1}
-#_company_content ._chart_table table thead tr th{padding: 15px 10px 15px 20px;line-height: 26px;font-size: 16px;text-align: center;vertical-align: top;background-color: #f5f7f9}
-#_company_content ._chart_table table tbody tr th{padding: 15px 10px 15px 20px;line-height: 26px;font-size: 16px;text-align: center;vertical-align: top}
-#_company_content ._chart_table table thead tr th:first-child{border-left: none}
-#_company_content ._chart_table table tbody td{padding: 15px 20px;line-height: 26px;font-size: 16px;text-align: center;color: #555}
-/* _environmental_management */
-#_company_content ._company_content_container._environmental_qulity ._tab_area{width: 301px}
-#_company_content ._company_content_container._environmental_qulity ._tab_area ._lst{width: 50%}
+#_company_content ._chart_table table tr th{padding: 15px 10px 15px 20px;line-height: 26px;font-size: 16px;text-align: center;vertical-align: top;background-color: #f5f7f9;border: 1px solid #dedee1}
+#_company_content ._chart_table table tr td{padding: 15px 20px;line-height: 26px;font-size: 16px;text-align: center;color: #555;border: 1px solid #dedee1}
+#_company_content ._chart_table table tr th:first-child{border-left: none}
+#_company_content ._chart_table table tr th:last-child{border-right: none}
+#_company_content ._chart_table table tr td:first-child{border-left: none}
+#_company_content ._chart_table table tr td:last-child{border-right: none}
+#_company_content ._chart_table table tbody td ._icon{display: inline-block;overflow: hidden;width: 19px;height: 25px;vertical-align: top;text-indent: -999px;background-image: url(../imgs/common.png);background-position: 0 -823px}
+/* _env_qual_tech_soc_management _tab_area*/
+#_company_content ._company_content_container._tab_w_301 ._tab_area{width: 301px}
+#_company_content ._company_content_container._tab_w_301 ._tab_area ._lst{width: 50%}
 /* _environmental_management02 */
 #_company_content ._company_content_container._environmental02_quality02{width: 100%;margin-bottom: -150px}
 #_company_content ._company_content_container._environmental02_quality02 ._info_wrap{width: 1200px;margin: 50px auto 0}
 #_company_content ._company_content_container._environmental02_quality02 ._content_01{margin-top: 60px;padding: 60px 0 150px 0;background-color: #f5f7f9}
 #_company_content ._company_content_container._environmental02_quality02 ._content_box{width: 1150px;margin: 0 auto}
-#_company_content ._company_content_container._environmental02_quality02 ._content_box_title{line-height: 1em;font-size: 26px;text-align: center;color: #222}
 #_company_content ._company_content_container._environmental02_quality02 ._content_box_lsts{display: inline-block;width: 100%;margin-top: 50px;vertical-align: top;background-image: url(../imgs/sm/_env/bg_environmental_management01.gif);background-position: 0 0;background-repeat: no-repeat}
 #_company_content ._company_content_container._environmental02_quality02 ._content_box_lsts li{float: left;width: 150px;margin-top: 307px;padding: 0 10px;text-align: center}
 #_company_content ._company_content_container._environmental02_quality02 ._content_box_lsts li:first-child{width: 140px;padding-left: 0;padding-right: 15px}
@@ -800,3 +802,21 @@ footer{position:relative;z-index:10}
 #_company_content ._company_content_container._environmental02_quality02 ._content_box._quality02 ._content_box_lsts li._lst02 ul li._sub_lst03{top: 150px;left: 600px}
 #_company_content ._company_content_container._environmental02_quality02 ._content_box._quality02 ._content_box_lsts li._lst02 ul li._sub_lst04{top: 290px;left: 460px}
 #_company_content ._company_content_container._environmental02_quality02 ._content_box._quality02 ._content_box_lsts li._lst03 p{display: table-cell;vertical-align: middle}
+/* _technology_management01 */
+#_company_content ._company_content_container._technology01 ._info_wrap ._info_title{width: 0;height: 0;overflow: hidden;text-indent: -9999px}
+#_company_content ._company_content_container._technology01 ._info_wrap ._info_txt{padding: 0;text-align: center}
+#_company_content ._company_content_container._technology01 ._info_wrap ._info_txt ._txt{font-size: 19px;line-height: 30px}
+#_company_content ._company_content_container._technology01 ._content_01{margin-top: 50px;padding-top: 60px;border-top: 1px solid #dedee1}
+#_company_content ._company_content_container._technology01 ._content_01 ._content_box_txt{margin-top: 20px;line-height: 26px;font-size: 16px;color: #555;text-align: center}
+#_company_content ._company_content_container._technology01 ._content_01 ._content_box_lsts{display: inline-block;margin-top: 45px;vertical-align: top}
+#_company_content ._company_content_container._technology01 ._content_01 ._content_box_lst:first-child{margin-left: 0}
+#_company_content ._company_content_container._technology01 ._content_01 ._content_box_lst{float: left;margin-left: 24px}
+#_company_content ._company_content_container._technology01 ._content_01 ._content_box_lst ._lst_head{position: relative}
+#_company_content ._company_content_container._technology01 ._content_01 ._content_box_lst ._lst_head ._lst_subhead{position: absolute;bottom: -60px;left: 30px;min-width: 180px;padding: 0 30px;text-align: center;background-color: #012b5d;box-sizing: border-box}
+#_company_content ._company_content_container._technology01 ._content_01 ._content_box_lst ._lst_head ._lst_subhead em{display: block;line-height: 117px;font-size: 30px;color: #fff}
+#_company_content ._company_content_container._technology01 ._content_01 ._content_box_lst ._lst_cont ul{margin-top: 80px;padding-left: 30px}
+#_company_content ._company_content_container._technology01 ._content_01 ._content_box_lst ._lst_cont ul li{position: relative;padding-left: 11px;line-height: 26px;font-size: 15px;color: #555}
+#_company_content ._company_content_container._technology01 ._content_01 ._content_box_lst ._lst_cont ul li:before{content: "";position: absolute;top: 12px;left: 2px;width: 3px;height: 3px;background-color: #0189b1}
+/* _technology_management01 */
+#_company_content ._company_content_container._technology02 ._content_01 ._chart_data_table{margin-top: 50px}
+#_company_content ._company_content_container._technology02 ._content_01 ._chart_data_table th{padding: 15px 10px}
