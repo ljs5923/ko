@@ -575,7 +575,7 @@
             var trIndex = Math.ceil($tr.length / 10);
             $('._btn_more').on('click', function() {
                 for (i = 0; i < 9; i++) {
-                    $tr.eq(i + (moreIndex*10) + 11).slideDown(3000);
+                    $tr.eq(i + (moreIndex*10) + 11).fadeIn();
                 }
                 ++moreIndex;
                 if ((trIndex-1) == moreIndex) {
