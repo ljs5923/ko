@@ -894,3 +894,8 @@ footer{position:relative;z-index:10}
 #_company_content ._company_content_container._fi02 ._chart_table_footer ._cont{margin-top: 40px;padding-top: 35px;border-top: 1px solid #dedee1}
 #_company_content ._company_content_container._fi02 ._chart_table_footer ._cont ._cont_txt{line-height: 26px;font-size: 16px;color: #555}
 #_company_content ._company_content_container._fi02 ._chart_table_footer ._cont ._import{display: block;margin-top: 10px;line-height: 30px;font-size: 20px;color: #222}
+/* _di01 */
+#_company_content ._company_content_container._di01 ._chart_data_only_table{margin-top: 0}
+#_company_content ._company_content_container._di01 ._chart_table_footer{margin: 60px 0 0 0;padding: 40px 50px;text-align: center;vertical-align: top;background-color: #f5f7f9}
+#_company_content ._company_content_container._di01 ._chart_table_footer ._import{display: inline-block;position: relative;margin: 10px 40px 0 0;padding-left: 12px;line-height: 26px;font-size: 17px;color: #555;opacity: 0.7}
+#_company_content ._company_content_container._di01 ._chart_table_footer ._btn_link{display: inline-block;overflow: hidden;position: relative;padding: 0 45px 0 30px;line-height: 46px;font-size: 16px;text-align: center;border: 1px solid #dedee1;border-radius: 2px;vertical-align: top;background-color: #fff;color: #555}
