@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <title>고려개발</title>
@@ -28,37 +29,37 @@
                                     <li class="_sub_lst_dept"><a href="../company/company_information.html" class="_sub_dept">기업정보</a></li>
                                     <li class="_sub_lst_dept"><a href="../company/company_ceo.html" class="_sub_dept">CEO 인사말</a></li>
                                     <li class="_sub_lst_dept"><a href="../company/company_value.html" target="_blank" class="_sub_dept">가치체계</a></li>
-                                    <li class="_sub_lst_dept"><a href="#" class="_sub_dept">주요 연혁</a></li>
-                                    <li class="_sub_lst_dept"><a href="#" class="_sub_dept">그룹사 소개</a></li>
-                                    <li class="_sub_lst_dept"><a href="#" class="_sub_dept">찾아오시는 길</a></li>
+                                    <li class="_sub_lst_dept"><a href="../company/company_history.html" class="_sub_dept">주요 연혁</a></li>
+                                    <li class="_sub_lst_dept"><a href="../company/company_relative01.html" class="_sub_dept">그룹사 소개</a></li>
+                                    <li class="_sub_lst_dept"><a href="../company/company_location.html" class="_sub_dept">찾아오시는 길</a></li>
                                 </ul>
                             </li>
                             <li class="_main_lst_dept">
-                                <a href="#" class="_main_dept _main"><span>사업소개</span></a>
+                                <a href="../bi/business_overview.html" class="_main_dept _main"><span>사업소개</span></a>
                                 <ul class="_sub_lst">
-                                    <li class="_sub_lst_dept"><a href="#" class="_sub_dept">사업개요</a></li>
-                                    <li class="_sub_lst_dept"><a href="#" class="_sub_dept">건축</a></li>
-                                    <li class="_sub_lst_dept"><a href="#" class="_sub_dept">주택</a></li>
-                                    <li class="_sub_lst_dept"><a href="#" class="_sub_dept">토목</a></li>
+                                    <li class="_sub_lst_dept"><a href="../bi/business_overview.html" class="_sub_dept">사업개요</a></li>
+                                    <li class="_sub_lst_dept"><a href="../bi/business_architecture.html" class="_sub_dept">건축</a></li>
+                                    <li class="_sub_lst_dept"><a href="../bi/business_housing.html" class="_sub_dept">주택</a></li>
+                                    <li class="_sub_lst_dept"><a href="../bi/business_civilEngineering.html" class="_sub_dept">토목</a></li>
                                 </ul>
                             </li>
                             <li class="_main_lst_dept">
-                                <a href="#" class="_main_dept _main"><span>지속가능경영</span></a>
+                                <a href="../sm/ethical_management01.html" class="_main_dept _main"><span>지속가능경영</span></a>
                                 <ul class="_sub_lst">
-                                    <li class="_sub_lst_dept"><a href="#" class="_sub_dept">윤리경영</a></li>
-                                    <li class="_sub_lst_dept"><a href="#" class="_sub_dept">안전경영</a></li>
-                                    <li class="_sub_lst_dept"><a href="#" class="_sub_dept">환경경영</a></li>
-                                    <li class="_sub_lst_dept"><a href="#" class="_sub_dept">품질경영</a></li>
-                                    <li class="_sub_lst_dept"><a href="#" class="_sub_dept">기술경영</a></li>
-                                    <li class="_sub_lst_dept"><a href="#" class="_sub_dept">사회공헌</a></li>
+                                    <li class="_sub_lst_dept"><a href="../sm/ethical_management01.html" class="_sub_dept">윤리경영</a></li>
+                                    <li class="_sub_lst_dept"><a href="../sm/safety_management01.html" class="_sub_dept">안전경영</a></li>
+                                    <li class="_sub_lst_dept"><a href="../sm/environmental_management01.html" class="_sub_dept">환경경영</a></li>
+                                    <li class="_sub_lst_dept"><a href="../sm/quality_management01.html" class="_sub_dept">품질경영</a></li>
+                                    <li class="_sub_lst_dept"><a href="../sm/technology_management01.html" class="_sub_dept">기술경영</a></li>
+                                    <li class="_sub_lst_dept"><a href="../sm/social_contribution01.html" class="_sub_dept">사회공헌</a></li>
                                 </ul>
                             </li>
                             <li class="_main_lst_dept">
-                                <a href="#" class="_main_dept _main"><span>투자정보</span></a>
+                                <a href="../ii/stock_price_information01.html" class="_main_dept _main"><span>투자정보</span></a>
                                 <ul class="_sub_lst">
-                                    <li class="_sub_lst_dept"><a href="#" class="_sub_dept">주가정보</a></li>
-                                    <li class="_sub_lst_dept"><a href="#" class="_sub_dept">재무정보</a></li>
-                                    <li class="_sub_lst_dept"><a href="#" class="_sub_dept">공시정보</a></li>
+                                    <li class="_sub_lst_dept"><a href="../ii/stock_price_information01.html" class="_sub_dept">주가정보</a></li>
+                                    <li class="_sub_lst_dept"><a href="../ii/financial_information01.html" class="_sub_dept">재무정보</a></li>
+                                    <li class="_sub_lst_dept"><a href="../ii/disclosure_information.html" class="_sub_dept">공시정보</a></li>
                                 </ul>
                             </li>
                             <li class="_main_lst_dept">
@@ -195,7 +196,7 @@
                 <button class="_btn_scroll_step">다음 content로 이동</button>
             </article>
         </section>
-        <section id="_content_wrap">
+        <section id="_company_content">
             <article class="_content1_container">
                 <h3 class="_content1_title">사업소개</h3>
                 <div class="_content1_slide_container">
@@ -695,10 +696,38 @@
                     autoControlsSelector: $('._start_pause'),
                     prevSelector: $('._prev'),
                     nextSelector: $('._next'),
-                    onSlideBefore: function() {
-                        no = mainSlide.getCurrentSlide();
-                        ++no;
-                        $('._current').text("0" + no);
+                    onSliderLoad: function(currentIndex) {
+                        $('._current').text("0" + (currentIndex + 1));
+                        $('._main_text').eq(currentIndex).find('._dec').animate({
+                            opacity: 1,
+                            left: 0
+                        }, function() {
+                            $('._main_text').eq(currentIndex).find('.text_content').animate({
+                                opacity: 1,
+                                top: 180
+                            })
+                        })
+                    },
+                    onSlideAfter: function($slideElement, oldIndex, newIndex) {
+                        $('._current').text("0" + (newIndex + 1));
+                        $('._main_text').eq(newIndex).find('._dec').animate({
+                            opacity: 1,
+                            left: 0
+                        }, function() {
+                            $('._main_text').eq(newIndex).find('.text_content').animate({
+                                opacity: 1,
+                                top: 180
+                            })
+                        })
+                        $('._main_text').eq(oldIndex).find('._dec').animate({
+                            opacity: 0,
+                            left: -45
+                        }, function() {
+                            $('._main_text').eq(oldIndex).find('.text_content').animate({
+                                opacity: 0,
+                                top: 160
+                            })
+                        })
                     }
                 });
                 //mainslide end
@@ -1041,35 +1070,51 @@
                     autoControlsSelector: $('._content3_btn_play'),
                     prevSelector: $('._content3_prev'),
                     nextSelector: $('._content3_next'),
-                    onSlideBefore: function() {
-                        no = content3Slide.getCurrentSlide();
-                        ++no;
-                        $('._content3_current').text("0" + no);
-                        if (no > 9) {
-                            $('._content3_current').text(no);
+                    onSliderLoad: function(currentIndex) {
+                        $('._content3_current').text("0" + (currentIndex + 1));
+                        if (currentIndex > 8) {
+                            $('._content3_current').text((currentIndex + 1));
                         }
+                        $('._content3_slide').eq(currentIndex).find('._content3_slide_title_box').animate({
+                            opacity: 1,
+                            left: 0
+                        }, function() {
+                            $('._content3_slide').eq(currentIndex).find('._content3_slide_person_box').animate({
+                                opacity: 1,
+                                right: 0
+                            })
+                        })
+                    },
+                    onSlideAfter: function($slideElement, oldIndex, newIndex) {
+                        $('._content3_current').text("0" + (newIndex + 1));
+                        if (newIndex > 8) {
+                            $('._content3_current').text((newIndex + 1));
+                        }
+                        $('._content3_slide').eq(newIndex).find('._content3_slide_title_box').animate({
+                            opacity: 1,
+                            left: 0
+                        }, function() {
+                            $('._content3_slide').eq(newIndex).find('._content3_slide_person_box').animate({
+                                opacity: 1,
+                                right: 0
+                            })
+                        })
+                        $('._content3_slide').eq(oldIndex).find('._content3_slide_title_box').animate({
+                            opacity: 0,
+                            left: -50
+                        }, function() {
+                            $('._content3_slide').eq(oldIndex).find('._content3_slide_person_box').animate({
+                                opacity: 0,
+                                right: 50
+                            })
+                        })
                     }
                 });
                 //content3 slide img end
-                //scrollTop event start
-                $('._scroll_top').on('click', function() {
-                    var wintop = $('html,body').offset().top;
-                    $('html,body').animate({
-                        'scrollTop': wintop
-                    }, 500, 'swing');
-                });
-                $(window).on('scroll', function() {
-                    var winST = $(window).scrollTop();
-                    var content1Top = $('._content1_container').offset().top;
-                    if (content1Top > winST) {
-                        $('._scroll_top').fadeOut();
-                    } else {
-                        $('._scroll_top').fadeIn().css("bottom", 100);
-                    }
-                });
-                //scrollTop evet end
             })
+
         </script>
     </div>
 </body>
+
 </html>
