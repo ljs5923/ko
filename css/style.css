@@ -843,17 +843,17 @@ footer{position:relative;z-index:10}
 #_company_content ._company_content_container._social01 ._content ._content_box ._content_cont ul li{float: left;position: relative;margin-left: 30px;padding-left: 11px;line-height: 26px;font-size: 16px;font-weight: bold;color: #222;opacity: 0.7}
 #_company_content ._company_content_container._social01 ._content ._content_box ._content_cont ul li:before{content: "";position: absolute;top: 12px;left: 2px;width: 3px;height: 3px;background-color: #0189b1}
 /* social_contribution02 */
-#_company_content ._company_content_container._social02 ._content{border-bottom: 1px solid #dedee1}
-#_company_content ._company_content_container._social02 ._content ._items{overflow: hidden;margin: 28px 0 0 -24px;padding-bottom: 40px;vertical-align: top}
-#_company_content ._company_content_container._social02 ._content ._items ._item{float: left;margin: 40px 0 0 24px;background-color: #f5f7f9}
-#_company_content ._company_content_container._social02 ._content ._items ._item:nth-child(n+9){display: none}
-#_company_content ._company_content_container._social02 ._content ._items ._item:hover a:before{width: 100%;opacity: 1}
-#_company_content ._company_content_container._social02 ._content ._items ._item a{position: relative;display: block;width: 282px;height: 360px}
-#_company_content ._company_content_container._social02 ._content ._items ._item a:before{content: '';position: absolute;bottom: 0;left: 0;width: 0;height: 4px;background-color: #012b5d;opacity: 0;transition: all 0.3s ease}
-#_company_content ._company_content_container._social02 ._content ._items ._item ._cont-box{padding: 50px 30px 50px}
-#_company_content ._company_content_container._social02 ._content ._items ._item ._cont-box ._date{display: block;line-height: 0.8;font-size: 16px;font-weight: bold;color: #012b5d;}
-#_company_content ._company_content_container._social02 ._content ._items ._item ._cont-box ._tit{overflow: hidden;max-height: 60px;margin-top: 15px;line-height: 30px;font-size: 20px;color: #222;}
-#_company_content ._company_content_container._social02 ._content ._items ._item ._cont-box ._txt{overflow: hidden;height: 156px;margin-top: 20px;line-height: 26px;font-size: 16px;color: #555;}
+#_company_content ._company_content_container ._item_lists_area{border-bottom: 1px solid #dedee1}
+#_company_content ._company_content_container ._item_lists_area ._items{overflow: hidden;margin: 28px 0 0 -24px;padding-bottom: 40px;vertical-align: top}
+#_company_content ._company_content_container ._item_lists_area ._items ._item{float: left;margin: 40px 0 0 24px;background-color: #f5f7f9}
+#_company_content ._company_content_container ._item_lists_area ._items ._item:nth-child(n+9){display: none}
+#_company_content ._company_content_container ._item_lists_area ._items ._item:hover a:before{width: 100%;opacity: 1}
+#_company_content ._company_content_container ._item_lists_area ._items ._item a{position: relative;display: block;width: 282px;height: 360px}
+#_company_content ._company_content_container ._item_lists_area ._items ._item a:before{content: '';position: absolute;bottom: 0;left: 0;width: 0;height: 4px;background-color: #012b5d;opacity: 0;transition: all 0.3s ease}
+#_company_content ._company_content_container ._item_lists_area ._items ._item ._cont_box{padding: 50px 30px 50px}
+#_company_content ._company_content_container ._item_lists_area ._items ._item ._cont_box ._date{display: block;line-height: 0.8;font-size: 16px;font-weight: bold;color: #012b5d;}
+#_company_content ._company_content_container ._content ._items ._item ._cont_box ._tit{overflow: hidden;max-height: 60px;margin-top: 15px;line-height: 30px;font-size: 20px;color: #222;}
+#_company_content ._company_content_container ._item_lists_area ._items ._item ._cont_box ._txt{overflow: hidden;height: 156px;margin-top: 20px;line-height: 26px;font-size: 16px;color: #555;}
 /* _ii */
 #_company_wrap ._header_top._ii{background-image: url(../imgs/ii/bg_spot_ii.jpg)}
 #_company_content ._company_content_container ._chart_info{display: inline-block;width: 100%;padding-bottom: 25px;vertical-align: top}
@@ -899,3 +899,10 @@ footer{position:relative;z-index:10}
 #_company_content ._company_content_container._di01 ._chart_table_footer{margin: 60px 0 0 0;padding: 40px 50px;text-align: center;vertical-align: top;background-color: #f5f7f9}
 #_company_content ._company_content_container._di01 ._chart_table_footer ._import{display: inline-block;position: relative;margin: 10px 40px 0 0;padding-left: 12px;line-height: 26px;font-size: 17px;color: #555;opacity: 0.7}
 #_company_content ._company_content_container._di01 ._chart_table_footer ._btn_link{display: inline-block;overflow: hidden;position: relative;padding: 0 45px 0 30px;line-height: 46px;font-size: 16px;text-align: center;border: 1px solid #dedee1;border-radius: 2px;vertical-align: top;background-color: #fff;color: #555}
+/* _pr_news */
+#_company_content ._company_content_container._pr_news ._item_lists_area ._items ._item a{position: relative;display: block;width: 282px;height: 400px}
+#_company_content ._company_content_container._pr_news ._item_lists_area ._items ._item ._img_box{overflow: hidden;position: relative;width: 282px;min-height: 212px}
+#_company_content ._company_content_container._pr_news ._item_lists_area ._items ._item._img_type ._cont_box{height: 127px;padding: 30px 30px 30px}
+#_company_content ._company_content_container._pr_news ._item_lists_area ._items ._item._txt_type ._cont_box{padding: 95px 30px 30px}
+#_company_content ._company_content_container ._item_lists_area ._items ._item ._label{position: absolute;top: 30px;left: 0;min-width: 154px;height: 35px;padding: 0 30px;line-height: 35px;font-size: 12px;background-color: #fff;color: #012b5d;letter-spacing: 3px;z-index: 1;transition: all 0.3s ease}
+#_company_content ._company_content_container._pr_news ._item_lists_area ._items ._item a:hover ._label{color: #fff;background-color: #012b5d}
