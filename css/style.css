@@ -17,6 +17,7 @@ em{font-style: normal}
 .clearfix:after{display:block;clear:both;content:''}
 .rel{width:100%;height:100%}
 ._company_content_title{display:block;margin-top:80px;padding-bottom:60px;font-size:40px;color:#012b5d;text-align:center}
+#_company_content ._company_content_container{width: 1200px;margin: 0 auto}
 /* layout */
 #wrap{width:100%;min-width:1200px}
 header{position:absolute;z-index:60}
@@ -245,13 +246,14 @@ footer{position:relative;z-index:10}
 ._company_header_wrap ._header_down ._header_down_container{width:100%;height:56px;background-color:#012b5d;text-align:center}
 ._company_header_wrap ._header_down ._header_gnb_wrap{display:inline-block;overflow:hidden;margin:0 auto;text-align:center;border-right:1px solid #34557d}
 ._company_header_wrap ._header_down ._header_gnb ._header_gnb_lst{float:left;height:56px;border-left:1px solid #34557d;box-sizing:border-box}
-._header_down ._header_gnb ._header_gnb_lst ._header_gnb_dept{position:relative;display:block;padding:20px 35px 13px;line-height:1em;font-size:16px;color:#fff;opacity:0.5}
+._company_header_wrap ._header_down ._header_gnb ._header_gnb_lst:hover ._header_gnb_dept{opacity: 1}
+._header_down ._header_gnb ._header_gnb_lst ._header_gnb_dept{position:relative;display:block;padding:20px 35px 13px;line-height:1em;font-size:16px;color:#fff;opacity:0.5;transition: all 0.3s ease}
 ._header_down ._header_gnb ._header_gnb_lst._active ._header_gnb_dept{opacity:1}
 ._header_down ._header_gnb_lst ._header_gnb_dept span{position:relative;display:inline-block;padding-bottom:9px}
 ._header_down ._header_gnb_lst ._header_gnb_dept span:before{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background-color:#fff;opacity:0}
 ._header_down ._header_gnb_lst._active ._header_gnb_dept span:before{opacity:1}
 /* company_information content */
-#_company_content ._company_content_container{margin-bottom:-150px}
+#_company_content ._company_content_container._information_container{margin-bottom:-150px}
 #_company_content ._company_content_container ._company_content_dec{width:1200px;margin:0 auto}
 #_company_content ._company_content_dec ._content_dec_box{margin-top:30px;padding-left:188px;font-size:18px;line-height:28px;color:#555}
 #_company_content ._content_dec_box ._dec_force{color:#012b5d}
@@ -307,8 +309,6 @@ footer{position:relative;z-index:10}
 ._company_content3 ._content3_dec ._content3_dec_dept._lst6{width:203px}
 ._content3_dec ._content3_dec_dept ._content3_dec_dept_img._img6{width:96px;height:79px;background-position:0 -958px}
 /* company ceo */
-#_company_content ._company_content_container._ceo_container{margin-bottom:0}
-._company_content_container ._company_ceo_wrap{width:1200px;margin:0 auto}
 ._company_ceo_wrap ._company_ceo_img_wrap{position:relative}
 ._company_ceo_wrap ._ceo_intro_box{position:absolute;bottom:-68px;left:100px;width:190px;padding:30px 35px;font-size:16px;line-height:25px;color:#fff;background-color:#012b5d}
 ._company_ceo_wrap ._ceo_intro_box strong{display:block;margin-top:19px;font-size:35px;line-height:35px;color:#fff}
@@ -410,7 +410,6 @@ footer{position:relative;z-index:10}
 #_scroll_nav ._scroll_nav_lst ._anchor_img{display:inline-block;width:21px;height:21px;text-indent:-9999px;background-image:url(../imgs/company/company.png);background-position:0 -229px;vertical-align:top;opacity:1}
 #_scroll_nav ._scroll_nav_lst.active ._anchor_img{transform:scale(0)}
 /* _company_history */
-#_company_content ._company_content_container._history_container{margin-bottom:0}
 #_company_content ._company_content_container._history_container:before{content:'';position:absolute;top:149px;left:0;width:100%;height:1px;background-color:#dedee1}
 ._history_container ._history_content_container{height:1396px;background-image:url(../imgs/company/history/bg_history2010.jpg)}
 ._history_container ._history_content_container{background-repeat:no-repeat;background-position:50% 348px;transition:background .2s ease}
@@ -456,7 +455,6 @@ footer{position:relative;z-index:10}
 ._history_bottom_lsts ._history_lsts_odd ul li ._history_lst_date{float:right;width:73px;padding-left:14px;line-height:26px;text-align:left;font-weight:bold;font-size:16px;color:#222}
 ._history_bottom_lsts ._history_lsts_odd ul li ._history_lst_txt{overflow:hidden;line-height:26px;font-size:16px;color:#555}
 /* _company_relative01 */
-#_company_content ._company_relative_container{width:1200px;margin:0 auto}
 #_company_content ._tab_area ._lsts{display:table;width:100%;border-right:1px solid #dedee1;box-sizing:border-box}
 #_company_content ._tab_area ._lst{display:table-cell;width:10%}
 #_company_content ._tab_area ._lst ._lst_btn{position:relative;display:block;height:48px;line-height:48px;text-align:center;font-size:18px;border:1px solid #dedee1;border-right:none;transition:all 0.3s ease}
@@ -547,7 +545,7 @@ footer{position:relative;z-index:10}
 #_company_content ._location_info_container ._location_info ._info ._info_dec ul li._bus_lst2 strong{background-color:#e70000}
 #_company_content ._location_info_container ._location_info ._info ._info_dec ul li._bus_lst3 strong{background-color:#54bc00}
 /* _business_overview */
-#_company_content ._company_content_container._business{width:1200px;margin:0 auto;margin-bottom:-80px}
+#_company_content ._company_content_container._business{margin-bottom:-80px}
 #_company_content ._company_content_container._business ._business_result_txt_box{padding-top:60px;text-align:left;border-top:1px solid #dedee1}
 #_company_content ._company_content_container._business ._business_title{line-height:1em;font-size:28px;color:#222}
 #_company_content ._company_content_container._business ._business_result_img_box{position:relative;margin:35px auto 100px}
@@ -587,7 +585,6 @@ footer{position:relative;z-index:10}
 #_company_content ._company_content_container ._business_lst_cont_box ._txt{margin-top:15px;line-height:26px;font-size:16px;color:#555}
 #_company_content ._company_content_container ._business_lst_cont_box ._img_box{margin-top:55px}
 /* _business_architure */
-#_company_content ._company_content_container._business_arch{margin-bottom:0}
 #_company_content ._company_content_container._business_arch ._tab_area{width:840px;margin:0 auto}
 #_company_content ._company_content_container._business_arch ._tab_area ._lsts ._lst{width:20%;vertical-align:middle}
 #_company_content ._company_content_container._business_arch ._tab_area ._lsts ._lst ._lst_btn._active{color:#fff;background-color:#012b5d;border-color:#012b5d}
@@ -636,7 +633,6 @@ footer{position:relative;z-index:10}
 #_company_content ._company_content_container ._content_more_box ._btn_more:hover ._icon_more:before{top: 5px}
 /* _sm */
 #_company_wrap ._company_header_wrap ._header_top._sm{background-image: url(../imgs/sm/bg_spot_sm.jpg)}
-#_company_content ._company_content_container._sm{width: 1200px;margin: 0 auto}
 #_company_content ._company_content_container._sm ._tab_area{width: 601px;margin: 0 auto}
 #_company_content ._company_content_container._sm ._info_wrap{position: relative;margin-top: 50px;padding-top: 60px;border-top: 2px solid #012b5d}
 #_company_content ._company_content_container._sm ._info_title{position: absolute;top: 60px;left: 0;width: 295px;line-height: 1em;font-size: 28px;color: #222;}
@@ -899,6 +895,8 @@ footer{position:relative;z-index:10}
 #_company_content ._company_content_container._di01 ._chart_table_footer{margin: 60px 0 0 0;padding: 40px 50px;text-align: center;vertical-align: top;background-color: #f5f7f9}
 #_company_content ._company_content_container._di01 ._chart_table_footer ._import{display: inline-block;position: relative;margin: 10px 40px 0 0;padding-left: 12px;line-height: 26px;font-size: 17px;color: #555;opacity: 0.7}
 #_company_content ._company_content_container._di01 ._chart_table_footer ._btn_link{display: inline-block;overflow: hidden;position: relative;padding: 0 45px 0 30px;line-height: 46px;font-size: 16px;text-align: center;border: 1px solid #dedee1;border-radius: 2px;vertical-align: top;background-color: #fff;color: #555}
+/* _pr */
+#_company_wrap ._company_header_wrap ._header_top._pr{background-image: url(../imgs/pr/bg_spot_pr.jpg)}
 /* _pr_news */
 #_company_content ._company_content_container._pr_news ._item_lists_area ._items ._item a{position: relative;display: block;width: 282px;height: 400px}
 #_company_content ._company_content_container._pr_news ._item_lists_area ._items ._item ._img_box{overflow: hidden;position: relative;width: 282px;min-height: 212px}
@@ -906,3 +904,30 @@ footer{position:relative;z-index:10}
 #_company_content ._company_content_container._pr_news ._item_lists_area ._items ._item._txt_type ._cont_box{padding: 95px 30px 30px}
 #_company_content ._company_content_container ._item_lists_area ._items ._item ._label{position: absolute;top: 30px;left: 0;min-width: 154px;height: 35px;padding: 0 30px;line-height: 35px;font-size: 12px;background-color: #fff;color: #012b5d;letter-spacing: 3px;z-index: 1;transition: all 0.3s ease}
 #_company_content ._company_content_container._pr_news ._item_lists_area ._items ._item a:hover ._label{color: #fff;background-color: #012b5d}
+/* _pr_cibi */
+#_company_content ._company_content_container._pr_cibi ._business_lst:last-child{padding-bottom: 0}
+#_company_content ._company_content_container._pr_cibi ._businsess_lst_head{width: 306px;padding: 0}
+#_company_content ._company_content_container._pr_cibi ._businsess_lst_head ._business_lst_title{padding-bottom: 0}
+#_company_content ._company_content_container._pr_cibi ._businsess_lst_head ._btn_download{display: inline-block;overflow: hidden;position: relative;margin-top: 40px;line-height: 46px;font-size: 16px;text-align: center;color: #555;border: 1px solid #dedee1;border-radius: 2px}
+#_company_content ._company_content_container._pr_cibi ._businsess_lst_head ._btn_download:hover ._icon:before{background-position: 0 -2334px}
+#_company_content ._company_content_container._pr_cibi ._businsess_lst_head ._btn_download ._icon{display: inline-block;padding: 0 30px 0 57px;vertical-align: top}
+#_company_content ._company_content_container._pr_cibi ._businsess_lst_head ._btn_download ._icon:before{content: '';position: absolute;top: 15px;left: 30px;width: 17px;height: 16px;background-image: url(../imgs/sm/sm.png);background-position: 0 -2336px;transition: all 0.3s ease}
+#_company_content ._company_content_container._pr_cibi ._business_lst_cont_box{float: left;width: 894px}
+#_company_content ._company_content_container._pr_cibi ._business_lst_cont_box ._img_box{margin-top: 0}
+#_company_content ._company_content_container._pr_cibi ._business_lst_cont_box ._txt{margin-top: 25px}
+#_company_content ._company_content_container._pr_cibi ._business_lst_cont_box ._txt ._point01{color: #012b5d}
+#_company_content ._company_content_container._pr_cibi ._business_lst_cont_box ._color_box{margin-top: 35px}
+#_company_content ._company_content_container._pr_cibi ._business_lst_cont_box ._color_tit{line-height: 1em;font-size: 20px;font-weight: bold;color: #222;opacity: 0.7}
+#_company_content ._company_content_container._pr_cibi ._business_lst_cont_box ul{display: inline-block;margin-top: 25px;vertical-align: top}
+#_company_content ._company_content_container._pr_cibi ._business_lst._bi_box ._business_lst_cont_box ul li{width: 435px}
+#_company_content ._company_content_container._pr_cibi ._business_lst_cont_box ul li{float: left;width: 282px;margin-left: 24px}
+#_company_content ._company_content_container._pr_cibi ._business_lst_cont_box ul li:first-child{margin-left: 0}
+#_company_content ._company_content_container._pr_cibi ._business_lst_cont_box ul li ._color{height: 109px;padding: 35px 30px;line-height: 1em;font-size: 22px;color: #fff;box-sizing: border-box}
+#_company_content ._company_content_container._pr_cibi ._business_lst_cont_box ul li._blue ._color{background-color: #1b2e5a}
+#_company_content ._company_content_container._pr_cibi ._business_lst_cont_box ul li._gray ._color{background-color: #666666}
+#_company_content ._company_content_container._pr_cibi ._business_lst_cont_box ul li._light_gray ._color{background-color: #a1a1a1}
+#_company_content ._company_content_container._pr_cibi ._business_lst_cont_box ul li._orange ._color{background-color: #e87e00}
+#_company_content ._company_content_container._pr_cibi ._business_lst_cont_box ul li._brown ._color{background-color: #5c4637}
+#_company_content ._company_content_container._pr_cibi ._business_lst_cont_box ul li ._color span{display: block;margin-top: 13px;line-height: 1em;font-size: 14px;}
+#_company_content ._company_content_container._pr_cibi ._business_lst_cont_box ul li ._txt_box{margin: 15px 0 0 -7px;line-height: 26px;font-size: 16px;color: #555;}
+#_company_content ._company_content_container._pr_cibi ._business_lst_cont_box ul li ._txt_box strong{margin-left: 7px}
