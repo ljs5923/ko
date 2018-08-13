@@ -534,9 +534,9 @@
                         opacity: 1
                     }, 300)
                 }
-                $('._slide_content').eq(indexNav).find('._img_slide').css('opacity','1');
+                $('._slide_content').eq(indexNav).find('._img_slide').css('opacity', '1');
                 $('._slide_content_container').animate({
-                    marginLeft: (indexNav) * (-397)
+                    marginLeft: indexNav * (-397)
                 }, 300, function() {
                     $('._slide_content').eq(indexNav).addClass('_active').siblings().removeClass('_active');
                 })
@@ -565,6 +565,25 @@
                     $('._slide_content').eq(3).find('._txt_img').removeClass('_active');
                     $('._slide_content').eq(6).find('._txt_img').removeClass('_active');
                 }
+            })
+            $('._btn_lst').on('click', function() {
+                var indexImg = $('._slide_content._active').index();
+                var anIndex = $(this).index();
+                if (indexImg <= anIndex*3) {
+                    $('._slide_content').eq(anIndex*3).prevAll().find('._img_slide').css('opacity','0');
+                    $('._slide_content').eq(anIndex*3).find('._img_slide').css('opacity','1');
+                }
+                if (indexImg >= anIndex*3) {
+                    $('._slide_content').eq(anIndex*3).nextAll().find('._img_slide').css('opacity','1');
+                    $('._slide_content').eq(anIndex*3).find('._img_slide').css('opacity','1');
+                }
+                $('._slide_content_container').css({
+                    marginLeft: (3 * anIndex) * -397
+                })
+                $('._slide_content').eq(anIndex * 3).addClass('_active').siblings().removeClass('_active');
+                $('._nav_btn').eq(anIndex*3).addClass('_active').siblings().removeClass('_active');
+                $('._slide_content').eq(anIndex*3).find('._txt_img').addClass('_active');
+                $('._slide_content').eq(anIndex*3).siblings().find('._txt_img').removeClass('_active');
             })
         })
 
