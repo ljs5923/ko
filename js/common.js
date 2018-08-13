@@ -70,11 +70,12 @@ jQuery(function ($) {
     //company_information_header event start
     $(window).on('scroll', function () {
         var winHT = $(window).scrollTop();
-        var headerTopH = $('._header_top').height();
+        var headerTopH = $('._header_spot').height();
+        console.log(headerTopH);
         if (winHT >= headerTopH) {
-            $('._header_down').addClass('_fixed');
+            $('#_company_wrap').addClass('_fixed');
         } else {
-            $('._header_down').removeClass('_fixed');
+            $('#_company_wrap').removeClass('_fixed');
         }
     });
     //company_information_header event end
