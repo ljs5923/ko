@@ -77,13 +77,13 @@
                                                     </ul>
                                                 </li>
                                                 <li class="_main_lst_dept">
-                                                    <a href="#" class="_main_dept"><span>채용정보</span></a>
+                                                    <a href="../ca/careers_talent.html" class="_main_dept"><span>채용정보</span></a>
                                                     <ul class="_sub_lst">
-                                                        <li class="_sub_lst_dept"><a href="#" class="_sub_dept">인재상</a></li>
-                                                        <li class="_sub_lst_dept"><a href="#" class="_sub_dept">인사제도</a></li>
-                                                        <li class="_sub_lst_dept"><a href="#" class="_sub_dept">직무소개</a></li>
-                                                        <li class="_sub_lst_dept"><a href="#" class="_sub_dept">고려인</a></li>
-                                                        <li class="_sub_lst_dept"><a href="#" class="_sub_dept">채용정보</a></li>
+                                                        <li class="_sub_lst_dept"><a href="../ca/careers_talent.html" class="_sub_dept">인재상</a></li>
+                                                        <li class="_sub_lst_dept"><a href="../ca/careers_per_sys.html" class="_sub_dept">인사제도</a></li>
+                                                        <li class="_sub_lst_dept"><a href="../ca/careers_job_intro.html" class="_sub_dept">직무소개</a></li>
+                                                        <li class="_sub_lst_dept"><a href="../ca/careers_kdc.html" class="_sub_dept">고려인</a></li>
+                                                        <li class="_sub_lst_dept"><a href="../ca/careers_careersList.html" class="_sub_dept">채용정보</a></li>
                                                     </ul>
                                                 </li>
                                             </ul>
@@ -91,7 +91,7 @@
                                         <div class="_KDC">
                                             배너이미지
                                             <sapn class="_KDC_content">KDC 역사관</sapn>
-                                            <a href="#" class="_KDC_btn"><span class="_KDC_btn_contnet">바로가기</span></a>
+                                            <a href="pr_kdc.html" class="_KDC_btn"><span class="_KDC_btn_contnet">바로가기</span></a>
                                         </div>
                                         <div class="_siteMap">
                                             <a href="#" class="_stieMap_go_btn">사이트맵 바로가기<span class="fa fa-bars"></span></a>
@@ -569,21 +569,21 @@
             $('._btn_lst').on('click', function() {
                 var indexImg = $('._slide_content._active').index();
                 var anIndex = $(this).index();
-                if (indexImg <= anIndex*3) {
-                    $('._slide_content').eq(anIndex*3).prevAll().find('._img_slide').css('opacity','0');
-                    $('._slide_content').eq(anIndex*3).find('._img_slide').css('opacity','1');
+                if (indexImg <= anIndex * 3) {
+                    $('._slide_content').eq(anIndex * 3).prevAll().find('._img_slide').css('opacity', '0');
+                    $('._slide_content').eq(anIndex * 3).find('._img_slide').css('opacity', '1');
                 }
-                if (indexImg >= anIndex*3) {
-                    $('._slide_content').eq(anIndex*3).nextAll().find('._img_slide').css('opacity','1');
-                    $('._slide_content').eq(anIndex*3).find('._img_slide').css('opacity','1');
+                if (indexImg >= anIndex * 3) {
+                    $('._slide_content').eq(anIndex * 3).nextAll().find('._img_slide').css('opacity', '1');
+                    $('._slide_content').eq(anIndex * 3).find('._img_slide').css('opacity', '1');
                 }
                 $('._slide_content_container').css({
                     marginLeft: (3 * anIndex) * -397
                 })
                 $('._slide_content').eq(anIndex * 3).addClass('_active').siblings().removeClass('_active');
-                $('._nav_btn').eq(anIndex*3).addClass('_active').siblings().removeClass('_active');
-                $('._slide_content').eq(anIndex*3).find('._txt_img').addClass('_active');
-                $('._slide_content').eq(anIndex*3).siblings().find('._txt_img').removeClass('_active');
+                $('._nav_btn').eq(anIndex * 3).addClass('_active').siblings().removeClass('_active');
+                $('._slide_content').eq(anIndex * 3).find('._txt_img').addClass('_active');
+                $('._slide_content').eq(anIndex * 3).siblings().find('._txt_img').removeClass('_active');
             })
         })
 
