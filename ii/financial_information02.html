@@ -816,11 +816,19 @@
     </div>
     <script>
         jQuery(function($) {
-            $('._btn').on('click', function() {
-                var charIndex = $('._btn').index(this);
-                $('._tab').eq(charIndex).addClass('_active').siblings().removeClass('_active');
-                $('._chart_data_only_table').eq(charIndex).fadeIn().siblings().fadeOut();
-            })
+            var $chartCon = $('._content_01');
+            var $chartWrap = $chartCon.find('._only_table_wrap');
+            var $chartOnly = $chartCon.find('._chart_data_only_table');
+            var $chartBtn = $chartCon.find('._btn');
+            var chartH = $chartOnly.eq(0).outerHeight();
+            $chartWrap.css('height', chartH);
+            $chartBtn.on('click', function() {
+                var index = $('._btn').index(this);
+                chartH = $chartOnly.eq(index).outerHeight();
+                $('._tab').eq(index).addClass('_active').siblings().removeClass('_active');
+                $chartOnly.eq(index).fadeIn().siblings().fadeOut();
+                $chartWrap.animate({height: chartH});
+            });
         })
 
     </script>

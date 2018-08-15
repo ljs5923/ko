@@ -71,7 +71,6 @@ jQuery(function ($) {
     $(window).on('scroll', function () {
         var winHT = $(window).scrollTop();
         var headerTopH = $('._header_spot').height();
-        console.log(headerTopH);
         if (winHT >= headerTopH) {
             $('#_company_wrap').addClass('_fixed');
         } else {

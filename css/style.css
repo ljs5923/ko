@@ -880,7 +880,8 @@ footer{position:relative;z-index:10}
 #_company_content ._company_content_container ._tab_box ._tab._active ._btn:before{bottom: 0;opacity: 1}
 #_company_content ._company_content_container ._tab_box ._tab ._btn span{display: block;font-size: 22px;color: #555;transition: color .3s ease;}
 #_company_content ._company_content_container ._tab_box ._tab._active ._btn span{color: #012b5d}
-#_company_content ._company_content_container._fi02 ._chart_data_only_table{display: none}
+#_company_content ._company_content_container._fi02 ._only_table_wrap{position: relative}
+#_company_content ._company_content_container._fi02 ._chart_data_only_table{display: none;position: absolute;top: 0;left: 0;width: 100%}
 #_company_content ._company_content_container._fi02 ._chart_data_only_table:first-child{display: block}
 #_company_content ._company_content_container._fi02 table tbody th{padding-left: 50px;text-align: left;background: none}
 #_company_content ._company_content_container._fi02 table tbody th.thead-th{padding-left: 20px;text-align: center;background-color: #f5f7f9}
@@ -1062,3 +1063,95 @@ footer{position:relative;z-index:10}
 #_company_content ._company_content._per_down ._per_content_lsts ul li ._icon._icon_pd11{width: 51px;height: 42px;margin-top: -21px;background-position: 0 -986px;}
 #_company_content ._company_content._per_down ._per_content_lsts ul li ._icon._icon_pd12{width: 43px;height: 49px;margin-top: -24.5px;background-position: 0 -1043px;}
 #_company_content ._company_content._per_down ._per_content_lsts ul li ._icon._icon_pd13{width: 48px;height: 53px;margin-top: -26.5px;background-position: 0 -1107px;}
+/* _job_intro */
+#_company_content ._company_content_container._job_intro ._lsts{overflow: hidden;margin: -30px 0 0 -24px;padding-bottom: 20px;vertical-align: top}
+#_company_content ._company_content_container._job_intro ._lsts ._lst{float: left;position: relative;width: 384px;margin: 30px 0 0 24px}
+#_company_content ._company_content_container._job_intro ._lsts ._btn{display: block;padding-bottom: 86px}
+#_company_content ._company_content_container._job_intro ._lsts ._img_box{position: relative;width: 384px;height: 384px;padding: 0}
+#_company_content ._company_content_container._job_intro ._lsts ._con_box{position: absolute;bottom: 0;left: 20px;width: 344px;padding: 9px 30px;text-align: left;background-color: #fff;box-sizing: border-box;transition: all 0.3s ease}
+#_company_content ._company_content_container._job_intro ._lsts ._con_box:before{content: '';position: absolute;bottom: 35px;right: 40px;width: 35px;height: 11px;background-image: url(../imgs/ca/careers.png);background-position: 0px -129px;transition: all 0.3s ease}
+#_company_content ._company_content_container._job_intro ._lsts ._term{display: block;line-height: 1em;font-size: 18px;font-weight: bold;color: #012b5d;transition: color 0.3s ease}
+#_company_content ._company_content_container._job_intro ._lsts ._name{display: block;margin-top: 13px;line-height: 1em;font-size: 26px;color: #222;transition: color 0.3s ease}
+#_company_content ._company_content_container._job_intro ._lsts ._btn:hover ._con_box{padding: 30px 30px;background-color: #012b5d}
+#_company_content ._company_content_container._job_intro ._lsts ._btn:hover ._term{color: #fff}
+#_company_content ._company_content_container._job_intro ._lsts ._btn:hover ._name{color: #fff}
+#_company_content ._company_content_container._job_intro ._lsts ._modal_head ._name{margin-top: 10px}
+._modal_container * {box-sizing:  content-box !important}
+._modal_container{display: none;width: 1028px;margin: 150px auto 35px !important;padding: 0 !important;padding-bottom: 80px !important;box-sizing:content-box !important;}
+._modal_container ._modal_head{position: relative;height: 511px}
+#_modal_container01 ._modal_head{background-image: url(../imgs/ca/_job/01_01.jpg)}
+#_modal_container02 ._modal_head{background-image: url(../imgs/ca/_job/02_01.jpg)}
+#_modal_container03 ._modal_head{background-image: url(../imgs/ca/_job/03_01.jpg)}
+#_modal_container04 ._modal_head{background-image: url(../imgs/ca/_job/08_01.jpg)}
+#_modal_container05 ._modal_head{background-image: url(../imgs/ca/_job/04_01.jpg)}
+#_modal_container06 ._modal_head{background-image: url(../imgs/ca/_job/06_01.jpg)}
+#_modal_container07 ._modal_head{background-image: url(../imgs/ca/_job/05_01.jpg)}
+#_modal_container08 ._modal_head{background-image: url(../imgs/ca/_job/07_01.jpg)}
+#_modal_container09 ._modal_head{background-image: url(../imgs/ca/_job/09_01.jpg)}
+#_modal_container10 ._modal_head{background-image: url(../imgs/ca/_job/10_01.jpg)}
+#_modal_container11 ._modal_head{background-image: url(../imgs/ca/_job/11_01.jpg)}
+#_modal_container12 ._modal_head{background-image: url(../imgs/ca/_job/13_01.jpg)}
+._modal_container ._modal_head ._modal_head_con{width: 360px;padding: 130px 0 0 518px}
+._modal_container ._modal_head ._modal_head_con ._tit{line-height: 40px;font-size: 29px;color: #222}
+._modal_container ._modal_head ._modal_head_con ._txt{margin-top:12px;font-size:16px;line-height:26px;color:#555;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;word-wrap:break-word}
+._modal_container ._modal_head ._modal_head_con ._per_info_box{display: inline-block;position: absolute;bottom: 55px;left: 518px;margin-top: 50px;padding: 48px 67px 25px 25px;vertical-align: top;background-color: #012b5d}
+._modal_container ._modal_head ._modal_head_con ._per_info_box:before{content: "";position: absolute;bottom: 36px;right: -36px;width: 88px;height: 2px;background-color: #0189b1;}
+._modal_container ._modal_head ._modal_head_con ._per_info_box ._term{line-height: 1em;font-size: 18px;color: #fff}
+._modal_container ._modal_head ._modal_head_con ._per_info_box ._name{display: block;    margin-top: 10px;line-height: 1em;font-size: 26px;color: #fff}
+._modal_container ._modal_head ._conut_area{position: absolute;bottom: 50px;right: 60px;width: 57px;height: 30px}
+._modal_container ._modal_head ._conut_area ._count{position: absolute;top: 0;left: 0;line-height: 1em;font-size: 16px;font-weight: bold;color: #012b5d}
+._modal_container ._modal_head ._conut_area ._slash{display: inline-block;position: absolute;top: 8px;left: 50%;width: 21px;height: 21px;margin-left: -10px;background-image: url(../imgs/ca/careers.png);background-position: 0px -93px}
+._modal_container ._modal_head ._conut_area ._total{position: absolute;bottom: 0;right: 0;line-height: 1em;font-size: 16px;font-weight: bold;color: #222;opacity: 0.5}
+._modal_container ._modal_content_box ._con_info{padding: 55px 0;margin: 0 60px;border-bottom: 1px solid #dedee1}
+._modal_container ._modal_content_box ._con_info ._txt{line-height: 26px;font-size: 16px;color: #555}
+._modal_container ._modal_content_box ._con{padding: 0 60px}
+._modal_container ._modal_content_box ._con ._con_txt_box{overflow: hidden;}
+._modal_container ._modal_content_box ._con ._con_txt_box ._tit{line-height: 30px;font-size: 19px;font-weight: bold;color: #222;opacity: 0.8}
+._modal_container ._modal_content_box ._con ._con_txt_box ._tit:before{content: 'Q.';margin-right: 5px;color: #0189b1}
+._modal_container ._modal_content_box ._con ._con_txt_box ._txt{margin-top: 15px;line-height: 26px;font-size: 16px;color: #555;opacity: 0.8}
+._modal_container ._modal_content_box ._con._con01{padding-top: 60px}
+._modal_container ._modal_content_box ._con._con01 ._img_box{float: right}
+._modal_container ._modal_content_box ._con._con01 ._con_txt_box{padding: 15px 60px 0 0}
+._modal_container ._modal_content_box ._con._con02{padding-top: 80px}
+._modal_container ._modal_content_box ._con._con02 ._img_box{float: left}
+._modal_container ._modal_content_box ._con._con02 ._con_txt_box{padding: 15px 0 0 60px}
+._modal_container ._modal_content_box ._con._con03{padding-top: 80px}
+._modal_container ._modal_content_box ._con._con03 ._con_box:first-child{margin-top: 0}
+._modal_container ._modal_content_box ._con._con03 ._con_box{margin-top: 55px;}
+._modal_container ._modal_content_box ._con._con03 ._img_box{float: right}
+._modal_container ._modal_content_box ._con._con03 ._con_txt_box{padding: 15px 60px 0 0}
+._modal_container ._modal_content_box ._con._con04{padding-top: 75px}
+._modal_container ._modal_content_box ._con._con04 ._con_txt_box{padding: 35px 0 0 0}
+._modal_container ._modal_content_box ._btn_box{margin-top: 35px;text-align: center}
+._modal_container ._modal_content_box ._btn_box ._btn_link{display: inline-block;min-width: 190px;line-height: 57px;font-size: 17px;vertical-align: top;color: #fff;background-color: #012b5d;border-radius: 2px;box-sizing: border-box;margin-left: 17px}
+._modal_container ._modal_content_box ._btn_box ._btn_link:first-child{margin-left: 0}
+/* _ca_kdc */
+#wrap ._ca_kdc ._content02{background-color: #e7e7e7}
+#wrap ._ca_kdc ._bg_wrap{position: absolute;top: 0;left: 0;width: 100%;height: 100%;background-image: url(../imgs/ca/_kdc/kdc_people_bg.png);background-position: 50% 100%;background-repeat: no-repeat}
+#wrap ._ca_kdc ._text_wrap{position: relative;width: 1200px;height: 100%;margin: 0 auto}
+#wrap ._ca_kdc ._text_wrap ._text_01{position: absolute;bottom: 500px;left: 200px;opacity: 0}
+#wrap ._ca_kdc ._text_wrap ._text_02{position: absolute;bottom: 200px;left: 538px;opacity: 0}
+#wrap ._ca_kdc ._text_wrap ._text_03{position: absolute;bottom: 400px;left: 200px;line-height: 34px;font-size: 24px;color: #fff;letter-spacing: -2px; opacity: 0}
+#wrap ._ca_kdc ._content03{margin-bottom: -150px;background-color: #191a1a}
+#wrap ._ca_kdc ._kdc_per_wrap{width: 1200px;height: 600px;position: absolute;top: 50%;left: 50%;margin-top: -272px;margin-left: -600px}
+#wrap ._ca_kdc ._kdc_per_wrap ul li{float: left;width: 300px;height: 600px}
+#wrap ._ca_kdc ._kdc_per_wrap ul li a{display: block;position: relative;width: 100%;height: 100%}
+#wrap ._ca_kdc ._kdc_per_wrap ul li a:before{content: '';position: absolute;top: 0;left: 0;width: 0;height: 515px;background-color: #0189b1;transition: all 0.3s ease}
+#wrap ._ca_kdc ._kdc_per_wrap ul li a:hover:before{width: 120px}
+#wrap ._ca_kdc ._kdc_per_wrap ul li a ._kdc_per{position: relative;width: 100%;height: 515px;z-index: 2;transition: all 0.3s ease}
+#wrap ._ca_kdc ._kdc_per_wrap ul li a ._kdc_per._kdc_per01{background-image: url(../imgs/ca/_kdc/gr_people01.png);background-repeat: no-repeat}
+#wrap ._ca_kdc ._kdc_per_wrap ul li a ._kdc_per._kdc_per02{background-image: url(../imgs/ca/_kdc/gr_people02.png);background-repeat: no-repeat}
+#wrap ._ca_kdc ._kdc_per_wrap ul li a ._kdc_per._kdc_per03{background-image: url(../imgs/ca/_kdc/gr_people03.png);background-repeat: no-repeat}
+#wrap ._ca_kdc ._kdc_per_wrap ul li a ._kdc_per._kdc_per04{background-image: url(../imgs/ca/_kdc/gr_people04.png);background-repeat: no-repeat}
+#wrap ._ca_kdc ._kdc_per_wrap ul li a:hover ._kdc_per._kdc_per01{background-image: url(../imgs/ca/_kdc/gr_people01_active.png);background-repeat: no-repeat}
+#wrap ._ca_kdc ._kdc_per_wrap ul li a:hover ._kdc_per._kdc_per02{background-image: url(../imgs/ca/_kdc/gr_people02_active.png);background-repeat: no-repeat}
+#wrap ._ca_kdc ._kdc_per_wrap ul li a:hover ._kdc_per._kdc_per03{background-image: url(../imgs/ca/_kdc/gr_people03_active.png);background-repeat: no-repeat}
+#wrap ._ca_kdc ._kdc_per_wrap ul li a:hover ._kdc_per._kdc_per04{background-image: url(../imgs/ca/_kdc/gr_people04_active.png);background-repeat: no-repeat}
+#wrap ._ca_kdc ._kdc_per_wrap ul li a p{position: absolute;top: 239px;left: 100px;opacity: 0;transition: all 0.3s ease}
+#wrap ._ca_kdc ._kdc_per_wrap ul li a ._kdc_per p span{position: relative;padding-bottom: 7px;font-size: 42px;font-weight: bold;color: #fff;text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.51)}
+#wrap ._ca_kdc ._kdc_per_wrap ul li a ._kdc_per p span:before{content: '';position: absolute;bottom: 0;left: 0;width: 100%;height: 2px;background: #fff}
+#wrap ._ca_kdc ._kdc_per_wrap ul li a ._kdc_per p span:after
+#wrap ._ca_kdc ._kdc_per_wrap ul li a ._kdc_per p span:after{content: '';position: absolute;top: 9px;right: -49px;background-image: url(../imgs/ca/_kdc/gr_people_arrow.png);background-repeat: no-repeat}
+#wrap ._ca_kdc ._kdc_per_wrap ul li a ._info_box{padding: 28px 20px 0;color: #fff}
+#wrap ._ca_kdc ._kdc_per_wrap ul li a ._info_box p{opacity: 0.5}
+#wrap ._ca_kdc ._kdc_per_wrap ul li a ._name{margin-top: 10px;font-size: 26px;font-weight: bold}
