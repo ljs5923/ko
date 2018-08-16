@@ -17,7 +17,7 @@ em{font-style: normal}
 .clearfix:after{display:block;clear:both;content:''}
 .rel{width:100%;height:100%}
 ._company_content_title{display:block;margin-top:80px;padding-bottom:60px;font-size:40px;color:#012b5d;text-align:center}
-#_company_content ._company_content_container{width: 1200px;margin: 0 auto}
+._company_content_container{width: 1200px;margin: 0 auto}
 ._hide_txt{display: none;overflow: hidden;position: absolute;width: 0;height: 0;line-height: 1em}
 /* layout */
 #wrap{width:100%;min-width:1200px}
@@ -634,8 +634,8 @@ footer{position:relative;z-index:10}
 #_company_content ._company_content_container ._content_more_box ._btn_more:hover ._icon_more:before{top: 5px}
 /* _sm */
 #_company_wrap ._header_spot ._header_top._sm{background-image: url(../imgs/sm/bg_spot_sm.jpg)}
-#_company_content ._company_content_container._sm ._tab_area{width: 601px;margin: 0 auto}
-#_company_content ._company_content_container._sm ._info_wrap{position: relative;margin-top: 50px;padding-top: 60px;border-top: 2px solid #012b5d}
+#_company_content ._company_content_container ._tab_area{width: 601px;margin: 0 auto}
+#_company_content ._company_content_container ._info_wrap{position: relative;margin-top: 50px;padding-top: 60px;border-top: 2px solid #012b5d}
 #_company_content ._company_content_container._sm ._info_title{position: absolute;top: 60px;left: 0;width: 295px;line-height: 1em;font-size: 28px;color: #222;}
 #_company_content ._company_content_container._sm ._info_wrap ._info_txt{padding-left: 305px}
 #_company_content ._company_content_container._sm ._info_wrap ._info_txt ._txt{margin-top: -5px;line-height: 26px;font-size: 16px;color: #555;}
@@ -775,6 +775,7 @@ footer{position:relative;z-index:10}
 #_company_content ._company_content_container._tab_w_301 ._tab_area{width: 301px}
 #_company_content ._company_content_container._tab_w_301 ._tab_area ._lst{width: 50%}
 /* _environmental_management02 */
+#_company_content ._company_content_container._environmental02{margin-bottom: -150px}
 #_company_content ._company_content_container._environmental02 ._content_box{width: 1150px;margin: 0 auto}
 #_company_content ._company_content_container._environmental02 ._content_box_lsts{display: inline-block;width: 100%;margin-top: 50px;vertical-align: top;background-image: url(../imgs/sm/_env/bg_environmental_management01.gif);background-position: 0 0;background-repeat: no-repeat}
 #_company_content ._company_content_container._environmental02 ._content_box_lsts li{float: left;width: 150px;margin-top: 307px;padding: 0 10px;text-align: center}
@@ -786,6 +787,7 @@ footer{position:relative;z-index:10}
 #_company_content ._company_content_container._environmental02 ._content_box_lsts li._lst06 ._lst_title{display: block;margin-top: 0;line-height: 26px;font-size: 24px;color: #222}
 #_company_content ._company_content_container._environmental02 ._content_box_lsts ._lst_title{display: block;margin-top: 8px;line-height: 28px;font-size: 18px;text-align: center;color: #222}
 /* _qulity_management02 */
+#_company_content ._company_content_container._quality02{margin-bottom: -150px}
 #_company_content ._company_content_container._quality02 ._content_box{width: 1024px}
 #_company_content ._company_content_container._quality02 ._content_box ._content_box_lsts{position: relative;display: inline-block;width: 100%;height: 400px;margin-top: 50px;background-image: url(../imgs/sm/_qul/bg_quality_management01.gif);background-position: 0 50%;background-repeat: no-repeat}
 #_company_content ._company_content_container._quality02 ._content_box ._content_box_lsts li._lst01{display: table;position: absolute;top: 109px;left: 12px;width: 180px;height: 180px;margin: 0;padding: 0;line-height: 27px;font-size: 18px;font-weight: bold;text-align: center;color: #012b5d}
@@ -980,6 +982,11 @@ footer{position:relative;z-index:10}
 #wrap ._pr_kdc .section._content03 ._content03_wrap ._slide_nav ._nav_btn span{overflow: hidden;position: absolute;top: 0;left: 0;width: 9px;height: 9px;margin: 7px 0 0 7px;text-indent: -9999px;background-color: #fff;border-radius: 9px}
 #wrap ._pr_kdc .section._content03 ._content03_wrap ._slide_nav ._nav_btn._active:nth-of-type(1):before,#wrap ._pr_kdc .section._content03 ._content03_wrap ._slide_nav ._nav_btn._active:nth-of-type(4):before,#wrap ._pr_kdc .section._content03 ._content03_wrap ._slide_nav ._nav_btn._active:nth-of-type(7):before,#wrap ._pr_kdc .section._content03 ._content03_wrap ._slide_nav ._nav_btn._active:nth-of-type(10):before{background-color: #0189b1}
 #wrap ._pr_kdc .section._content03 ._content03_wrap ._slide_nav ._nav_btn:nth-of-type(1):before,#wrap ._pr_kdc .section._content03 ._content03_wrap ._slide_nav ._nav_btn:nth-of-type(4):before,#wrap ._pr_kdc .section._content03 ._content03_wrap ._slide_nav ._nav_btn:nth-of-type(7):before,#wrap ._pr_kdc .section._content03 ._content03_wrap ._slide_nav ._nav_btn:nth-of-type(10):before{content: '';position: absolute;top: 0;left: 0;width: 23px;height: 23px;border-radius: 23px;background-color: #fff;opacity: 0.2}
+#wrap ._pr_kdc .section._content03 ._content03_wrap ._slide_nav ._nav_btn:after{position: absolute;top: 30px;left: 0;width: 180px;font-size: 18px;color: #fff}
+#wrap ._pr_kdc .section._content03 ._content03_wrap ._slide_nav ._nav_btn:nth-of-type(1):after{content: '창업과 성장의 시대'}
+#wrap ._pr_kdc .section._content03 ._content03_wrap ._slide_nav ._nav_btn:nth-of-type(4):after{content: '꿈을 향한 도전의 시대'}
+#wrap ._pr_kdc .section._content03 ._content03_wrap ._slide_nav ._nav_btn:nth-of-type(7):after{content: '혁신과 도약의 시대'}
+#wrap ._pr_kdc .section._content03 ._content03_wrap ._slide_nav ._nav_btn:nth-of-type(10):after{content: '더 나은 미래와의 약속'}
 /* ca */
 #_company_wrap ._header_top._ca{background-image: url(../imgs/ca/bg_spot_careers.jpg)}
 /* _tal */
@@ -1147,11 +1154,83 @@ footer{position:relative;z-index:10}
 #wrap ._ca_kdc ._kdc_per_wrap ul li a:hover ._kdc_per._kdc_per02{background-image: url(../imgs/ca/_kdc/gr_people02_active.png);background-repeat: no-repeat}
 #wrap ._ca_kdc ._kdc_per_wrap ul li a:hover ._kdc_per._kdc_per03{background-image: url(../imgs/ca/_kdc/gr_people03_active.png);background-repeat: no-repeat}
 #wrap ._ca_kdc ._kdc_per_wrap ul li a:hover ._kdc_per._kdc_per04{background-image: url(../imgs/ca/_kdc/gr_people04_active.png);background-repeat: no-repeat}
-#wrap ._ca_kdc ._kdc_per_wrap ul li a p{position: absolute;top: 239px;left: 100px;opacity: 0;transition: all 0.3s ease}
+#wrap ._ca_kdc ._kdc_per_wrap ul li a:hover ._kdc_per p{left: 60px;opacity: 1}
+#wrap ._ca_kdc ._kdc_per_wrap ul li a ._kdc_per p{position: absolute;top: 239px;left: 100px;opacity: 0;transition: all 0.3s ease}
 #wrap ._ca_kdc ._kdc_per_wrap ul li a ._kdc_per p span{position: relative;padding-bottom: 7px;font-size: 42px;font-weight: bold;color: #fff;text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.51)}
 #wrap ._ca_kdc ._kdc_per_wrap ul li a ._kdc_per p span:before{content: '';position: absolute;bottom: 0;left: 0;width: 100%;height: 2px;background: #fff}
-#wrap ._ca_kdc ._kdc_per_wrap ul li a ._kdc_per p span:after
-#wrap ._ca_kdc ._kdc_per_wrap ul li a ._kdc_per p span:after{content: '';position: absolute;top: 9px;right: -49px;background-image: url(../imgs/ca/_kdc/gr_people_arrow.png);background-repeat: no-repeat}
+#wrap ._ca_kdc ._kdc_per_wrap ul li a ._kdc_per p span:after{content: '';position: absolute;top: 9px;right: -49px;width: 36px;height: 36px;background-image: url(../imgs/ca/_kdc/gr_people_arrow.png);background-repeat: no-repeat}
 #wrap ._ca_kdc ._kdc_per_wrap ul li a ._info_box{padding: 28px 20px 0;color: #fff}
-#wrap ._ca_kdc ._kdc_per_wrap ul li a ._info_box p{opacity: 0.5}
+#wrap ._ca_kdc ._kdc_per_wrap ul li a ._info_box ._value{opacity: 0.5}
 #wrap ._ca_kdc ._kdc_per_wrap ul li a ._name{margin-top: 10px;font-size: 26px;font-weight: bold}
+/* _kdc_per */
+#_company_content ._company_content_container._kdc_per ._per_content_container._per01 ._per_content_head{background-image: url(../imgs/ca/_kdc/gr_people_top01.jpg)}
+#_company_content ._company_content_container._kdc_per ._per_content_container._per02 ._per_content_head{background-image: url(../imgs/ca/_kdc/gr_people_top02.jpg)}
+#_company_content ._company_content_container._kdc_per ._per_content_container._per03 ._per_content_head{background-image: url(../imgs/ca/_kdc/gr_people_top03.jpg)}
+#_company_content ._company_content_container._kdc_per ._per_content_container._per04 ._per_content_head{background-image: url(../imgs/ca/_kdc/gr_people_top04.jpg)}
+#_company_content ._company_content_container._kdc_per ._per_head_wrap{width: 1200px;height: 652px;margin: 0 auto}
+#_company_content ._company_content_container._kdc_per ._per_head{padding-top: 80px}
+#_company_content ._company_content_container._kdc_per ._per_head ._control_box ._btn_prev{float: left;}
+#_company_content ._company_content_container._kdc_per ._per_head ._control_box ._btn_next{float: right;}
+#_company_content ._company_content_container._kdc_per ._control_box button a{position: relative;font-size: 16px;font-weight: bold;color: #222}
+#_company_content ._company_content_container._kdc_per ._per_head ._control_box ._btn_prev a{padding-left: 33px}
+#_company_content ._company_content_container._kdc_per ._per_head ._control_box ._btn_next a{padding-right: 33px}
+#_company_content ._company_content_container._kdc_per ._control_box ._btn_prev a:before{content: '';position: absolute;top: 2px;left: 0;width: 24px;height: 13px;background-image: url(../imgs/ca/_kdc/prev_bt_arrow.png);background-repeat: no-repeat;transition: all 0.2s ease}
+#_company_content ._company_content_container._kdc_per ._control_box ._btn_next a:after{content: '';position: absolute;top: 2px;right: 0;width: 24px;height: 13px;background-image: url(../imgs/ca/_kdc/next_bt_arrow.png);background-repeat: no-repeat;transition: all 0.2s ease}
+#_company_content ._company_content_container._kdc_per ._control_box button span{display: inline-block;text-indent: -9999px}
+#_company_content ._company_content_container._kdc_per ._per_head ._tit_wrap{overflow: hidden;margin-top: 46px}
+#_company_content ._company_content_container._kdc_per ._per_content_container._per01 ._per_head ._tit_wrap{width: 296px}
+#_company_content ._company_content_container._kdc_per ._per_content_container._per02 ._per_head ._tit_wrap{width: 355px}
+#_company_content ._company_content_container._kdc_per ._per_content_container._per03 ._per_head ._tit_wrap{width: 370px}
+#_company_content ._company_content_container._kdc_per ._per_content_container._per04 ._per_head ._tit_wrap{width: 375px}
+#_company_content ._company_content_container._kdc_per ._per_head ._tit_wrap ._tit{display: block;padding-right: 2px;text-align: right;font-size: 22px;font-weight: bold;color: #0189b1}
+#_company_content ._company_content_container._kdc_per ._per_head ._tit_wrap .typist{display: block;position: relative;line-height: 0.8;height: 75px;margin-top: 7px;font-size: 70px;font-weight: bold;color: #0189b1;letter-spacing: 1px}
+#_company_content ._company_content_container._kdc_per ._per_head ._tit_wrap .typist span:after{content: '';position: absolute;bottom: 0;left: 0;width: 100%;height: 3px;background-color: #0189b1}
+#_company_content ._company_content_container._kdc_per ._per_head ._per_info_wrap{margin-top: 58px}
+#_company_content ._company_content_container._kdc_per ._per_head ._per_info_wrap ._term{font-size: 24px;font-weight: bold;color: #555;opacity: 0.8}
+#_company_content ._company_content_container._kdc_per ._per_head ._per_info_wrap ._name{margin-top: 12px;font-size: 34px;color: #222}
+#_company_content ._company_content_container._kdc_per ._per_head ._per_info_wrap ._name span{position: relative;top: -2px;margin-left: 6px;font-size: 16px}
+#_company_content ._company_content_container._kdc_per ._per_head ._per_info_wrap ._info_text{overflow: hidden;position: relative;top: 7px;margin-top: 32px;padding-left: 27px;letter-spacing: -1px}
+#_company_content ._company_content_container._kdc_per ._per_head ._per_info_wrap ._info_text:before{content: '';position: absolute;bottom: 0;left: 0;width: 4px;height: 0;opacity: 0;transition: all 1.5s ease}
+#_company_content ._company_content_container._kdc_per ._per_head ._per_info_wrap ._info_text._active:before{height: 100%;background-color: #012b5d;opacity: 1}
+#_company_content ._company_content_container._kdc_per ._per_head ._per_info_wrap ._info_text span{display: block;position: relative;margin: -5px 0;line-height: 26px;color: #555}
+#_company_content ._company_content_container._kdc_per ._per_con_wrap{width: 1200px;margin: 0 auto}
+#_company_content ._company_content_container._kdc_per ._per_con_wrap ._img_box{margin-top: 80px}
+#_company_content ._company_content_container._kdc_per ._per_con_wrap ._con_text_wrap{overflow: hidden;margin-top: 73px}
+#_company_content ._company_content_container._kdc_per ._per_con_wrap ._con_tit{float: left;width: 305px;line-height: 36px;font-size: 25px;font-weight: bold;color: #222;letter-spacing: -1px;opacity: 0.7}
+#_company_content ._company_content_container._kdc_per ._per_con_wrap ._con_txt{float: left;width: 895px;line-height: 26px;font-size: 16px;color: #555;letter-spacing: -1.4px}
+#_company_content ._company_content_container._kdc_per ._per_nav_box{margin: 145px 0 -150px 0;background-color: #1a1a1a}
+#_company_content ._company_content_container._kdc_per ._per_nav_box ._per_gnb{width: 1200px;height: 315px;margin: 0 auto}
+#_company_content ._company_content_container._kdc_per ._per_nav_box ._per_gnb ._per_lst{float: left}
+#_company_content ._company_content_container._kdc_per ._per_nav_box ._per_gnb ._per_lst a{
+display: block;position: relative;width: 400px;height: 315px;transition: all 0.3s ease}
+#_company_content ._company_content_container._kdc_per ._per_nav_box ._per_gnb ._per_lst p{position: absolute;bottom: 22px;right: 0;font-size: 24px;color: #fff}
+#_company_content ._company_content_container._kdc_per ._per_nav_box ._per_gnb ._per_lst p span{position: relative;top: -2px;right: 18px;font-size: 18px;letter-spacing: 1.5px;text-shadow: 2px 2px 5px #333}
+#_company_content ._company_content_container._kdc_per ._per_nav_box ._per_gnb a._per_link_01{background-image: url(../imgs/ca/_kdc/people_bg1_off.png)}
+#_company_content ._company_content_container._kdc_per ._per_nav_box ._per_gnb a._per_link_02{background-image: url(../imgs/ca/_kdc/people_bg2_off.png)}
+#_company_content ._company_content_container._kdc_per ._per_nav_box ._per_gnb a._per_link_03{background-image: url(../imgs/ca/_kdc/people_bg3_off.png)}
+#_company_content ._company_content_container._kdc_per ._per_nav_box ._per_gnb a._per_link_04{background-image: url(../imgs/ca/_kdc/people_bg4_off.png)}
+#_company_content ._company_content_container._kdc_per ._per_nav_box ._per_gnb a:hover._per_link_01{background-image: url(../imgs/ca/_kdc/people_bg1_on.png)}
+#_company_content ._company_content_container._kdc_per ._per_nav_box ._per_gnb a:hover._per_link_02{background-image: url(../imgs/ca/_kdc/people_bg2_on.png)}
+#_company_content ._company_content_container._kdc_per ._per_nav_box ._per_gnb a:hover._per_link_03{background-image: url(../imgs/ca/_kdc/people_bg3_on.png)}
+#_company_content ._company_content_container._kdc_per ._per_nav_box ._per_gnb a:hover._per_link_04{background-image: url(../imgs/ca/_kdc/people_bg4_on.png)}
+/* _carList */
+#_company_content ._company_content_container._car ._content{margin-top: 50px;padding-top: 60px;border-top: 2px solid #012b5d}
+#_company_content ._company_content_container._car ._content_head_box ._txt{padding: 5px 0;line-height: 30px;font-size: 20px;color: #222}
+#_company_content ._company_content_container._car ._content_head_box ._txt ._point{color: #0189b1}
+#_company_content ._company_content_container._car ._content_con_box{margin-top: 40px}
+#_company_content ._company_content_container._car ._content_con_box ._lsts{padding-bottom: 50px;border-bottom: 1px solid #dedee1}
+#_company_content ._company_content_container._car ._content_con_box ._lsts ._lst{position: relative;height: 100px;margin-top: 20px;border: 1px solid #dedee1;background-color: #f5f7f9;box-sizing: border-box;vertical-align: middle}
+#_company_content ._company_content_container._car ._content_con_box ._lsts ._lst:before{content: '';position: absolute;bottom: 0;left: 0;width: 4px;height: 0;background-color: #012b5d;opacity: 0;transition: all .3s ease}
+#_company_content ._company_content_container._car ._content_con_box ._lsts ._lst:hover:before{height: 100%;opacity: 1}
+#_company_content ._company_content_container._car ._content_con_box ._lsts ._lst ._date_box{float: left;position: relative;width: 110px;padding: 26px 0;text-align: center}
+#_company_content ._company_content_container._car ._content_con_box ._lsts ._lst ._date_box:after{content: '';position: absolute;top: 26px;right: 0;height: 48px;width: 1px;background-color: #dedee1}
+#_company_content ._company_content_container._car ._content_con_box ._lsts ._lst ._date_box ._day{display: block;line-height: 0.8;font-size: 34px;font-weight: bold;color: #222}
+#_company_content ._company_content_container._car ._content_con_box ._lsts ._lst ._date_box ._date{display: block;margin-top: 9px;line-height: 0.8;font-size: 16px;color: #222}
+#_company_content ._company_content_container._car ._content_con_box ._lsts ._lst ._lst_con_box{float: left;width: 650px;margin-left: 30px}
+#_company_content ._company_content_container._car ._content_con_box ._lsts ._lst ._lst_con_box ._con_txt{overflow: hidden;padding-top: 30px;line-height: 30px;font-size: 20px;text-overflow: ellipsis;white-space: nowrap}
+#_company_content ._company_content_container._car ._content_con_box ._lsts ._lst ._lst_con_box ._con_txt ._category{margin-right: 5px;color: #012b5d;font-weight: bold}
+#_company_content ._company_content_container._car ._content_con_box ._lsts ._lst ._lst_info_box{float: left;width: 408px}
+#_company_content ._company_content_container._car ._content_con_box ._lsts ._lst ._lst_info_box ._during{display: inline-block;margin:0 40px 0 10px;padding-top: 30px;line-height: 35px;font-size: 19px;color: #555}
+#_company_content ._company_content_container._car ._content_con_box ._lsts ._lst ._lst_info_box ._label._end{display: inline-block;width: 80px;line-height: 35px;font-size: 16px;    text-align: center;color: #fff;border-radius: 17px;background-color: #a8a9ab}
+#_company_content ._company_content_container._car ._content_con_box ._lsts ._no_data{padding: 50px 0;text-align: center}
+#_company_content ._company_content_container._car ._content_con_box ._lsts ._no_data ._no_data_icon{display: inline-block;width: 92px;height: 72px;text-indent: -9999px;background-image: url(../imgs/ca/_car/search_no_data.gif)}
