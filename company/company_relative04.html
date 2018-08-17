@@ -468,6 +468,7 @@
     </div>
     <script>
         jQuery(function($) {
+//            bxslider start
             var companySlide6 = $('._img_box').eq(0).bxSlider({
                 mode: 'fade',
                 pagerCustom: '.count06',
@@ -483,9 +484,6 @@
                     currentNo = companySlide6.getCurrentSlide();
                     $('.count06 ._btn._btn_number').eq(currentNo).addClass('_active').siblings().removeClass('_active');
                 }
-            });
-            $('._btn._btn_number').on('click', function() {
-                $(this).addClass('_active').siblings().removeClass('_active')
             });
             var companySlide7 = $('._img_box').eq(1).bxSlider({
                 mode: 'fade',
@@ -535,9 +533,7 @@
                     $('.count09 ._btn._btn_number').eq(currentNo).addClass('_active').siblings().removeClass('_active');
                 }
             });
-            $('._btn._btn_number').on('click', function() {
-                $(this).addClass('_active').siblings().removeClass('_active')
-            });
+//            bsslider end
         })
 
     </script>

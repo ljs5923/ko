@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="../js/jquery-latest.min.js"></script>
     <script src="../js/common.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
 </head>
 
 <body>
@@ -572,17 +570,16 @@
     </div>
     <script>
         jQuery(function($) {
-            var $tr=$('._company_content_container._technology02 ._content_01 ._chart_data_table tbody tr');
+            var $tr = $('._company_content_container._technology02 ._content_01 ._chart_data_table tbody tr');
             var moreIndex = 0
             var trIndex = Math.ceil($tr.length / 10);
             $('._btn_more').on('click', function() {
                 for (i = 0; i < 9; i++) {
-                    $tr.eq(i + (moreIndex*10) + 11).fadeIn();
+                    $tr.eq(i + (moreIndex * 10) + 11).fadeIn();
                 }
                 ++moreIndex;
-                if ((trIndex-1) == moreIndex) {
+                if ((trIndex - 1) == moreIndex) {
                     $('._content_more_box').hide();
-                    //            return false;            
                 }
             })
         })

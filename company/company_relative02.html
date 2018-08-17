@@ -364,6 +364,7 @@
     </div>
     <script>
         jQuery(function($) {
+//            bxslider start
             $('._img_box').eq(0).bxSlider({
                 pagerCustom: '.count01',
                 prevSelector: $('._btn01_prev'),
@@ -387,9 +388,7 @@
                     $('.count02 ._btn._btn_number').eq(currentNo).addClass('_active').siblings().removeClass('_active');
                 }
             });
-            $('.count02 ._btn._btn_number').on('click', function() {
-                $(this).addClass('_active').siblings().removeClass('_active')
-            })
+//            bxslider end
         })
 
     </script>

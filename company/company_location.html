@@ -247,17 +247,18 @@
     </div>
     <script>
         jQuery(function() {
+//            naver map
             function koPosition() {
                 myMap = new naver.maps.Map(document.getElementById('_map'), {
                     center: new naver.maps.LatLng(37.390724, 126.950661),
                     zoom: 12
                 });
                 new naver.maps.Marker(myMap);
-            }; //  스타벅스 매장 위치 확인
-
+            };
             $(window).on('load', function() {
                 koPosition()
             });
+//            naver map end
             $(window).on('scroll', function() {
                 var winST = $(window).scrollTop();
                 var mapOffT = $('#_map').offset().top;

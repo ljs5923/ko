@@ -21,7 +21,7 @@ jQuery(function ($) {
             $('._siteMap .fa-bars').removeClass('_active');
         });
     });
-    $('._main_lst_dept').hover(
+    $('._main_lst_dept a').hover(
         function () {
             var mainlstIndex = $(this).index();
             $(this).find('span').addClass('_active');

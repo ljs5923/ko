@@ -274,6 +274,7 @@
     </div>
     <script>
         jQuery(function($) {
+//            bxslider start
             var companySlide9 = $('._img_box').eq(0).bxSlider({
                 mode: 'fade',
                 pagerCustom: '.count06',
@@ -290,9 +291,7 @@
                     $('.count09 ._btn._btn_number').eq(currentNo).addClass('_active').siblings().removeClass('_active');
                 }
             });
-            $('._btn._btn_number').on('click', function() {
-                $(this).addClass('_active').siblings().removeClass('_active')
-            });
+//            bxslider end
         })
 
     </script>

@@ -10,7 +10,6 @@
     <script src="../js/jquery-latest.min.js"></script>
     <script src="../js/common.js"></script>
     <script src="../js/lib/fullpage/fullpage.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
 </head>
 
 <body>
@@ -460,13 +459,16 @@
     </div>
     <script>
         jQuery(function($) {
+//            fullpage start
             $('#fullpage').fullpage({
                 licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
                 anchors: ['anchor1', 'anchor2', 'anchor3', 'anchor4'],
                 verticalCentered: false,
                 scrollBar: true
             });
+//            fullpage end
             $('#wrap').css('overflow', 'hidden');
+//            prev/next button evnet start
             $('._btn').on('click', function() {
                 var indexImg = $('._slide_content._active').index();
                 if ($(this).hasClass('_btn_next')) {
@@ -521,6 +523,8 @@
                     $('._nav_btn').eq(indexImg - 1).addClass('_active').siblings().removeClass('_active')
                 }
             })
+//            prev/next button evnet end
+//            nav button evnet start
             $('._nav_btn').on('click', function() {
                 var indexImg = $('._slide_content._active').index();
                 var indexNav = $(this).index();
@@ -566,6 +570,8 @@
                     $('._slide_content').eq(6).find('._txt_img').removeClass('_active');
                 }
             })
+//            nav button event end
+//            main button event start
             $('._btn_lst').on('click', function() {
                 var indexImg = $('._slide_content._active').index();
                 var anIndex = $(this).index();
@@ -585,6 +591,7 @@
                 $('._slide_content').eq(anIndex * 3).find('._txt_img').addClass('_active');
                 $('._slide_content').eq(anIndex * 3).siblings().find('._txt_img').removeClass('_active');
             })
+//            main button evnet end
         })
 
     </script>

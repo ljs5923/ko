@@ -480,6 +480,7 @@
     </div>
     <script>
         jQuery(function($) {
+//            bslider start
             var companySlide3 = $('._img_box').eq(0).bxSlider({
                 mode: 'fade',
                 pagerCustom: '.count03',
@@ -495,9 +496,6 @@
                     currentNo = companySlide3.getCurrentSlide();
                     $('.count03 ._btn._btn_number').eq(currentNo).addClass('_active').siblings().removeClass('_active');
                 }
-            });
-            $('._btn._btn_number').on('click', function() {
-                $(this).addClass('_active').siblings().removeClass('_active')
             });
             var companySlide4 = $('._img_box').eq(1).bxSlider({
                 mode: 'fade',
@@ -522,9 +520,7 @@
                 prevText: '폴리미래(주) - 이전이미지 보기',
                 nextText: '폴리미래(주) - 다음이미지 보기',
             });
-            $('._btn._btn_number').on('click', function() {
-                $(this).addClass('_active').siblings().removeClass('_active')
-            });
+//            bsslider end
         })
 
     </script>
