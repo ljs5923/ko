@@ -59,6 +59,9 @@ jQuery(function ($) {
         }
     });
     //scroll event end
+    //email open start
+    $('._footer_top_link ._footer_link_lay').fancybox();
+    //email open end
     //FAMILY SITE open start
     $('._btn_familysite_open').on('click', function () {
         $('._footer_bottom_familysite_container').fadeToggle(500, function () {
