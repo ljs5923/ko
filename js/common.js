@@ -21,7 +21,7 @@ jQuery(function ($) {
             $('._siteMap .fa-bars').removeClass('_active');
         });
     });
-    $('._main_lst_dept').hover(
+    $('._main_lst_dept a').hover(
         function () {
             var mainlstIndex = $(this).index();
             $(this).find('span').addClass('_active');
@@ -59,6 +59,47 @@ jQuery(function ($) {
         }
     });
     //scroll event end
+    //email open start
+
+    $('._footer_link_lay').fancybox();
+    $('._footer_link_lay').on('click', function () {
+        var $emailModal = $('._email_modal');
+        var $emailMoCon = $emailModal.find('._modal_content');
+        var $emailBtnWrap = $emailMoCon.find('._sel_btn_wrap');
+        var $emailDecWrap = $emailMoCon.find('._modal_dec_box');
+        var $emailDecCon = $emailDecWrap.find('._modal_dec')
+        var $_btn = $emailBtnWrap.find('._btn');
+        var emailDecH = $emailDecCon.eq(0).outerHeight();
+        $emailDecWrap.css('height', emailDecH);
+        $_btn.on('click', function () {
+            if ($(this).hasClass('_btn_sel')) {
+                $emailModal.find('._sel_lsts').show();
+                $(this).addClass('_active');
+            } else if ($(this).hasClass('_val1')) {
+                var reText = $(this).text();
+                $emailModal.find('._val').text(reText);
+                $emailModal.find('._sel_lsts').hide();
+                $emailModal.find('._btn._btn_sel').removeClass('_active');
+            } else if ($(this).hasClass('_val2')) {
+                var reText = $(this).text();
+                $emailModal.find('._val').text(reText);
+                $emailModal.find('._sel_lsts').hide();
+                $emailModal.find('._btn._btn_sel').removeClass('_active');
+            } else if ($(this).hasClass('_btn_view')) {
+                if ($emailModal.find('._val').text() == '이메일무단수집거부 v1.1') {
+                    var emailDecH = $emailDecCon.eq(1).outerHeight();
+                    $emailDecWrap.css('height', emailDecH);
+                    $emailDecCon.eq(1).show().siblings().hide();
+                } else if ($emailModal.find('._val').text() == '이메일무단수집거부 v1.2') {
+                    var emailDecH = $emailDecCon.eq(0).outerHeight();
+                    $emailDecWrap.css('height', emailDecH);
+                    $emailDecCon.eq(0).show().siblings().hide();
+                }
+            }
+        })
+    })
+
+    //email open end
     //FAMILY SITE open start
     $('._btn_familysite_open').on('click', function () {
         $('._footer_bottom_familysite_container').fadeToggle(500, function () {
@@ -70,11 +111,11 @@ jQuery(function ($) {
     //company_information_header event start
     $(window).on('scroll', function () {
         var winHT = $(window).scrollTop();
-        var headerTopH = $('._header_top').height();
+        var headerTopH = $('._header_spot').height();
         if (winHT >= headerTopH) {
-            $('._header_down').addClass('_fixed');
+            $('#_company_wrap').addClass('_fixed');
         } else {
-            $('._header_down').removeClass('_fixed');
+            $('#_company_wrap').removeClass('_fixed');
         }
     });
     //company_information_header event end

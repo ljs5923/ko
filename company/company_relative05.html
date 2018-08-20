@@ -63,21 +63,21 @@
                                 </ul>
                             </li>
                             <li class="_main_lst_dept">
-                                <a href="#" class="_main_dept"><span>홍보센터</span></a>
+                                <a href="../pr/pr_news.html" class="_main_dept"><span>홍보센터</span></a>
                                 <ul class="_sub_lst">
-                                    <li class="_sub_lst_dept"><a href="#" class="_sub_dept">고려개발 소식</a></li>
-                                    <li class="_sub_lst_dept"><a href="#" class="_sub_dept">CI/BI 소개</a></li>
-                                    <li class="_sub_lst_dept"><a href="#" class="_sub_dept">KDC 역사관</a></li>
+                                    <li class="_sub_lst_dept"><a href="../pr/pr_news.html" class="_sub_dept">고려개발 소식</a></li>
+                                    <li class="_sub_lst_dept"><a href="../pr/pr_cibi.html" class="_sub_dept">CI/BI 소개</a></li>
+                                    <li class="_sub_lst_dept"><a href="../pr/pr_kdc.html" class="_sub_dept">KDC 역사관</a></li>
                                 </ul>
                             </li>
                             <li class="_main_lst_dept">
-                                <a href="#" class="_main_dept"><span>채용정보</span></a>
+                                <a href="../ca/careers_talent.html" class="_main_dept"><span>채용정보</span></a>
                                 <ul class="_sub_lst">
-                                    <li class="_sub_lst_dept"><a href="#" class="_sub_dept">인재상</a></li>
-                                    <li class="_sub_lst_dept"><a href="#" class="_sub_dept">인사제도</a></li>
-                                    <li class="_sub_lst_dept"><a href="#" class="_sub_dept">직무소개</a></li>
-                                    <li class="_sub_lst_dept"><a href="#" class="_sub_dept">고려인</a></li>
-                                    <li class="_sub_lst_dept"><a href="#" class="_sub_dept">채용정보</a></li>
+                                    <li class="_sub_lst_dept"><a href="../ca/careers_talent.html" class="_sub_dept">인재상</a></li>
+                                    <li class="_sub_lst_dept"><a href="../ca/careers_per_sys.html" class="_sub_dept">인사제도</a></li>
+                                    <li class="_sub_lst_dept"><a href="../ca/careers_job_intro.html" class="_sub_dept">직무소개</a></li>
+                                    <li class="_sub_lst_dept"><a href="../ca/careers_kdc.html" class="_sub_dept">고려인</a></li>
+                                    <li class="_sub_lst_dept"><a href="../ca/careers_careersList.html" class="_sub_dept">채용정보</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -85,7 +85,7 @@
                     <div class="_KDC">
                         배너이미지
                         <sapn class="_KDC_content">KDC 역사관</sapn>
-                        <a href="#" class="_KDC_btn"><span class="_KDC_btn_contnet">바로가기</span></a>
+                        <a href="../pr/pr_kdc.html" class="_KDC_btn"><span class="_KDC_btn_contnet">바로가기</span></a>
                     </div>
                     <div class="_siteMap">
                         <a href="#" class="_stieMap_go_btn">사이트맵 바로가기<span class="fa fa-bars"></span></a>
@@ -95,21 +95,23 @@
         </header>
         <div id="_company_container">
             <div id="_company_wrap">
-                <div class="_company_header_wrap">
+                <div class="_header_spot">
                     <div class="_header_top">
                         <strong class="_header_title">회사소개</strong>
                         <span class="_header_text">COMPANY INFO</span>
                     </div>
+                </div>
+                <div class="_company_header_wrap">
                     <div class="_header_down">
                         <div class="_header_down_container">
                             <div class="_header_gnb_wrap">
                                 <ul class="_header_gnb clearfix">
                                     <li class="_header_gnb_lst">
-                                        <a href="company_information.html" class="_header_gnb_dept"><span>기업정보</span></a></li>
+                                        <a href="../company/company_information.html" class="_header_gnb_dept"><span>기업정보</span></a></li>
                                     <li class="_header_gnb_lst">
-                                        <a href="company_ceo.html" class="_header_gnb_dept"><span>CEO 인사말</span></a></li>
+                                        <a href="../company/company_ceo.html" class="_header_gnb_dept"><span>CEO 인사말</span></a></li>
                                     <li class="_header_gnb_lst">
-                                        <a href="company_value.html" target="_blank" class="_header_gnb_dept"><span>가치체계</span></a></li>
+                                        <a href="../company/company_value.html" target="_blank" class="_header_gnb_dept"><span>가치체계</span></a></li>
                                     <li class="_header_gnb_lst">
                                         <a href="company_history.html" class="_header_gnb_dept"><span>주요 연혁</span></a></li>
                                     <li class="_header_gnb_lst _active">
@@ -272,6 +274,7 @@
     </div>
     <script>
         jQuery(function($) {
+//            bxslider start
             var companySlide9 = $('._img_box').eq(0).bxSlider({
                 mode: 'fade',
                 pagerCustom: '.count06',
@@ -288,9 +291,7 @@
                     $('.count09 ._btn._btn_number').eq(currentNo).addClass('_active').siblings().removeClass('_active');
                 }
             });
-            $('._btn._btn_number').on('click', function() {
-                $(this).addClass('_active').siblings().removeClass('_active')
-            });
+//            bxslider end
         })
 
     </script>
