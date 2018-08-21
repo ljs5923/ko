@@ -6,9 +6,12 @@
     <title>가치체계 / 기업정보 / 고려개발</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../js/lib/fullpage/fullpage.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css">
     <script src="../js/jquery-latest.min.js"></script>
+    <script src="../js/common.js"></script>
     <script src="../js/lib/fullpage/fullpage.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
 </head>
 
 <body>
@@ -201,19 +204,55 @@
                                     <div class="_footer_top clearfix">
                                         <div class="_footer_address_box">
                                             <span class="_footer_logo_wrap">고려개발</span>
-                                            <address>경기도 안양시 동안구 시민대로 180 G.SQUARE 17층 TEL: 031-420-9000</address>
+                                            <address>경기도 안양시 동안구 시민대로 180 G.SQUARE 17층 　 TEL: 031-420-9000</address>
                                         </div>
                                         <div class="_footer_top_link_wrap">
                                             <div class="_footer_top_link">
-                                                <a href="#">전자공고</a>
-                                                <a href="#" class="_imformation">개인정보처리방침</a>
-                                                <a href="#">영상정보처리기기운영관리방침</a>
+                                                <a href="../ii/disclosure_information.html">전자공고</a>
+                                                <a href="../etc/etc_terms01.html" class="_imformation">개인정보처리방침</a>
+                                                <a href="../etc/etc_terms02.html">영상정보처리기기운영관리방침</a>
                                             </div>
                                             <div class="_footer_top_link">
-                                                <a href="#" class="_footer_link_lay">이메일무단수집거부</a>
-                                                <a href="#">사이트맵</a>
-                                                <a href="#">전자입찰시스템</a>
-                                                <a href="#">대금결제시스템</a>
+                                                <a href="#_modal_layout" class="_footer_link_lay">이메일무단수집거부</a>
+                                                <div id="_modal_layout" class="_modal_container _email_modal">
+                                                    <div class="_modal_head">
+                                                        <h3 class="_modal_title">이메일무단수집거부</h3>
+                                                    </div>
+                                                    <div class="_modal_content">
+                                                        <div class="_sel_btn_container">
+                                                            <div class="_sel_btn_wrap clearfix">
+                                                                <h4 class="_sel_tit">개정이력 리스트</h4>
+                                                                <div class="_sel_btn_box">
+                                                                    <div class="_sel_val_box">
+                                                                        <em class="_val">이메일무단수집거부 v1.2</em>
+                                                                        <button type="button" class="_btn _btn_sel"><span>개정이력 리스트 열기</span></button>
+                                                                    </div>
+                                                                    <ul class="_sel_lsts">
+                                                                        <li>
+                                                                            <button type="button" class="_btn _btn_sel_val _val1">이메일무단수집거부 v1.2</button>
+                                                                        </li>
+                                                                        <li>
+                                                                            <button type="button" class="_btn _btn_sel_val _val2">이메일무단수집거부 v1.1</button>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <button class="_btn _btn_view"><span>보기</span></button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="_modal_dec_box">
+                                                            <div class="_modal_dec">
+                                                                <p class="_tit">이메일무단수집거부 v1.2</p>
+                                                                <p class="_con">본 웹사이트에 게시된 이메일 주소가 전자우편 수집 프로그램이나 그 밖의 기술적 장치를 이용한 무단으로 수집되는 것을 거부하며, 이를 위반 시 정보통신망법에 의해 형사처벌 됨을 유념하시기 바랍니다.</p>
+                                                                <p class="_date"><strong>게시일</strong>2018-02-11</p>
+                                                            </div>
+                                                            <div class="_modal_dec">
+                                                                <p class="_con">본 웹사이트에 게시된 이메일 주소가 전자우편 수집 프로그램이나 그 밖의 기술적 장치를 이용한 무단으로 수집되는 것을 거부하며, 이를 위반 시 정보통신망법에 의해 형사처벌 됨을 유념하시기 바랍니다.</p>
+                                                                <p class="_date"><strong>게시일</strong>2018-02-11</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a href="../etc/etc_siteMap.html">사이트맵</a>
                                             </div>
                                         </div>
                                     </div>
@@ -230,25 +269,25 @@
                                                 <div class="_footer_bottom_familysite_box">
                                                     <strong class="_familysite_title">패밀리 사이트</strong>
                                                     <ul class="_familysite_lst_wrap">
-                                                        <li class="_familysite_lst"><a href="">e편한세상</a></li>
-                                                        <li class="_familysite_lst"><a href="">대금 결제조회 시스템</a></li>
-                                                        <li class="_familysite_lst"><a href="">eSpeedNet</a></li>
-                                                        <li class="_familysite_lst"><a href="">KDC OB Club</a></li>
+                                                        <li class="_familysite_lst"><a href="http://www.kdc-apt.co.kr/Mnmn_main.action" target="_blank">e편한세상</a></li>
+                                                        <li class="_familysite_lst"><a href="../etc/etc_payment.html" target="_blank">대금 결제조회 시스템</a></li>
+                                                        <li class="_familysite_lst"><a href="https://www.espeednet.co.kr/ESPWeb/Auth/login.aspx" target="_blank">eSpeedNet</a></li>
+                                                        <li class="_familysite_lst"><a href="https://obclub.kdc.co.kr/" target="_blank">KDC OB Club</a></li>
                                                     </ul>
                                                 </div>
                                                 <div class="_footer_bottom_familysite_box">
                                                     <strong class="_familysite_title">관계사 사이트</strong>
                                                     <ul class="_familysite_lst_wrap">
-                                                        <li class="_familysite_lst"><a href="">대림산업</a></li>
-                                                        <li class="_familysite_lst"><a href="">대림코퍼레이션</a></li>
-                                                        <li class="_familysite_lst"><a href="">삼호</a></li>
-                                                        <li class="_familysite_lst"><a href="">대림 C&S</a></li>
-                                                        <li class="_familysite_lst"><a href="">대림학원</a></li>
-                                                        <li class="_familysite_lst"><a href="">YNCC</a></li>
-                                                        <li class="_familysite_lst"><a href="">대림자동차공업</a></li>
-                                                        <li class="_familysite_lst"><a href="">오라관광</a></li>
-                                                        <li class="_familysite_lst"><a href="">대림산업(주) 석유화학사업부</a></li>
-                                                        <li class="_familysite_lst"><a href="">폴리미래</a></li>
+                                                        <li class="_familysite_lst"><a href="http://www.daelim.co.kr/main.do" target="_blank">대림산업</a></li>
+                                                        <li class="_familysite_lst"><a href="https://www.daelimcorp.co.kr/ko/pc/index.do" target="_blank">대림코퍼레이션</a></li>
+                                                        <li class="_familysite_lst"><a href="http://www.samho.co.kr/zMain/main.asp" target="_blank">삼호</a></li>
+                                                        <li class="_familysite_lst"><a href="http://www.daelimcns.co.kr/" target="_blank">대림 C&S</a></li>
+                                                        <li class="_familysite_lst"><a href="https://www.daelim.ac.kr/hme/index.do" target="_blank">대림학원</a></li>
+                                                        <li class="_familysite_lst"><a href="http://www.yncc.co.kr/ko/index.do" target="_blank">YNCC</a></li>
+                                                        <li class="_familysite_lst"><a href="http://www.yncc.co.kr/ko/index.do" target="_blank">대림자동차공업</a></li>
+                                                        <li class="_familysite_lst"><a href="http://www.oraresort.co.kr/" target="_blank">오라관광</a></li>
+                                                        <li class="_familysite_lst"><a href="https://www.daelimchem.co.kr/main.do" target="_blank">대림산업(주) 석유화학사업부</a></li>
+                                                        <li class="_familysite_lst"><a href="http://www.polymirae.com/kr/" target="_blank">폴리미래</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -284,7 +323,7 @@
     </div>
     <script>
         jQuery(function($) {
-//            bxslider start
+            //            bxslider start
             $('#fullpage').fullpage({
                 licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
                 menu: '#_scroll_nav',
@@ -347,7 +386,7 @@
                     $('._value3_lst3_conut_current').text('0' + pageNo);
                 }
             });
-//            bxslider end
+            //            bxslider end
         })
     </script>
 </body>
