@@ -54,12 +54,12 @@ footer{position:relative;z-index:10}
 #_nav_container ._main_lst_dept ._main_dept._active{color:#222}
 #_nav_container ._main_dept span{display:inline-block;position:relative}
 #_nav_container ._main_dept span:before{content:"";position:absolute;bottom:-7px;left:0;width:100%;height:2px;transition:background .3s ease}
-#_nav_container ._main_dept span._active:before{opacity:1;background-color:#012b5d}
+#_nav_container ._main_dept:hover span:before{opacity:1;background-color:#012b5d}
 #_header._active #_nav_container ._sub_lst{opacity:1}
-#_nav_container ._sub_lst{height:230px;padding-top:20px;border-right:1px solid #dcdddd;opacity:0;filter:alpha(opacity=0);transition:all .3s ease}
-#_nav_container ._sub_lst._active{background:#f5f7f9}
+#_nav_container ._sub_lst{height:230px;padding-top:20px;border-right:1px solid #dcdddd;opacity:0;transition:all .3s ease}
+#_nav_container ._main_lst_dept:hover>._sub_lst{background:#f5f7f9}
 #_nav_container ._sub_lst ._sub_dept{display:block;padding:7px 0;font-size:15px;color:#555;transition:color .3s ease}
-#_nav_container ._sub_lst ._sub_dept._active{font-weight:bold;color:#012b5d}
+#_nav_container ._sub_lst_dept:hover>._sub_dept{font-weight:bold;color:#012b5d}
 #_nav_container ._nav_wrap ._KDC{position:absolute;top:86px;left:1007px;width:550px;height:250px;background-image:url(../imgs/main/_banner.jpg);background-size:cover;font-size:0}
 #_nav_container ._KDC ._KDC_content{display:inline-block;width:120px;height:50px;padding:35px 35px 0 35px;font-size:20px;text-align:center;line-height:50px;color:#fff}
 #_nav_container ._KDC ._KDC_btn{display:block;width:80px;height:35px;margin-left:35px; padding:0 20px;border-radius:20px;background-color:#082149; text-align:center;line-height:35px}
@@ -504,6 +504,7 @@ footer{position:relative;z-index:10}
 #_company_content ._relative_content ._btn_box{margin-top:35px}
 #_company_content ._relative_content ._btn_box ._btn_link{position:relative;display:inline-block;overflow:hidden;padding:0 45px 0 30px;line-height:46px;font-size:16px;color:#555;border:1px solid #dedee1;border-radius:2px;vertical-align:top}
 #_company_content ._relative_content ._btn_box ._btn_link:before{content:'';position:absolute;top:19px;right:31px;width:5px;height:10px;background-image:url(../imgs/company/company.png);background-position:0 -1420px;transition:all 0.3s ease}
+#_company_content ._relative_content ._btn_box ._btn_link:hover:before{right: 28px}
 #_company_content ._relative_content ._dec_content{width:792px;padding-left:408px}
 #_company_content ._relative_content ._dec_img_contanier{position:relative;padding-bottom:40px}
 #_company_content ._relative_content ._dec_img_contanier ._img_wrap{width:792px;height:380px}
@@ -1269,9 +1270,10 @@ display: block;position: relative;width: 400px;height: 315px;transition: all 0.3
 ._sel_val_box ._val{display: block;padding-left: 20px;line-height: 40px;font-size: 16px;color: #555;background-color: #fff}
 ._sel_val_box ._btn._btn_sel{overflow: hidden;position: absolute;top: 0;left: 0;width: 100%;height: 100%;border: 1px solid #dedee1;border-radius: 2px;box-sizing: border-box !important;transition: border .3s ease}
 ._sel_btn_wrap ._sel_btn_box ._sel_val_box ._btn._btn_sel:hover,._sel_btn_wrap ._sel_btn_box ._sel_val_box ._btn._btn_sel._active{border: 1px solid #012b5d}
-._btn._btn_sel span{overflow: hidden;position: absolute;top: 15px;right: 10px;width: 15px;height: 9px;vertical-align: top;text-indent: -999px;background-image: url(../imgs/common.png);background-position: 0px -543px}
+._btn._btn_sel span{overflow: hidden;position: absolute;top: 15px;right: 10px;width: 15px;height: 9px;vertical-align: top;text-indent: -999px;background-image: url(../imgs/common.png);background-position: 0px -543px;transition: all .3s ease}
+._sel_btn_box ._btn._btn_sel._active span{transform: rotate(180deg)}
 ._sel_btn_wrap ._sel_btn_box ._sel_lsts{display: none;position: absolute;top: 39px;left: 0;width: 100%;max-height: 217px;overflow-y: auto;border: 1px solid #012b5d;border-top: none;background-color: #fff;z-index: 1;box-sizing: border-box !important}
-._sel_btn_wrap ._sel_btn_box ._sel_lsts ._btn._btn_sel_val{display: block;width: 100%;height: 40px;padding-left: 20px;line-height: 40px;font-size: 16px;text-align: left;color: #555;background-color: #fff;box-sizing: border-box !important;transition: all .3s ease}
+._sel_btn_wrap ._sel_btn_box ._sel_lsts ._btn._btn_sel_val{display: block;width: 100%;height: 40px;padding-left: 20px;line-height: 40px;font-size: 16px;text-align: left;color: #555;background-color: #fff;box-sizing: border-box !important}
 ._sel_btn_wrap ._btn._btn_view{float: left;margin-left: 15px}
 ._sel_btn_wrap ._btn._btn_view span{display: block;height: 40px;padding: 0 15px;line-height: 40px;font-size: 16px;color: #fff;background-color: #012b5d}
 #_company_content ._company_content_container._term ._content_wrap{position: relative}
@@ -1341,6 +1343,8 @@ display: block;position: relative;width: 400px;height: 315px;transition: all 0.3
 #_company_content ._company_content_container._sitM ._siteMap_lst{float: left;width: 255px;margin-top: 86px;margin-left: 30px;padding-left: 30px}
 #_company_content ._company_content_container._sitM ._siteMap_lst:nth-of-type(5){clear: both}
 #_company_content ._company_content_container._sitM ._main_lst{display: block;position: relative;padding: 0 48px 0 30px;line-height: 45px;font-size: 17px;font-weight: bold;color: #fff;background-color: #012b5d}
+#_company_content ._company_content_container._sitM ._main_lst:before{content: '';position: absolute;top: 15px;right: 30px;width: 8px;height: 15px;background-image: url(../imgs/etc/etc.png);background-position: 0px -25px;transition: right .3s ease}
+#_company_content ._company_content_container._sitM ._main_lst:hover:before{right: 25px}
 #_company_content ._company_content_container._sitM ._sub_lsts{padding: 18px 30px 4px 30px}
 #_company_content ._company_content_container._sitM ._sub_lst_val1{position: relative;padding-left: 12px;line-height: 36px;font-size: 16px;color: #222}
 #_company_content ._company_content_container._sitM ._sub_lst_val1:before{content: '';overflow: hidden;position: absolute;top: 11px;left: 0;width: 4px;height: 4px;background-color: #222;border-radius: 2px}

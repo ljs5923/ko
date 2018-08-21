@@ -8,7 +8,6 @@ jQuery(function ($) {
         $('#_header').addClass('_active');
         $('._main_dept').addClass('_active');
         $('._logo_img').addClass('_active');
-        $('._logo_img').addClass('_active');
         $('._siteMap .fa-bars').addClass('_active');
     });
     $('#_header').on('mouseleave', function () {
@@ -21,26 +20,6 @@ jQuery(function ($) {
             $('._siteMap .fa-bars').removeClass('_active');
         });
     });
-    $('._main_lst_dept a').hover(
-        function () {
-            var mainlstIndex = $(this).index();
-            $(this).find('span').addClass('_active');
-            $('._sub_lst').eq(mainlstIndex).addClass('_active');
-        },
-        function () {
-            var mainlstIndex = $(this).index();
-            $(this).find('span').removeClass('_active');
-            $('._sub_lst').eq(mainlstIndex).removeClass('_active');
-        }
-    );
-    $('._sub_lst_dept a').hover(
-        function () {
-            $(this).addClass('_active');
-        },
-        function () {
-            $(this).removeClass('_active');
-        }
-    );
     //nav event end
     //scroll event start
     $('._scroll_top').on('click', function () {
@@ -73,7 +52,7 @@ jQuery(function ($) {
         $emailDecWrap.css('height', emailDecH);
         $_btn.on('click', function () {
             if ($(this).hasClass('_btn_sel')) {
-                $emailModal.find('._sel_lsts').show();
+                $emailModal.find('._sel_lsts').fadeToggle();
                 $(this).addClass('_active');
             } else if ($(this).hasClass('_val1')) {
                 var reText = $(this).text();

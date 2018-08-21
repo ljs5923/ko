@@ -636,9 +636,8 @@
             var contentH = $companyCon.eq(0).outerHeight();
             $companyConConta.css('height', contentH);
             $btn.on('click', function() {
-                console.log($(this));
                 if ($(this).hasClass('_btn_sel')) {
-                    $companyConWrap.find('._sel_lsts').show();
+                    $companyConWrap.find('._sel_lsts').fadeToggle();
                     $(this).addClass('_active');
                 } else if ($(this).hasClass('_val1')) {
                     var reText = $(this).text();
