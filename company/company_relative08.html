@@ -159,8 +159,8 @@
                                                 </ul>
                                             </div>
                                             <div class="_dec_btn_contanier">
-                                                <button class="_btn _btn_prev _btn13_prev"></button>
-                                                <button class="_btn _btn_next _btn13_next"></button>
+                                                <span class="_btn _btn_prev _btn13_prev"></span>
+                                                <span class="_btn _btn_next _btn13_next"></span>
                                             </div>
                                             <div class="_dec_count_container count13">
                                                 <a data-slide-index="0" class="_btn _btn_number _active">
@@ -328,10 +328,7 @@
                     currentNo = companySlide13.getCurrentSlide();
                     $('.count13 ._btn._btn_number').eq(currentNo).addClass('_active').siblings().removeClass('_active');
                 }
-            });
-            $('._btn._btn_number').on('click', function() {
-                $(this).addClass('_active').siblings().removeClass('_active')
-            });
+            })
             //            bxslider end
         })
     </script>

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css">
     <script src="js/jquery-latest.min.js"></script>
     <script src="js/common.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
 </head>
 
@@ -185,9 +185,9 @@
                 </ul>
                 <div class="_control_container">
                     <div class="_control clearfix">
-                        <button class="_btn _prev">고려개발 이전 슬라이드 가기</button>
-                        <button class="_btn _start_pause"></button>
-                        <button class="_btn _next">고려개발 다음 슬라이드 가기</button>
+                        <span class="_btn _prev">고려개발 이전 슬라이드 가기</span>
+                        <span class="_btn _start_pause"></span>
+                        <span class="_btn _next">고려개발 다음 슬라이드 가기</span>
                     </div>
                     <div class="_count_container">
                         <span class="_no _current">01</span>
@@ -529,9 +529,9 @@
                     </div>
                     <div class="_content3_btn_container">
                         <div class="_content3_btn_wrap">
-                            <button class="_content3_btn _content3_prev">고려인 이전 이미지</button>
-                            <button class="_content3_btn_play"></button>
-                            <button class="_content3_btn _content3_next">고려인 다음 이미지</button>
+                            <span class="_content3_btn _content3_prev">고려인 이전 이미지</span>
+                            <span class="_content3_btn_play"></span>
+                            <span class="_content3_btn _content3_next">고려인 다음 이미지</span>
                         </div>
                         <div class="_content3_count_container">
                             <span class="_content3_current">01</span>
@@ -722,7 +722,7 @@
                 $w = $(window).height();
                 $('#_main_slide').css("height", $w);
                 //mainslide Strat
-                var mainSlide = $('._slide_img').bxSlider({
+                $('._slide_img').bxSlider({
                     mode: 'fade',
                     speed: 2000,
                     control: false,
@@ -732,8 +732,8 @@
                     autoControlsCombine: true,
                     randomStart: true,
                     autoControlsSelector: $('._start_pause'),
-                    prevSelector: $('._prev'),
-                    nextSelector: $('._next'),
+                    prevSelector: $('._btn._prev'),
+                    nextSelector: $('._btn._next'),
                     onSliderLoad: function(currentIndex) {
                         $('._current').text("0" + (currentIndex + 1));
                         $('._main_text').eq(currentIndex).find('._dec').animate({
@@ -1096,7 +1096,7 @@
                 }
                 //content2 slide img End
                 //content3 slide img start
-                var content3Slide = $('._content3_slide_wrap').bxSlider({
+                $('._content3_slide_wrap').bxSlider({
                     mode: 'fade',
                     speed: 2000,
                     control: false,

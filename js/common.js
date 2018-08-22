@@ -77,8 +77,12 @@ jQuery(function ($) {
             }
         })
     })
-
     //email open end
+    //    rel_con_nav start
+    $('._company_relative_container ._btn._btn_number').on('click', function () {
+        $(this).addClass('_active').siblings().removeClass('_active')
+    });
+    //    rel_con_nav end
     //FAMILY SITE open start
     $('._btn_familysite_open').on('click', function () {
         $('._footer_bottom_familysite_container').fadeToggle(500, function () {

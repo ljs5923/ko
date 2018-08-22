@@ -638,7 +638,7 @@
             $btn.on('click', function() {
                 if ($(this).hasClass('_btn_sel')) {
                     $companyConWrap.find('._sel_lsts').fadeToggle();
-                    $(this).addClass('_active');
+                    $(this).toggleClass('_active');
                 } else if ($(this).hasClass('_val1')) {
                     var reText = $(this).text();
                     $companyConWrap.find('._val').text(reText);
