@@ -285,18 +285,42 @@
     </div>
     <script>
         jQuery(function() {
-            //            naver map
-            function koPosition() {
-                myMap = new naver.maps.Map(document.getElementById('_map'), {
-                    center: new naver.maps.LatLng(37.390724, 126.950661),
-                    zoom: 12
-                });
-                new naver.maps.Marker(myMap);
-            };
-            $(window).on('load', function() {
-                koPosition()
+            //naver map
+            var map = new naver.maps.Map('_map',{
+                zoom: 13
             });
-            //            naver map end
+            var myaddress = '시민대로 180';
+            naver.maps.Service.geocode({
+                address: myaddress,                
+            }, function(status, response) {
+                if (status !== naver.maps.Service.Status.OK) {
+                    return alert(myaddress + '의 검색 결과가 없거나 기타 네트워크 에러');
+                }
+                var result = response.result;
+                // 검색 결과 갯수: result.total
+                // 첫번째 결과 결과 주소: result.items[0].address
+                // 첫번째 검색 결과 좌표: result.items[0].point.y, result.items[0].point.x
+                var myaddr = new naver.maps.Point(result.items[0].point.x, result.items[0].point.y);
+                map.setCenter(myaddr); // 검색된 좌표로 지도 이동
+                // 마커 표시
+                var marker = new naver.maps.Marker({
+                    position: myaddr,
+                    map: map
+                });
+                // 마커 클릭 이벤트 처리
+                naver.maps.Event.addListener(marker, "click", function(e) {
+                    if (infowindow.getMap()) {
+                        infowindow.close();
+                    } else {
+                        infowindow.open(map, marker);
+                    }
+                });
+                // 마크 클릭시 인포윈도우 오픈
+                var infowindow = new naver.maps.InfoWindow({
+                    content: '<img src="../imgs/map_marker.png" width="100%">'
+                });
+            });
+            //naver map end
             $(window).on('scroll', function() {
                 var winST = $(window).scrollTop();
                 var mapOffT = $('#_map').offset().top;
@@ -305,6 +329,7 @@
                 }
             });
         }); //jQuery end
+
     </script>
 </body>
 
